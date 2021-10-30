@@ -20,7 +20,7 @@ export default function Form({
           ref={descriptionInputRef}
         ></textarea>
         <div className={classes.actions}>
-          <button>Submit</button>
+          <button>submit</button>
         </div>
       </div>
     </form>

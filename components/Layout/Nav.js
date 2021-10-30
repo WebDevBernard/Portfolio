@@ -1,3 +1,4 @@
+import Link from "next/link";
 import classes from "./Nav.module.css";
 export default function Nav() {
   return (
@@ -5,9 +6,15 @@ export default function Nav() {
       <br />
       <nav>
         <ul>
-          <li>About</li>
+          <a
+            href="https://www.canva.com/design/DAEkU6w_4cQ/8HufPu__iW0icX1ofHSiUg/view?utm_content=DAEkU6w_4cQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+            target="_blank"
+          >
+            <li>VIEW MY RESUME</li>
+          </a>
+          {/* <li>About</li>
           <li>Projects</li>
-          <li>Contact</li>
+          <li>Contact</li> */}
         </ul>
       </nav>
     </header>

@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import classes from "./Projects.module.css";
 const projects = [
   {
     id: "m1",
@@ -21,7 +22,7 @@ const projects = [
 ];
 export default function Projects() {
   return (
-    <section>
+    <section className={classes.container}>
       <h1>Projects</h1>
       <ul>
         {projects.map((project) => {
