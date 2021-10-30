@@ -25,7 +25,12 @@ export default function Projects() {
       <h1>Projects</h1>
       <ul>
         {projects.map((project) => {
-          return <li key={projects.id}>{project.title}</li>;
+          return (
+            <li key={projects.id}>
+              {project.title}
+              {project.description}
+            </li>
+          );
         })}
       </ul>
     </section>
