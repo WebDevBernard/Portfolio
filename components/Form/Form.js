@@ -11,8 +11,8 @@ export default function Form({
       className={classes.form}
       name="contact"
       method="POST"
-      data-netlify="true"
       data-netlify-recaptcha="true"
+      data-netlify="true"
     >
       <input type="hidden" name="form" value="contact" />
       <div className={classes.control}>
