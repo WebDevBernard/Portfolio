@@ -7,7 +7,7 @@ const projects = [
     title: "Make My Day",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/kanban.png",
-    description: "A trello clone / task board built with React Hooks.",
+    description: "A trello clone built with React Hooks.",
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.netlify.app/",
   },
@@ -16,7 +16,7 @@ const projects = [
     title: "Scheduler",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/Scheduler.png",
-    description: "Scheduling App: schedule, edit or cancel interviews.",
+    description: "An interview scheduling app",
     github: "https://github.com/WebDevBernard/scheduler",
     link: "",
   },

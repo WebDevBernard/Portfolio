@@ -15,6 +15,12 @@
   margin-left: 2rem;
 }
 
+@media (max-width: 768px) {
+  .footer li {
+    margin-left: 1rem;
+  }
+}
+
 .colour {
   color: black;
 }
