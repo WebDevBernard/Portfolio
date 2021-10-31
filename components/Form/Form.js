@@ -9,7 +9,7 @@ export default function Form({
   return (
     <form
       className={classes.form}
-      onSubmit={submitHandler}
+      // onSubmit={submitHandler}
       data-netlify="true"
       data-netlify-recaptcha="true"
       action="/success"
