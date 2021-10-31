@@ -11,7 +11,6 @@ export default function Form({
       className={classes.form}
       // onSubmit={submitHandler}
       data-netlify="true"
-      data-netlify-recaptcha="true"
       action="POST"
     >
       <div className={classes.control}>
@@ -27,6 +26,7 @@ export default function Form({
           ref={descriptionInputRef}
           required
         ></textarea>
+        <div data-netlify-recaptcha="true" />
         <div className={classes.actions}>
           <button>submit</button>
         </div>
