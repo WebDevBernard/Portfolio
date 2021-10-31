@@ -18,3 +18,9 @@
   font-size: 1.05rem;
   margin-left: 2rem;
 }
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: left;
+  }
+}

@@ -2,7 +2,6 @@ import { useRef } from "react";
 import About from "./About/About";
 import ProjectList from "./Projects/ProjectList";
 import Form from "./Form/Form";
-import Footer from "./Footer/Footer";
 
 export default function App() {
   const nameInputRef = useRef();
@@ -31,7 +30,6 @@ export default function App() {
         descriptionInputRef={descriptionInputRef}
         submitHandler={submitHandler}
       />
-      <Footer />
     </>
   );
 }
