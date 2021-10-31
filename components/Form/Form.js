@@ -35,6 +35,7 @@ export default function Form({
       </div>
       <div className={classes.control}>
         <textarea
+          name="message"
           placeholder="Message"
           rows="5"
           ref={descriptionInputRef}
