@@ -9,7 +9,7 @@ export default function App() {
   const emailInputRef = useRef();
   const descriptionInputRef = useRef();
   const submitHandler = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const enteredName = nameInputRef.current.value;
     const enteredEmail = emailInputRef.current.value;
     const enteredDescription = descriptionInputRef.current.value;
