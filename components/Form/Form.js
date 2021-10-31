@@ -8,11 +8,13 @@ export default function Form({
 }) {
   return (
     <form
+      name="form"
       className={classes.form}
-      // onSubmit={submitHandler}
+      onSubmit={submitHandler}
       data-netlify="true"
-      action="POST"
+      method="POST"
     >
+      <input type="hidden" name="form" value="contact" />
       <div className={classes.control}>
         <input id="form" placeholder="Name" ref={nameInputRef} required />
       </div>
