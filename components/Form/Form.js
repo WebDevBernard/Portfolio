@@ -11,7 +11,6 @@ export default function Form({
       className={classes.form}
       name="contact"
       method="POST"
-      data-netlify-recaptcha="true"
       data-netlify="true"
     >
       <input type="hidden" name="form" value="contact" />
@@ -28,7 +27,7 @@ export default function Form({
           name="message"
           required
         ></textarea>
-        <div data-netlify-recaptcha="true"></div>
+
         <div className={classes.actions}>
           <button>submit</button>
         </div>
