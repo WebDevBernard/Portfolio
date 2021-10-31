@@ -12,13 +12,9 @@ export default function Form({
       name="contact"
       method="POST"
       data-netlify="true"
+      data-netlify-recaptcha="true"
     >
-      <input
-        type="hidden"
-        name="form"
-        value="contact"
-        data-netlify-recaptcha="true"
-      />
+      <input type="hidden" name="form" value="contact" />
       <div className={classes.control}>
         <input id="form" placeholder="Name" type="text" name="name" required />
       </div>
