@@ -8,7 +8,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <li className={classes.colour}>View my Resume</li>
+          <li className={classes.colour}>Resume</li>
         </a>
         <a
           href="https://www.linkedin.com/in/bernard-yang/"
