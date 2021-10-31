@@ -12,7 +12,7 @@ export default function Form({
       // onSubmit={submitHandler}
       data-netlify="true"
       data-netlify-recaptcha="true"
-      action="/success"
+      action="POST"
     >
       <div className={classes.control}>
         <input id="form" placeholder="Name" ref={nameInputRef} required />
