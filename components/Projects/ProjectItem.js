@@ -1,4 +1,3 @@
-import Image from "next/image";
 import classes from "./ProjectItem.module.css";
 export default function ProjectItem({
   image,
@@ -10,7 +9,7 @@ export default function ProjectItem({
   return (
     <li className={classes.card}>
       <div className={classes.container}>
-        <Image src={image} alt={title} />
+        <img src={image} alt={title} />
         {link && (
           <a href={link} target="_blank" rel="noreferrer">
             <button>view live</button>
