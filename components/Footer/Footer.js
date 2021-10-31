@@ -2,7 +2,7 @@ import classes from "./Footer.module.css";
 export default function Footer() {
   return (
     <footer className={classes.footer}>
-      <ul>
+      <ul id="contact">
         <a
           href="https://www.canva.com/design/DAEkU6w_4cQ/8HufPu__iW0icX1ofHSiUg/view?utm_content=DAEkU6w_4cQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
           target="_blank"

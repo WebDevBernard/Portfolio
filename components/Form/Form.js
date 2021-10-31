@@ -1,3 +1,4 @@
+import axios from "axios";
 import classes from "./Form.module.css";
 export default function Form({
   nameInputRef,
@@ -6,18 +7,24 @@ export default function Form({
   submitHandler,
 }) {
   return (
-    <form className={classes.form} onSubmit={submitHandler}>
+    <form
+      className={classes.form}
+      onSubmit={submitHandler}
+      data-netlify="true"
+      action="/success"
+    >
       <div className={classes.control}>
-        <input placeholder="Name" ref={nameInputRef} />
+        <input id="form" placeholder="Name" ref={nameInputRef} required />
       </div>
       <div className={classes.control}>
-        <input placeholder="Email" ref={emailInputRef} />
+        <input type="email" placeholder="Email" ref={emailInputRef} required />
       </div>
       <div className={classes.control}>
         <textarea
           placeholder="Message"
           rows="5"
           ref={descriptionInputRef}
+          required
         ></textarea>
         <div className={classes.actions}>
           <button>submit</button>

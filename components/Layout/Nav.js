@@ -6,9 +6,15 @@ export default function Nav() {
       <br />
       <nav>
         <ul>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#projects">
+            <li>Projects</li>
+          </a>
+          <a href="#form">
+            <li>Contact</li>
+          </a>
         </ul>
       </nav>
     </header>
