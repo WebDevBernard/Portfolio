@@ -11,6 +11,7 @@ export default function Form({
       className={classes.form}
       onSubmit={submitHandler}
       data-netlify="true"
+      data-netlify-recaptcha="true"
       action="/success"
     >
       <div className={classes.control}>
