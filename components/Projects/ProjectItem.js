@@ -9,12 +9,12 @@ export default function ProjectItem({
   return (
     <li className={classes.card}>
       <div className={classes.container}>
-        <img src={image} alt={title} />
-        {link && (
+        {image && link && (
           <a href={link} target="_blank" rel="noreferrer">
             <button>view live</button>
           </a>
         )}
+        <img src={image} alt={title} />
       </div>
       <div className={classes.content}>
         <h3>

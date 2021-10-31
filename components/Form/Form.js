@@ -1,4 +1,3 @@
-import axios from "axios";
 import classes from "./Form.module.css";
 export default function Form({
   nameInputRef,
