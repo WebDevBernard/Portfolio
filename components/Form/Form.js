@@ -29,7 +29,7 @@ export default function Form({
           ref={descriptionInputRef}
           required
         ></textarea>
-        <div data-netlify-recaptcha="true" ><
+        <div data-netlify-recaptcha="true" />
         <div className={classes.actions}>
           <button>submit</button>
         </div>
