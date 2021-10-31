@@ -8,28 +8,28 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <li className={classes.colour}>VIEW MY RESUME</li>
+          <li className={classes.colour}>View my Resume</li>
         </a>
         <a
           href="https://www.linkedin.com/in/bernard-yang/"
           target="_blank"
           rel="noreferrer"
         >
-          <li>LINKEDIN</li>
+          <li>Linkedin</li>
         </a>
         <a
           href="https://www.github.com/webdevbernard"
           target="_blank"
           rel="noreferrer"
         >
-          <li>GITHUB</li>
+          <li>Github</li>
         </a>
         <a
           href="https://www.twitter.com/WebDevBernard"
           target="_blank"
           rel="noreferrer"
         >
-          <li>TWITTER</li>
+          <li>Twitter</li>
         </a>
         {/* <a href="mailto:ybernard@gmail.com" blanktarget="_blank">
           <li>EMAIL</li>
