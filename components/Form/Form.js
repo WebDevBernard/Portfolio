@@ -8,6 +8,7 @@ export default function Form({
 }) {
   return (
     <form
+      action="POST"
       className={classes.form}
       // onSubmit={submitHandler}
       data-netlify="true"
