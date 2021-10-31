@@ -4,7 +4,7 @@ export default function About() {
     <>
       <h1 id="about" className={classes.about}>
         <em> Hi!</em> <br />
-        I'm Bernard Yang,
+        Im Bernard Yang,
         <br /> a web developer in Vancouver
       </h1>
       <a href="#form">
