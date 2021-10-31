@@ -8,7 +8,6 @@ export default function Form({
 }) {
   return (
     <form
-      className={classes.form}
       name="contact"
       method="POST"
       data-netlify-recaptcha="true"
