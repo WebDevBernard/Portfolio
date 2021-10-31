@@ -10,7 +10,7 @@ export default function Form({
     <form
       name="form"
       className={classes.form}
-      onSubmit={submitHandler}
+      // onSubmit={submitHandler}
       data-netlify="true"
       method="POST"
     >
