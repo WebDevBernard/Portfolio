@@ -8,6 +8,7 @@ export default function Form({
 }) {
   return (
     <form
+      className={classes.form}
       name="contact"
       method="POST"
       data-netlify-recaptcha="true"
@@ -15,16 +16,16 @@ export default function Form({
     >
       <input type="hidden" name="form" value="contact" />
       <div className={classes.control}>
-        <input id="form" placeholder="Name" ref={nameInputRef} required />
+        <input id="form" placeholder="Name" type="text" name="name" required />
       </div>
       <div className={classes.control}>
-        <input type="email" placeholder="Email" ref={emailInputRef} required />
+        <input type="email" placeholder="Email" name="email" required />
       </div>
       <div className={classes.control}>
         <textarea
           placeholder="Message"
           rows="5"
-          ref={descriptionInputRef}
+          name="message"
           required
         ></textarea>
         <div data-netlify-recaptcha="true"></div>
