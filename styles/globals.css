@@ -17,7 +17,8 @@ a {
 }
 
 button {
-  font: inherit;
+  font-size: 1.2rem;
+  font-family: "nunito";
   cursor: pointer;
   background-color: #8338ec;
   color: white;

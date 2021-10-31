@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import About from "./About/About";
-import Projects from "./Projects/Projects";
+import ProjectList from "./Projects/ProjectList";
 import Form from "./Form/Form";
 import Footer from "./Footer/Footer";
 
@@ -24,7 +24,7 @@ export default function App() {
   return (
     <>
       <About />
-      <Projects />
+      <ProjectList />
       <Form
         nameInputRef={nameInputRef}
         emailInputRef={emailInputRef}

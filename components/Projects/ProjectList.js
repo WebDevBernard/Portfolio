@@ -1,0 +1,53 @@
+import { useContext, useEffect, useState } from "react";
+import ProjectItem from "./ProjectItem";
+import classes from "./ProjectList.module.css";
+const projects = [
+  {
+    id: "m1",
+    title: "Make My Day",
+    image:
+      "https://raw.githubusercontent.com/byeongjae-kang/MakeMyDay/master/front-end/src/images/kanban.png",
+    description: "A trello clone / task board built with React Hooks.",
+    github: "https://github.com/WebDevBernard/MakeMyDay",
+    link: "https://makemydaydemo.netlify.app/",
+  },
+  {
+    id: "m2",
+    title: "Scheduler",
+    image:
+      "https://raw.githubusercontent.com/WebDevBernard/scheduler/master/docs/localhost_8000_%20(2).png",
+    description: "Scheduling App: schedule, edit or cancel interviews.",
+    github: "https://github.com/WebDevBernard/scheduler",
+    link: "",
+  },
+  {
+    id: "m3",
+    title: "Smart-to-do",
+    image:
+      "https://raw.githubusercontent.com/byeongjae-kang/MakeMyDay/master/front-end/src/images/kanban.png",
+    description: "A todo list that utilizes external APIs to organize tasks",
+    github: "https://github.com/WebDevBernard/smart-to-do",
+    link: "",
+  },
+];
+export default function ProjectList() {
+  return (
+    <section>
+      {/* <h1 className={classes.title}>Projects</h1> */}
+      <ul className={classes.wrapper}>
+        {projects.map((project) => {
+          return (
+            <ProjectItem
+              key={project.id}
+              title={project.title}
+              image={project.image}
+              description={project.description}
+              github={project.github}
+              link={project.link}
+            />
+          );
+        })}
+      </ul>
+    </section>
+  );
+}

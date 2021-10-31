@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Bernard Yang | Web Developer</title>
+        <title>Bernard Yang</title>
         <meta name="Bernard Yang" content="Portfolio" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@200&family=Source+Sans+Pro:ital,wght@1,200&display=swap"
           rel="stylesheet"
         />
       </Head>

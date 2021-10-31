@@ -1,0 +1,49 @@
+.card {
+  background: #d0d4ed;
+  border: 4px solid #d0d4ed;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
+  color: black;
+  padding: 1rem;
+  overflow: hidden;
+  list-style: none;
+}
+
+/* Styling for Card img */
+.container {
+  display: inline-block;
+}
+
+.container img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.container button {
+  position: absolute;
+  /* need to fix this */
+  transform: translate(-105%, 610%);
+  -ms-transform: translate(-50%, -50%);
+  /* need to fix this */
+}
+/* Styling for Card Title, Description, Github link */
+.content {
+  font-family: "Source-Serif-Pro";
+  font-size: 1.5rem;
+  color: #00695f;
+}
+
+.content h3 {
+  font: inherit;
+}
+
+.content em {
+  font-weight: bold;
+}
+
+.card a {
+  font-size: 1.05rem;
+  font-family: "nunito";
+  color: #00695f;
+}
