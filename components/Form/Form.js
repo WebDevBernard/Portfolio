@@ -16,26 +16,24 @@ export default function Form() {
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
       </p>
-      <div className={classes.control}>
+      <p className={classes.control}>
         <input id="form" placeholder="Name*" name="name" required />
-      </div>
-      <div className={classes.control}>
+      </p>
+      <p className={classes.control}>
         <input type="email" name="email" placeholder="Email*" required />
-      </div>
-      <div className={classes.control}>
+      </p>
+      <p className={classes.control}>
         <textarea
           name="message"
           placeholder="Message*"
           rows="5"
           required
         ></textarea>
-        <div data-netlify-recaptcha="true"></div>
-        <div className={classes.actions}>
-          <button data-netlify-recaptcha="true" type="submit">
-            Submit
-          </button>
-        </div>
-      </div>
+      </p>
+      <div data-netlify-recaptcha="true"></div>
+      <p className={classes.actions}>
+        <button type="submit">Submit</button>
+      </p>
     </form>
   );
 }
