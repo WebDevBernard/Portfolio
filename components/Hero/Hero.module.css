@@ -5,17 +5,32 @@
 }
 
 .about_info {
+  margin-top: 2rem;
   font-size: 24px;
 }
 
 .info_name {
-  color: blue;
+  color: #673ab7;
   font-size: 32px;
 }
 .picture {
   height: 420px;
 }
 
+.hero_buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.resume_button {
+  flex: 1;
+  margin-left: 12px;
+  background-color: #009688;
+}
+
+.resume_button:hover {
+  background-color: #00695f;
+}
 @media only screen and (max-width: 720px) {
   .about_top {
     flex-direction: column;
@@ -23,13 +38,7 @@
     align-items: center;
   }
   .picture {
+    margin-top: 24px;
     height: 280px;
-  }
-  .about_info {
-    font-size: 24px;
-  }
-  .info_name {
-    color: blue;
-    font-size: 30px;
   }
 }

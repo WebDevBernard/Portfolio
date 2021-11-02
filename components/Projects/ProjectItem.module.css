@@ -1,52 +1,55 @@
-.card {
-  background: #d0d4ed;
-  border: 4px solid #d0d4ed;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
-  color: black;
-  padding: 1rem;
-  overflow: hidden;
-  list-style: none;
-}
-
-/* Styling for Card img */
-.container {
-  position: relative;
-}
-
-.container img {
+.project_photo {
   width: 100%;
-  height: 15rem;
-  object-fit: cover;
 }
 
-.container button {
-  position: absolute;
-
-  border-radius: 0;
-  background-color: #009688;
-  border: none;
+.project_info {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 12px;
 }
 
-.container button:hover {
-  background-color: #00695f;
-}
-/* Styling for Card Title, Description, Github link */
-.content {
-  font-size: 1.5rem;
-  color: #00695f;
+.project_title {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.content h3 {
-  font: inherit;
+.project_tag {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.content em {
-  font-weight: bold;
+.tag {
+  padding: 4px 8px;
+  background-color: aquamarine;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-bottom: 4px;
 }
 
-.card a {
-  font-size: 1.05rem;
-  font-family: "nunito";
-  color: #00695f;
+.project_link a {
+  text-decoration: none;
+  color: black;
+}
+
+.project_link {
+  margin-top: 6px;
+  display: flex;
+}
+
+.link_button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: aquamarine;
+  width: max-content;
+  padding: 4px 8px;
+  margin-right: 6px;
+}
+
+@media only screen and (max-width: 720px) {
 }

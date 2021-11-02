@@ -2,6 +2,9 @@
   margin: 3rem auto;
   max-width: 50rem;
 }
+.name {
+  display: flex;
+}
 
 .control {
   margin-bottom: 0.5rem;

@@ -1,20 +1,15 @@
 .footer {
-  padding: 1rem;
-  margin: 3rem auto;
-  max-width: 40rem;
-}
-
-.footer ul {
   display: flex;
-  list-style: none;
-  font-family: "Nunito", "Sans-Serif";
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 600;
+  margin: 1rem;
   font-size: 1.05rem;
 }
 
-.footer li {
-  margin-left: 2rem;
+.footer a {
+  margin-right: 16px;
 }
-
-.colour {
-  color: black;
+.footer a:last-child {
+  margin-right: 0px;
 }

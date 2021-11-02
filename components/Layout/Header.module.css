@@ -1,12 +1,18 @@
 .header {
   font-weight: 600;
-  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
   flex: 1;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  z-index: 5;
+  width: 100%;
+  height: 4rem;
   padding: 0 10%;
-  position: relative;
 }
 
 .logo {
@@ -31,13 +37,4 @@
 
 .web_option:last-child {
   margin-right: 0px;
-}
-
-@media only screen and (max-width: 720px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    height: 3rem;
-    margin-bottom: 3rem;
-  }
 }

@@ -3,21 +3,20 @@ export default function Form({
   nameInputRef,
   emailInputRef,
   descriptionInputRef,
-  submitHandler,
 }) {
   return (
     <form
       name="contact"
       className={classes.form}
-      onSubmit={submitHandler}
       data-netlify="true"
       method="POST"
     >
       <input type="hidden" name="form" value="contact" />
+
       <div className={classes.control}>
         <input
           id="form"
-          placeholder="Name"
+          placeholder="Name*"
           name="name"
           ref={nameInputRef}
           required
@@ -27,7 +26,7 @@ export default function Form({
         <input
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder="Email*"
           ref={emailInputRef}
           required
         />
@@ -35,13 +34,13 @@ export default function Form({
       <div className={classes.control}>
         <textarea
           name="message"
-          placeholder="Message"
+          placeholder="Message*"
           rows="5"
           ref={descriptionInputRef}
           required
         ></textarea>
         <div className={classes.actions}>
-          <button>submit</button>
+          <button>Submit</button>
         </div>
       </div>
     </form>
