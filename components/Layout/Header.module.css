@@ -34,7 +34,7 @@
 }
 
 .web_option:last-child {
-  margin-right: 0px;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 720px) {
