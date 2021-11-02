@@ -25,7 +25,7 @@
 
 .tag {
   padding: 4px 8px;
-  background: linear-gradient(to bottom, transparent 70%, aquamarine 30%);
+  background: linear-gradient(to bottom, transparent 50%, aquamarine 50%);
   border-radius: 4px;
   margin-right: 6px;
   margin-bottom: 4px;
@@ -40,8 +40,16 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  background: linear-gradient(to bottom, transparent 70%, #ffd0ae 30%);
+  background: linear-gradient(to bottom, transparent 50%, #ffd0ae 50%);
   width: max-content;
   padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 16px;
   margin-right: 6px;
+}
+
+.link_button i {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
 }

@@ -1,7 +1,4 @@
 import classes from "./ProjectItem.module.css";
-import { FaGlobe } from "react-icons/fa";
-import { GoMarkGithub } from "react-icons/go";
-
 export default function Projects({
   id,
   title,
@@ -23,7 +20,9 @@ export default function Projects({
             target="_blank"
             rel="noreferrer"
           >
-            <div className={classes.link_button}>Demo</div>
+            <div className={classes.link_button}>
+              <i class="devicon-react-original"></i>Demo
+            </div>
           </a>
         )}
         {github && (
@@ -33,7 +32,11 @@ export default function Projects({
             target="_blank"
             rel="noreferrer"
           >
-            <div className={classes.link_button}>Github</div>
+            <div className={classes.link_button}>
+              {" "}
+              <i className="devicon-github-original"></i>
+              Github
+            </div>
           </a>
         )}
       </div>
