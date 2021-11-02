@@ -17,6 +17,7 @@
 
 .logo {
   display: flex;
+  white-space: nowrap;
 }
 
 .web {
@@ -35,4 +36,13 @@
 
 .web_option:last-child {
   margin-right: 0px;
+}
+
+@media only screen and (max-width: 720px) {
+  .header {
+    padding: 0 5%;
+  }
+  .logo {
+    font-size: 16px;
+  }
 }
