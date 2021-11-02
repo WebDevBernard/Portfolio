@@ -21,7 +21,7 @@ export default function Projects({
             rel="noreferrer"
           >
             <div className={classes.link_button}>
-              <i class="devicon-react-original"></i>Demo
+              <i className="devicon-react-original"></i>Demo
             </div>
           </a>
         )}
