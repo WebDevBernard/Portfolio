@@ -1,6 +1,5 @@
 import classes from "./ProjectItem.module.css";
 export default function Projects({
-  id,
   title,
   link,
   github,
