@@ -5,11 +5,17 @@ export default function Form() {
     <form
       name="contact"
       className={classes.form}
-      data-netlify="true"
       method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      data-netlify-recaptcha="true"
     >
       <input type="hidden" name="form" value="contact" />
-
+      <p className={classes.hidden}>
+        <label>
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+      </p>
       <div className={classes.control}>
         <input id="form" placeholder="Name*" name="name" required />
       </div>
@@ -23,9 +29,9 @@ export default function Form() {
           rows="5"
           required
         ></textarea>
-
+        <div data-netlify-recaptcha="true"></div>
         <div className={classes.actions}>
-          <button>Submit</button>
+          <button data-netlify-recaptcha="true">Submit</button>
         </div>
       </div>
     </form>
