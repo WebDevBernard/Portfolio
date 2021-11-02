@@ -1,27 +1,43 @@
 .header {
+  font-weight: 600;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex: 1;
   padding: 0 10%;
   position: relative;
-  background-color: blue;
 }
 
-.header ul {
-  list-style: none;
+.logo {
   display: flex;
-  align-items: baseline;
 }
 
-.header li {
-  font-family: "Nunito";
-  font-size: 1.05rem;
-  margin-left: 2rem;
+.web {
+  display: flex;
+  align-self: center;
 }
-@media (max-width: 768px) {
+
+.web_option {
+  margin-right: 16px;
+}
+
+.web_option a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.web_option:last-child {
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 720px) {
   .header {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    height: 3rem;
+    margin-bottom: 3rem;
   }
 }

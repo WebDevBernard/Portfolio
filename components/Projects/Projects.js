@@ -1,6 +1,5 @@
-import { useContext, useEffect, useState } from "react";
 import ProjectItem from "./ProjectItem";
-import classes from "./ProjectList.module.css";
+import classes from "./Projects.module.css";
 const projects = [
   {
     id: "m1",
@@ -32,7 +31,7 @@ const projects = [
     link: "",
   },
 ];
-export default function ProjectList() {
+export default function Projects() {
   return (
     <section>
       {/* <h1 className={classes.title}>Projects</h1> */}

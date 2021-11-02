@@ -1,6 +1,5 @@
-import { useRef } from "react";
-import About from "./About/About";
-import ProjectList from "./Projects/ProjectList";
+import Hero from "./Hero/Hero";
+import Projects from "./Projects/Projects";
 import Form from "./Form/Form";
 import Header from "./Layout/Header";
 import Footer from "./Layout/Footer";
@@ -9,9 +8,16 @@ export default function App() {
   return (
     <>
       <Header />
-      <About />
-      <ProjectList />
-      <Form />
+      <section>
+        <Hero />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="about">...</section>
+      <section id="contact">
+        <Form />
+      </section>
       <Footer />
     </>
   );
