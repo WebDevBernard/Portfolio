@@ -8,7 +8,7 @@ export default function Form() {
       method="POST"
       netlify-honeypot="bot-field"
       data-netlify="true"
-      data-netlify-recaptcha="true"
+      // data-netlify-recaptcha="true"
     >
       <input type="hidden" name="form" value="contact" />
       <p className={classes.hidden}>
