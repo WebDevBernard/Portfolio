@@ -20,12 +20,9 @@ export default function Form() {
   } = useForm({
     resolver: yupResolver(schema),
   });
-  const submitForm = (data) => {
-    console.log(data);
-  };
+
   return (
     <form
-      onSubmit={handleSubmit(submitForm)}
       name="contact"
       className={classes.form}
       data-netlify="true"
@@ -39,6 +36,7 @@ export default function Form() {
           placeholder="Name*"
           name="name"
           {...register("name", { required: true })}
+          required
         />
 
         <p className={classes.errors}>{errors.name?.message}</p>
@@ -49,6 +47,7 @@ export default function Form() {
           name="email"
           placeholder="Email*"
           {...register("email", { required: true })}
+          required
         />
         <p className={classes.errors}>{errors.email?.message}</p>
       </div>
@@ -58,6 +57,7 @@ export default function Form() {
           placeholder="Message*"
           rows="5"
           {...register("message", { required: true })}
+          required
         ></textarea>
         <p className={classes.errors}>{errors.message?.message}</p>
         <div className={classes.actions}>
