@@ -1,11 +1,10 @@
+import Link from "next/link";
 import classes from "./Header.module.css";
 export default function Header() {
   return (
     <div className={classes.header}>
       <div className={classes.logo}>
-        <a href="https://www.bernardyang.com/" target="_blank" rel="noreferrer">
-          BERNARD YANG
-        </a>
+        <Link href="https://www.bernardyang.com/">BERNARD YANG</Link>
       </div>
       <nav className={classes.web}>
         <div className={classes.web_option}>
