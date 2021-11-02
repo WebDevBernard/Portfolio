@@ -7,7 +7,8 @@ const projects = [
     title: "Make My Day",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/kanban.png",
-    description: "A trello clone built with React Hooks.",
+    description:
+      "A trello clone built with React.  NodeJS backend connected to Postgres database.",
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.netlify.app/",
   },
@@ -25,7 +26,8 @@ const projects = [
     title: "Smart-to-do",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
-    description: "A todo list that utilizes external APIs to organize tasks",
+    description:
+      "A smart todo list that utilizes external APIs to organize tasks",
     github: "https://github.com/WebDevBernard/smart-to-do",
     link: "",
   },
