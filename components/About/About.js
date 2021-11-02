@@ -8,9 +8,9 @@ export default function About() {
         <Skills />
         <span>
           <h2>About me</h2> I love making apps that are intuitive to use. Right
-          now I am learning about how to build front-end with React and smart
-          contracts built with Solidity. In my free time, I enjoy running,
-          watching movies, and playing videogames.
+          now I am learning React front-end and smart contracts with Solidity.
+          In my free time, I enjoy running, watching movies, and playing
+          videogames.
         </span>
       </div>
     </div>
