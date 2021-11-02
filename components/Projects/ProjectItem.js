@@ -3,6 +3,7 @@ import { FaGlobe } from "react-icons/fa";
 import { GoMarkGithub } from "react-icons/go";
 
 export default function Projects({
+  id,
   title,
   link,
   github,
@@ -45,7 +46,11 @@ export default function Projects({
       <p>{description}</p>
       <div className={classes.project_tag}>
         {tags.map((tag) => {
-          return <label className={classes.tag}>{tag}</label>;
+          return (
+            <label key={id} className={classes.tag}>
+              {tag}
+            </label>
+          );
         })}
       </div>
     </div>

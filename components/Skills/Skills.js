@@ -5,7 +5,7 @@ export default function Skills() {
     <div className={classes.skills_container}>
       {skills.map((skill) => {
         return (
-          <div className={classes.skill_card}>
+          <div key={skill.id} className={classes.skill_card}>
             <div className={classes.skill_icon}>{skill.icon}</div>
             <label className={classes.skill_name}>{skill.name}</label>
           </div>

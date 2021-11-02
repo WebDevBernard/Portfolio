@@ -7,8 +7,8 @@ export default function About() {
       <div className={classes.title}>
         <Skills />
         <p>
-          <h2>About me</h2> I love making apps that are intuitive to use. I'm
-          very interested in learning more about UI/UX, and DeFi. I'm currently
+          <h2>About me</h2> I love making apps that are intuitive to use. I am
+          very interested in learning more about UI/UX, and DeFi. I am currently
           learning React Redux and Solidity.
         </p>
       </div>
