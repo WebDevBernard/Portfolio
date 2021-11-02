@@ -1,9 +1,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  background-color: #9a9bc1;
-  color: white;
-  font-family: "Montserrat", "sans-serif";
+  font-family: "Inter";
 }
 
 a {
