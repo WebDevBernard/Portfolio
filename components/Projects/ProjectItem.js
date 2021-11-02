@@ -23,10 +23,7 @@ export default function Projects({
             target="_blank"
             rel="noreferrer"
           >
-            <div className={classes.link_button}>
-              <FaGlobe />
-              Demo
-            </div>
+            <div className={classes.link_button}>Demo</div>
           </a>
         )}
         {github && (
@@ -36,10 +33,7 @@ export default function Projects({
             target="_blank"
             rel="noreferrer"
           >
-            <div className={classes.link_button}>
-              <GoMarkGithub />
-              Github
-            </div>
+            <div className={classes.link_button}>Github</div>
           </a>
         )}
       </div>
@@ -47,7 +41,7 @@ export default function Projects({
       <div className={classes.project_tag}>
         {tags.map((tag) => {
           return (
-            <label key={id} className={classes.tag}>
+            <label key={Math.random()} className={classes.tag}>
               {tag}
             </label>
           );
