@@ -11,13 +11,18 @@ export default function Form() {
       <input type="hidden" name="form" value="contact" />
 
       <div className={classes.control}>
-        <input id="form" placeholder="Name*" name="name" />
+        <input id="form" placeholder="Name*" name="name" required />
       </div>
       <div className={classes.control}>
-        <input type="email" name="email" placeholder="Email*" />
+        <input type="email" name="email" placeholder="Email*" required />
       </div>
       <div className={classes.control}>
-        <textarea name="message" placeholder="Message*" rows="5"></textarea>
+        <textarea
+          name="message"
+          placeholder="Message*"
+          rows="5"
+          required
+        ></textarea>
 
         <div className={classes.actions}>
           <button>Submit</button>
