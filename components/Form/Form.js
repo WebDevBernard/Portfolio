@@ -31,7 +31,9 @@ export default function Form() {
         ></textarea>
         <div data-netlify-recaptcha="true"></div>
         <div className={classes.actions}>
-          <button data-netlify-recaptcha="true">Submit</button>
+          <button data-netlify-recaptcha="true" type="submit">
+            Submit
+          </button>
         </div>
       </div>
     </form>
