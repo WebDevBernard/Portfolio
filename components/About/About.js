@@ -9,10 +9,11 @@ export default function About() {
         <span>
           <h2>About me</h2>
           Having recently completed the Lighthouse Labs Web Development Program,
-          I am excited to take on the next big challenge. I am currently
-          learning about full stack development with React and NodeJS.
-          Eventually, I would like to start working on some DeFi projects. In my
-          free time, I enjoy running outdoors, and watching movies at home.
+          I am excited to take on the next big challenge. Currently, I am
+          learning more about full stack development by building apps with React
+          and NodeJS. Eventually, I would like to start working on apps in the
+          DeFi space. In my free time, I enjoy running outdoors, watching movies
+          and playing videogames.
         </span>
       </div>
     </div>

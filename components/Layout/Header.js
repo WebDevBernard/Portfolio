@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className={classes.header}>
       <div className={classes.logo}>
-        <Link href="https://www.bernardyang.com/">BERNARD YANG</Link>
+        <Link href="https://www.bernardyang.com/">Bernard Yang</Link>
       </div>
       <nav className={classes.web}>
         <div className={classes.web_option}>

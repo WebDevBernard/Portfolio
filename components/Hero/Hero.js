@@ -27,7 +27,7 @@ export default function Hero() {
             <img
               className={classes.picture}
               src={
-                "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/Code%20typing-amico.png"
+                "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/Programming-amico.png"
               }
             />
           </div>
