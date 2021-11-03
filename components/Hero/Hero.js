@@ -26,9 +26,7 @@ export default function Hero() {
           <div className={classes.about_photo}>
             <img
               className={classes.picture}
-              src={
-                "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/Programming-amico.svg"
-              }
+              src={"../docs/programming-animate.svg"}
             />
           </div>
         </div>
