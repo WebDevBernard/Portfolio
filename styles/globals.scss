@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Inter:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #dbffa2;
+  font-family: "Inter";
+  scroll-behavior: smooth;
+  background-color: #513b56;
+}
+
+p {
+  color: #dbffa2;
+  font-family: "Assistant";
+}
+
+a {
+  font-family: "Inter";
+  color: #dbffa2;
+  text-decoration: none;
+}
+
+button {
+  white-space: nowrap;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ff7750;
+  color: #dbffa2;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #bd4d2e;
+  border-color: #bd4d2e;
+}

@@ -3,18 +3,16 @@
 }
 
 .project_info {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  padding: 15px;
+  background-color: #00695f;
+  border-radius: 4px;
+  padding: 12px;
   margin-top: 12px;
+  font-size: 18px;
 }
 
 .project_title {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 24px;
+  font-family: "Assistant";
 }
 
 .project_tag {
@@ -24,8 +22,10 @@
 }
 
 .tag {
+  font-weight: bold;
+  color: #00100d;
+  background-color: #fdffc4;
   padding: 4px 8px;
-  background: linear-gradient(to bottom, transparent 50%, aquamarine 50%);
   border-radius: 4px;
   margin-right: 6px;
   margin-bottom: 4px;
@@ -40,7 +40,9 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  background: linear-gradient(to bottom, transparent 50%, #ffd0ae 50%);
+  font-weight: bold;
+  color: #00100d;
+  background-color: #fdffc4;
   width: max-content;
   padding: 4px 8px;
   border-radius: 4px;
@@ -52,4 +54,8 @@
   display: flex;
   align-items: center;
   margin-right: 4px;
+}
+
+.link_button:hover {
+  background-color: #e0e2b6;
 }

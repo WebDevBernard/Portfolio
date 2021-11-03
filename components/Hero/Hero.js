@@ -11,16 +11,14 @@ export default function Hero() {
             <br /> a web developer in Vancouver
             <div className={classes.hero_buttons}>
               <a href="#contact">
-                <button>Contact me</button>
+                <button>CONTACT ME</button>
               </a>
               <a
                 href="https://www.canva.com/design/DAEkU6w_4cQ/8HufPu__iW0icX1ofHSiUg/view?utm_content=DAEkU6w_4cQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className={classes.resume_button}>
-                  View my Resume
-                </button>
+                <button className={classes.resume_button}>VIEW RESUME</button>
               </a>
             </div>
           </div>

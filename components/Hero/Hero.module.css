@@ -5,12 +5,14 @@
 }
 
 .about_info {
+  white-space: nowrap;
+
   margin-top: 2rem;
   font-size: 24px;
 }
 
 .info_name {
-  color: #673ab7;
+  color: #dbffa2;
   font-size: 32px;
 }
 .picture {

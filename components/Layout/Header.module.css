@@ -5,7 +5,6 @@
   justify-content: space-between;
   position: fixed;
   flex: 1;
-  background: #ffffff;
   top: 0;
   left: 0;
   z-index: 5;
@@ -13,6 +12,7 @@
   width: 100%;
   height: 4rem;
   padding: 0 15%;
+  background: #513b56;
 }
 
 .logo {
@@ -30,6 +30,7 @@
 }
 
 .web_option a {
+  color: #dbffa2;
   display: flex;
   align-items: center;
 }
