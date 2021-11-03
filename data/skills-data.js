@@ -7,7 +7,7 @@ export const skills = [
   },
   {
     id: "m2",
-    name: "ReactJS",
+    name: "React",
     icon: <i className="devicon-react-original"></i>,
   },
   {
