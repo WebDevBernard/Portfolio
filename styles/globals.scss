@@ -2,12 +2,13 @@
   box-sizing: border-box;
 }
 
-html,
 body {
   color: #dbffa2;
   font-family: "Inter";
   scroll-behavior: smooth;
-  background-color: #513b56;
+  // background-color: #513b56;
+  background-image: url("../docs/Blob Group.svg");
+  background-size: cover;
 }
 
 p {
