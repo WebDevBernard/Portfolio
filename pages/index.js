@@ -5,7 +5,13 @@ export default function Home() {
     <>
       <Head>
         <title>Bernard Yang</title>
-        <meta name="Bernard Yang" content="Portfolio" />
+        <meta name="author" content="Bernard Yang" />
+        <meta name="keywords" content="Bernard Yang" />
+        <meta
+          name="description"
+          content="I am Bernard Yang, a web developer in Vancouver, welcome to my portfolio website."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           href="https://fonts.googleapis.com/css2?family=Assistant&family=Inter:wght@200&display=swap"
           rel="stylesheet"
