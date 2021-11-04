@@ -4,24 +4,27 @@ import Projects from "./Projects/Projects";
 import About from "./About/About";
 import Form from "./Form/Form";
 import Footer from "./Layout/Footer";
+import Layout from "./Layout/Layout";
 
 export default function App() {
   return (
     <>
-      <Header />
-      <section>
-        <Hero />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="contact">
-        <Form />
-      </section>
-      <Footer />
+      <Layout>
+        <Header />
+        <section>
+          <Hero />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="contact">
+          <Form />
+        </section>
+        <Footer />
+      </Layout>
     </>
   );
 }
