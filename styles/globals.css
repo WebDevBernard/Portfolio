@@ -43,11 +43,10 @@ button {
   background-color: #ff7750;
   color: #dbffa2;
   padding: 1rem 2rem;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 5px;
 }
 
 button:hover {
   background-color: #bd4d2e;
-  border-color: #bd4d2e;
 }
