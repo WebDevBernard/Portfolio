@@ -9,9 +9,10 @@ export default function Home() {
         <meta name="keywords" content="Bernard Yang" />
         <meta
           name="description"
-          content="I am Bernard Yang, a web developer in Vancouver, welcome to my portfolio website."
+          content="Hi there, I am Bernard Yang, a web developer in Vancouver"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/globals.scss" />
         <link
           href="https://fonts.googleapis.com/css2?family=Assistant&family=Inter:wght@200&display=swap"
           rel="stylesheet"
