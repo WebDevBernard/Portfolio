@@ -17,6 +17,7 @@
 
 .logo {
   display: flex;
+  font-size: 16px;
   white-space: nowrap;
 }
 
@@ -45,5 +46,14 @@
   }
   .logo {
     font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 2160px) {
+  .logo {
+    font-size: 20px;
+  }
+  .web_option a {
+    font-size: 20px;
   }
 }
