@@ -11,25 +11,24 @@ body {
   margin: 0 auto;
   margin: 0;
   padding: 0;
-  color: #dbffa2;
+  color: #fff;
   font-family: "Inter";
   font-weight: 200;
   scroll-behavior: smooth;
   background-color: #484848;
   /* background-image: url("https://raw.githubusercontent.com/WebDevBernard/Portfolio/c28a9c2c4aec2492b7c0bdd48d9b7a0b28410c38/docs/Simple%20Shiny.svg"); */
-  background-image: url("../docs/Simple Shiny.svg");
+  background-image: url("../docs/Simple Shiny(9).svg");
   background-size: cover;
 }
 
 p {
-  color: #dbffa2;
   font-family: "Assistant";
 }
 
 a {
   font-family: "Inter";
   font-weight: 200;
-  color: #dbffa2;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -40,13 +39,9 @@ button {
   text-align: center;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #ff7750;
+  background-color: inherit;
   color: #dbffa2;
   padding: 1rem 2rem;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #bd4d2e;
+  border-radius: 25px;
 }

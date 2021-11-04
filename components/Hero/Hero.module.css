@@ -27,12 +27,10 @@
 .resume_button {
   flex: 1;
   margin-left: 12px;
-  background-color: #009688;
+  color: #00a699;
+  border-color: #00a699;
 }
 
-.resume_button:hover {
-  background-color: #00695f;
-}
 @media only screen and (max-width: 720px) {
   .about_top {
     flex-direction: column;
