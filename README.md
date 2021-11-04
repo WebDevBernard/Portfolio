@@ -10,7 +10,7 @@
 
 - These are some of the resources I used to make this portfolio site. All credits goes to these guys:
 
--- [Background img generator ](https://bgjar.com/)
--- [Cartoon animation](https://storyset.com/)
--- [Youtube tutorial](https://www.youtube.com/watch?v=j0yZc2yfa7o)
--- [Design](https://portfolio.smakosh.com/)
+  - [Background img generator ](https://bgjar.com/)
+  - [Cartoon animation](https://storyset.com/)
+  - [Youtube tutorial](https://www.youtube.com/watch?v=j0yZc2yfa7o)
+  - [Design](https://portfolio.smakosh.com/)
