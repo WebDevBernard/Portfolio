@@ -1,9 +1,10 @@
 .project_photo {
   width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
 
-.project_info {
-  padding: 12px;
+.project_card {
   margin-top: 12px;
   font-size: 18px;
   backdrop-filter: blur(16px) saturate(180%);
@@ -13,6 +14,9 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.project_text {
+  padding: 12px;
+}
 .project_title {
   font-size: 24px;
   font-family: "Assistant";

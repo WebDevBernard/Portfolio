@@ -4,7 +4,7 @@ export const projects = [
     title: "Make My Day",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/kanban.png",
-    description: "A trello clone built with React.",
+    description: "A trello clone / project management app.",
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.netlify.app/",
     tags: ["React", "NodeJS", "Postgres"],
