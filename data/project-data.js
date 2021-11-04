@@ -6,7 +6,7 @@ export const projects = [
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/kanban.png",
     description: "A trello clone / project management app.",
     github: "https://github.com/WebDevBernard/MakeMyDay",
-    link: "https://makemydaydemo.netlify.app/",
+    link: "https://makemydaydemo.vercel.app/",
     tags: ["React", "NodeJS", "Postgres"],
   },
   {
