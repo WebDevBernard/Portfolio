@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-::selection {
+/* ::selection {
   background: #666;
-}
+} */
 
 body {
   min-height: 100%;
@@ -16,8 +16,8 @@ body {
   font-weight: 200;
   scroll-behavior: smooth;
   background-color: #484848;
-  /* background-image: url("https://raw.githubusercontent.com/WebDevBernard/Portfolio/c28a9c2c4aec2492b7c0bdd48d9b7a0b28410c38/docs/Simple%20Shiny.svg"); */
-  background-image: url("../docs/Simple Shiny(9).svg");
+  background-image: url("https://raw.githubusercontent.com/WebDevBernard/Portfolio/a0614c40c4bba2d89694f9c92282bc527bfd4564/docs/Simple%20Shiny.svg");
+  /* background-image: url("../docs/Simple Shiny.svg"); */
   background-size: cover;
 }
 
