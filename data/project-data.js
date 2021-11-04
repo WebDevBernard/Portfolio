@@ -25,7 +25,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
     description:
-      "A smart todo list built with  utilizes external APIs to organize tasks.",
+      "A smart todo list that utilizes external APIs to organize tasks.",
     github: "https://github.com/WebDevBernard/smart-to-do",
     link: "",
     tags: ["JQuery", "NodeJS", "Postgres"],
