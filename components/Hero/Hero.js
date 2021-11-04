@@ -14,7 +14,7 @@ export default function Hero() {
                 <button>CONTACT ME</button>
               </a>
               <a
-                href="https://www.canva.com/design/DAEkU6w_4cQ/8HufPu__iW0icX1ofHSiUg/view?utm_content=DAEkU6w_4cQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                href="https://resume.io/r/FRG2fMe5g"
                 target="_blank"
                 rel="noreferrer"
               >
