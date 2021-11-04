@@ -34,7 +34,8 @@
   color: #00100d;
   background-color: #fdffc4;
   padding: 4px 8px;
-  border-radius: 4px;
+  border: 1px solid black;
+
   margin-right: 6px;
   margin-bottom: 4px;
 }
@@ -53,17 +54,14 @@
   background-color: #fdffc4;
   width: max-content;
   padding: 4px 8px;
-  border-radius: 4px;
+  border: 1px solid black;
   font-size: 16px;
   margin-right: 6px;
+  position: relative;
 }
 
 .link_button i {
   display: flex;
   align-items: center;
   margin-right: 4px;
-}
-
-.link_button:hover {
-  background-color: #e0e2b6;
 }
