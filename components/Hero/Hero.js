@@ -13,7 +13,10 @@ export default function Hero() {
               <a href="#contact">
                 <button>CONTACT ME</button>
               </a>
-              <a href="/resume.pdf">
+              <a
+                href="/resume.pdf"
+                // target="_blank" rel="noreferrer"
+              >
                 <button className={classes.resume_button}>VIEW RESUME</button>
               </a>
             </div>

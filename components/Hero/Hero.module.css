@@ -31,6 +31,10 @@
   border-color: #00a699;
 }
 
+.resume_button:hover {
+  border-color: #00a699;
+}
+
 @media only screen and (max-width: 720px) {
   .about_top {
     flex-direction: column;
