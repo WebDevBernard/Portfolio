@@ -13,11 +13,7 @@ export default function Hero() {
               <a href="#contact">
                 <button>CONTACT ME</button>
               </a>
-              <a
-                href="https://www.canva.com/design/DAEkU6w_4cQ/8HufPu__iW0icX1ofHSiUg/view?utm_content=DAEkU6w_4cQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="/resume.pdf">
                 <button className={classes.resume_button}>VIEW RESUME</button>
               </a>
             </div>
