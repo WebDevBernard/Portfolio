@@ -20,7 +20,7 @@ export default function App() {
         <section id="about">
           <About />
         </section>
-        <section id="contact">
+        <section>
           <Form />
         </section>
         <Footer />

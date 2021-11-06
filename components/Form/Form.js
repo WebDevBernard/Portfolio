@@ -17,7 +17,7 @@ export default function Form() {
         </label>
       </p>
       <p className={classes.control}>
-        <input id="form" placeholder="Name*" name="name" required />
+        <input id="contact" placeholder="Name*" name="name" required />
       </p>
       <p className={classes.control}>
         <input type="email" name="email" placeholder="Email*" required />
