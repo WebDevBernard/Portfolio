@@ -6,19 +6,18 @@
 
 .project_card {
   margin-top: 12px;
-  font-size: 18px;
+  font-size: 16px;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: #404040;
+  background-color: #42414d;
   border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .project_text {
   padding: 12px;
 }
 .project_title {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Assistant";
 }
 
@@ -64,10 +63,4 @@
   display: flex;
   align-items: center;
   margin-right: 4px;
-}
-
-@media only screen and (min-width: 2160px) {
-  .project_text {
-    font-size: 20px;
-  }
 }

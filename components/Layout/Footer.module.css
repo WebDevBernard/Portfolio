@@ -13,9 +13,3 @@
 .footer a:last-child {
   margin-right: 0px;
 }
-
-@media only screen and (min-width: 2160px) {
-  .footer a {
-    font-size: 20px;
-  }
-}

@@ -15,9 +15,7 @@ body {
   font-family: "Inter";
   font-weight: 200;
   scroll-behavior: smooth;
-  background-color: #484848;
-  background-image: url("https://raw.githubusercontent.com/WebDevBernard/Portfolio/71091abbc5a90a59bcc196e253f41022ed6b21c2/docs/Simple%20Shiny.svg");
-  /* background-image: url("../docs/Simple Shiny.svg"); */
+  background-color: #2b2a33;
   background-size: cover;
 }
 
@@ -27,6 +25,7 @@ p {
 
 a {
   font-family: "Inter";
+  font-size: 18px;
   font-weight: 200;
   color: #fff;
   text-decoration: none;

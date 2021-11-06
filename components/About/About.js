@@ -7,12 +7,12 @@ export default function About() {
       <div className={classes.title}>
         <Skills />
         <span>
-          <h2>About me</h2>
+          <h2 style={{ fontSize: "20px" }}>About me</h2>
           Having recently completed the Lighthouse Labs Web Development Program,
-          I am excited to take on the next big challenge. I am currently taking a deep dive into React
-          and NodeJS. Eventually, I would like to start building apps in the
-          DeFi space. In my free time, I enjoy running outdoors, watching movies
-          and playing videogames.
+          I am excited to take on the next big challenge. I am currently taking
+          a deep dive into React and NodeJS. Eventually, I would like to start
+          building apps in the DeFi space. In my free time, I enjoy running
+          outdoors, watching movies and playing videogames.
         </span>
       </div>
     </div>
