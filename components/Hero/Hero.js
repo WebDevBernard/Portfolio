@@ -10,7 +10,7 @@ export default function Hero() {
             <span className={classes.info_name}>Bernard Yang </span>
             <br /> a web developer in Vancouver
             <div className={classes.hero_buttons}>
-              <a href="#contact">
+              <a href="#form">
                 <button>CONTACT ME</button>
               </a>
               <a
