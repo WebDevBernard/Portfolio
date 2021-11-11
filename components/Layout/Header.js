@@ -14,7 +14,7 @@ export default function Header() {
           <a href="#projects">Projects</a>
         </div>
         <div className={classes.web_option}>
-          <a href="#contact">Contact</a>
+          <a href="#form">Contact</a>
         </div>
       </nav>
     </div>
