@@ -1,6 +1,16 @@
 export const projects = [
   {
     id: "m1",
+    title: "Auth + Forms",
+    image:
+      "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/auth-forms.png",
+    description: "A trello clone / project management app.",
+    github: "https://github.com/WebDevBernard/Auth-Forms",
+    link: "https://auth-forms.vercel.app/",
+    tags: ["React", "NodeJS", "Postgres"],
+  },
+  {
+    id: "m2",
     title: "Make My Day",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/kanban.png",
@@ -10,7 +20,7 @@ export const projects = [
     tags: ["React", "NodeJS", "Postgres"],
   },
   {
-    id: "m2",
+    id: "m3",
     title: "Scheduler",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/Scheduler.png",
@@ -20,7 +30,7 @@ export const projects = [
     tags: ["React", "NodeJS", "Postgres"],
   },
   {
-    id: "m3",
+    id: "m4",
     title: "Smart-to-do",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
