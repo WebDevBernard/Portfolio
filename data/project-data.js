@@ -4,7 +4,7 @@ export const projects = [
     title: "Auth + Forms",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/auth-forms.png",
-    description: "A trello clone / project management app.",
+    description: "A general message board with login feature.",
     github: "https://github.com/WebDevBernard/Auth-Forms",
     link: "https://auth-forms.vercel.app/",
     tags: ["React", "NodeJS", "Postgres"],
