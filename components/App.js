@@ -17,7 +17,7 @@ export default function App() {
         <section id="projects">
           <Projects />
         </section>
-        <section id="about">
+        <section>
           <About />
         </section>
         <section>

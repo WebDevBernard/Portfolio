@@ -17,7 +17,7 @@ export const projects = [
     description: "A trello clone / project management app.",
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.vercel.app/",
-    tags: ["React", "NodeJS", "Postgres"],
+    tags: ["React", "NodeJS", "PostgreSQL"],
   },
   {
     id: "m3",
@@ -27,7 +27,7 @@ export const projects = [
     description: "An interview scheduling app.",
     github: "https://github.com/WebDevBernard/scheduler",
     link: "",
-    tags: ["React", "NodeJS", "Postgres"],
+    tags: ["React", "NodeJS", "PostgreSQL"],
   },
   {
     id: "m4",
@@ -38,6 +38,6 @@ export const projects = [
       "A smart todo list that utilizes external APIs to organize tasks.",
     github: "https://github.com/WebDevBernard/smart-to-do",
     link: "",
-    tags: ["JQuery", "NodeJS", "Postgres"],
+    tags: ["JQuery", "NodeJS", "PostgreSQL"],
   },
 ];

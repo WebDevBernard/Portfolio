@@ -6,7 +6,7 @@ export default function About() {
     <div>
       <div className={classes.title}>
         <Skills />
-        <span>
+        <span id="about">
           <h2 style={{ fontSize: "20px" }}>About me</h2>
           Having recently completed the Lighthouse Labs Web Development Program,
           I am excited to take on the next big challenge. I am currently taking
