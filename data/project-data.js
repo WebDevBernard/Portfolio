@@ -4,10 +4,10 @@ export const projects = [
     title: "Auth + Forms",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/auth-forms.png",
-    description: "A general message board with login feature.",
+    description: "A Twitter clone.",
     github: "https://github.com/WebDevBernard/Auth-Forms",
     link: "https://auth-forms.vercel.app/",
-    tags: ["React", "NodeJS", "MongoDB"],
+    tags: ["React", "NodeJS", "MongoDB", "TypeScript"],
   },
   {
     id: "m2",
