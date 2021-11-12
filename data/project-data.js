@@ -1,13 +1,13 @@
 export const projects = [
   {
     id: "m1",
-    title: "Auth + Forms",
+    title: "Tweeter React",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/auth-forms.png",
     description: "A simple Twitter clone.",
-    github: "https://github.com/WebDevBernard/Auth-Forms",
-    link: "https://auth-forms.vercel.app/",
-    tags: ["React", "NodeJS", "MongoDB", "TypeScript"],
+    github: "https://github.com/WebDevBernard/Tweeter-React",
+    link: "",
+    tags: ["React", "NodeJS", "MongoDB"],
   },
   {
     id: "m2",
