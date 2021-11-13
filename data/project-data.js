@@ -1,10 +1,10 @@
 export const projects = [
   {
     id: "m1",
-    title: "Tweeter React",
+    title: "Twitter React",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/auth-forms.png",
-    description: "A simple Twitter clone.",
+    description: "A Twitter clone with resuable React components.",
     github: "https://github.com/WebDevBernard/Tweeter-React",
     link: "",
     tags: ["React", "NodeJS", "MongoDB"],
@@ -14,7 +14,7 @@ export const projects = [
     title: "Make My Day",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/kanban.png",
-    description: "A trello clone / project management app.",
+    description: "A project management app and Kanban board.",
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.vercel.app/",
     tags: ["React", "NodeJS", "PostgreSQL"],
@@ -24,7 +24,7 @@ export const projects = [
     title: "Scheduler",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/Scheduler.png",
-    description: "An interview scheduling app.",
+    description: "An interview scheduling app built with modern React tools.",
     github: "https://github.com/WebDevBernard/scheduler",
     link: "",
     tags: ["React", "NodeJS", "PostgreSQL"],
@@ -35,7 +35,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
     description:
-      "A smart todo list that utilizes external APIs to organize tasks.",
+      "A smart todo list that auto-organize tasks to a to buy, to eat, to watch, to read category",
     github: "https://github.com/WebDevBernard/smart-to-do",
     link: "",
     tags: ["JQuery", "NodeJS", "PostgreSQL"],
