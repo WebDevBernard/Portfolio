@@ -5,7 +5,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/twitter.png",
     description:
-      "A kind of like Twitter clone that uses resuable React components.",
+      "A kind of like Twitter app that uses resuable React components.",
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitter-react-coral.vercel.app/",
     tags: ["React", "NodeJS", "MongoDB"],
