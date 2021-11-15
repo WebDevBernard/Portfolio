@@ -36,7 +36,7 @@
   background-color: #fdffc4;
   padding: 4px 8px;
   border: 1px solid black;
-
+  user-select: none;
   margin-right: 6px;
   margin-bottom: 4px;
 }
@@ -44,6 +44,7 @@
 .project_link {
   margin-top: 6px;
   display: flex;
+  user-select: none;
 }
 
 .link_button {
@@ -59,6 +60,7 @@
   font-size: 16px;
   margin-right: 6px;
   position: relative;
+  user-select: none;
 }
 
 .link_button i {

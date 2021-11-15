@@ -39,6 +39,7 @@
 .actions {
   margin-top: 1rem;
   text-align: right;
+  user-select: none;
 }
 .hidden {
   display: none;
