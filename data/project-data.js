@@ -8,7 +8,7 @@ export const projects = [
       "A kind of like Twitter app that uses resuable React components.",
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitter-react-coral.vercel.app/",
-    tags: ["React", "NodeJS", "MongoDB"],
+    tags: ["React"],
   },
   {
     id: "m2",
