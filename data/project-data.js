@@ -1,17 +1,27 @@
 export const projects = [
   {
     id: "m1",
+    title: "Raider.io-API-Data",
+    image:
+      "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/raiderio.png",
+    description: "A graph of World of Warcraft Mythic+ player engagement data",
+    github: "https://github.com/WebDevBernard/Raider.io-API-Data",
+    link: "https://mythicdungeons.vercel.app/",
+    tags: ["React", "AWS Lambda"],
+  },
+  {
+    id: "m2",
     title: "Twitter React",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/twitter.png",
     description:
-      "A kind of like Twitter app that uses resuable React components.",
+      "A simple Twitter like app that uses resuable React components.",
     github: "https://github.com/WebDevBernard/Twitter-React",
-    link: "https://twitter-react-coral.vercel.app/",
-    tags: ["React"],
+    link: "https://twitterreact.vercel.app/",
+    tags: ["React", "NodeJs", "MongoDB"],
   },
   {
-    id: "m2",
+    id: "m3",
     title: "Make My Day",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/kanban.png",
@@ -21,7 +31,7 @@ export const projects = [
     tags: ["React", "NodeJS", "PostgreSQL"],
   },
   {
-    id: "m3",
+    id: "m4",
     title: "Scheduler",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/Scheduler.png",
@@ -31,7 +41,7 @@ export const projects = [
     tags: ["React", "NodeJS", "PostgreSQL"],
   },
   {
-    id: "m4",
+    id: "m5",
     title: "Smart-to-do",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
