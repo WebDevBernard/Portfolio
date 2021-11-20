@@ -1,11 +1,11 @@
 export const projects = [
   {
     id: "m1",
-    title: "Raider.io-API-Data",
+    title: "Raider.io API Data",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/raiderio.png",
     description:
-      "A graph of World of Warcraft Mythic+ player engagement data with an automated backend.",
+      "A chart of WoW M+ player engagement data with an automated backend.",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicdungeons.vercel.app/",
     tags: ["React", "AWS Lambda"],
@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     id: "m5",
-    title: "Smart-to-do",
+    title: "Smart To-Do",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
     description:
