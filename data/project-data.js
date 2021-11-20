@@ -7,7 +7,7 @@ export const projects = [
     description:
       "A chart of WoW M+ player engagement data with an automated backend.",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
-    link: "https://mythicdungeons.vercel.app/",
+    link: "https://mythicplus.vercel.app/",
     tags: ["React", "AWS Lambda"],
   },
   {
