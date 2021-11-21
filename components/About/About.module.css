@@ -1,10 +1,10 @@
 .aboutcard {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   /* background-image: linear-gradient(to right, #cdd6fd, #a3e8dd); */
   background-color: #efefef;
-  outline: 0;
   padding: 1rem 1rem;
   position: relative;
+  border-bottom: 1px solid #a3e8dd;
+  border-right: 1px solid #cdd6fd;
 }
 .aboutcard:after {
   content: "";

@@ -18,7 +18,7 @@ export default function Form({ contactRef }) {
       </p>
       <p className={classes.control}>
         <input
-          autocomplete="off"
+          autoComplete="off"
           ref={contactRef}
           placeholder="Name*"
           name="name"
@@ -27,7 +27,7 @@ export default function Form({ contactRef }) {
       </p>
       <p className={classes.control}>
         <input
-          autocomplete="off"
+          autoComplete="off"
           type="email"
           name="email"
           placeholder="Email*"
@@ -36,7 +36,7 @@ export default function Form({ contactRef }) {
       </p>
       <p className={classes.control}>
         <textarea
-          autocomplete="off"
+          autoComplete="off"
           name="message"
           placeholder="Message*"
           rows="5"
