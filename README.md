@@ -4,6 +4,6 @@
 
 ### About:
 
-- This app contains my portfolio page and resume.
+- This app contains my portfolio page and resume
 - Made with NextJS and hosted on Netlify
 - Animation from [StorySet](https://storyset.com/)

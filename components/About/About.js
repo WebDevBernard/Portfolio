@@ -1,12 +1,12 @@
 import Skills from "../Skills/Skills";
 import classes from "./About.module.css";
 
-export default function About() {
+export default function About({ aboutRef }) {
   return (
     <div>
-      <div className={classes.title}>
+      <div ref={aboutRef} className={classes.title}>
         <Skills />
-        <span id="about">
+        <span>
           <p className={classes.project_title}>About me</p>
           Having recently completed the Lighthouse Labs Web Development Program,
           I am excited to take on the next big challenge. I am currently taking

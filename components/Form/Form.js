@@ -1,6 +1,6 @@
 import classes from "./Form.module.css";
 
-export default function Form() {
+export default function Form({ contactRef }) {
   return (
     <form
       name="contact"
@@ -17,7 +17,7 @@ export default function Form() {
         </label>
       </p>
       <p className={classes.control}>
-        <input id="form" placeholder="Name*" name="name" required />
+        <input ref={contactRef} placeholder="Name*" name="name" required />
       </p>
       <p className={classes.control}>
         <input type="email" name="email" placeholder="Email*" required />

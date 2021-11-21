@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 1rem;
   font-size: 1.05rem;
   padding-top: 24px;
@@ -9,8 +9,16 @@
 }
 
 .footer a {
-  margin-right: 16px;
+  margin-right: 12px;
 }
 .footer a:last-child {
   margin-right: 0px;
+}
+.slideup {
+  font-size: 12px;
+}
+@media only screen and (max-width: 720px) {
+  .slideup {
+    display: none;
+  }
 }

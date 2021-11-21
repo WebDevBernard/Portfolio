@@ -56,3 +56,13 @@ button:hover::after {
   top: 0px;
   left: 0px;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+
+  background: rgb(199, 210, 254);
+}
+
+::selection {
+  background: rgb(199, 210, 254);
+}

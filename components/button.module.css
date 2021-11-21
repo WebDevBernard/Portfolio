@@ -1,0 +1,20 @@
+.button {
+  cursor: pointer;
+  position: fixed;
+  height: 70px;
+  bottom: 24px;
+  left: 24px;
+  min-width: 0;
+  z-index: 4;
+}
+.hide {
+  display: none;
+}
+.button:after {
+  background-color: transparent;
+}
+@media only screen and (max-width: 720px) {
+  .button {
+    left: 0px;
+  }
+}

@@ -1,10 +1,13 @@
 import ProjectItem from "./ProjectItem";
 import classes from "./Projects.module.css";
 import { projects } from "../../data/project-data";
-export default function Projects() {
+export default function Projects({ projectsRef }) {
   return (
     <>
-      <p className={classes.title}>Projects</p>
+      <div></div>
+      <p ref={projectsRef} className={classes.title}>
+        Projects
+      </p>
       <div className={classes.wrapper}>
         {projects.map((project) => {
           return (
