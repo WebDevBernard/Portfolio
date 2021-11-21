@@ -22,7 +22,7 @@ export default function Footer() {
           Web illustrations by Storyset
         </a>
       </div>
-      <div>
+      <div className={classes.socials}>
         <a
           href="https://www.linkedin.com/in/bernard-yang/"
           target="_blank"
