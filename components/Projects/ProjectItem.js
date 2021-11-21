@@ -1,12 +1,5 @@
 import classes from "./ProjectItem.module.css";
-export default function Projects({
-  title,
-  link,
-  github,
-  description,
-  image,
-  tags,
-}) {
+export default function Projects({ title, link, github, description, image }) {
   return (
     <div className={classes.project_card}>
       <img src={image} alt={title} className={classes.project_photo} />
@@ -41,15 +34,6 @@ export default function Projects({
           )}
         </div>
         <p>{description}</p>
-        {/* <div className={classes.project_tag}>
-          {tags.map((tag) => {
-            return (
-              <label key={Math.random()} className={classes.tag}>
-                {tag}
-              </label>
-            );
-          })}
-        </div> */}
       </div>
     </div>
   );

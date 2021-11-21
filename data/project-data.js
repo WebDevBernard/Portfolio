@@ -32,16 +32,6 @@ export const projects = [
   },
   {
     id: "m4",
-    title: "Scheduler",
-    image:
-      "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/Scheduler.png",
-    description: "An interview scheduling app built with modern React tools.",
-    github: "https://github.com/WebDevBernard/scheduler",
-    link: "",
-    tags: ["React", "NodeJS", "PostgreSQL"],
-  },
-  {
-    id: "m5",
     title: "Smart To-Do",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",

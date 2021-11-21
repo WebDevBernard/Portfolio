@@ -7,38 +7,25 @@
 }
 
 .project_card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-top: 12px;
-  font-size: 16px;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: #42414d;
-  border-radius: 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
 }
 
 .project_text {
   padding: 12px;
 }
 .project_title {
-  font-size: 20px;
-  font-family: "Assistant";
 }
 
 .project_tag {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-
-.tag {
-  font-size: 16px;
-  font-weight: bold;
-  color: #00100d;
-  background-color: #fdffc4;
-  padding: 4px 8px;
-  border: 1px solid black;
-  user-select: none;
-  margin-right: 6px;
-  margin-bottom: 4px;
 }
 
 .project_link {
@@ -51,12 +38,14 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  font-weight: bold;
-  color: #00100d;
-  background-color: #fdffc4;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.08rem;
+  background-color: rgb(225, 227, 234);
   width: max-content;
-  padding: 4px 8px;
+  padding: 4px 67px;
+  outline: 0;
   border: 1px solid black;
+  border-radius: 2px;
   font-size: 16px;
   margin-right: 6px;
   position: relative;
@@ -67,4 +56,9 @@
   display: flex;
   align-items: center;
   margin-right: 4px;
+}
+@media only screen and (max-width: 768px) {
+  .link_button {
+    padding: 4px 20px;
+  }
 }

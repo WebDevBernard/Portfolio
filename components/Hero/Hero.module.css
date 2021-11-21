@@ -8,11 +8,12 @@
   white-space: nowrap;
 
   margin-top: 2rem;
-  font-size: 24px;
 }
 
+.job_title {
+  background: linear-gradient(to top, rgb(167, 243, 208), transparent 50%);
+}
 .info_name {
-  color: #dbffa2;
   font-size: 32px;
 }
 .picture {
@@ -28,13 +29,11 @@
 .resume_button {
   flex: 1;
   margin-left: 12px;
-  color: #00a699;
-  border-color: #00a699;
+
   user-select: none;
 }
 
 .resume_button:hover {
-  border-color: #00a699;
 }
 
 @media only screen and (max-width: 720px) {

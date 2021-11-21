@@ -13,7 +13,7 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Inter:wght@200&family=Rubik:wght@300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap"
           rel="stylesheet"
         />
         <link

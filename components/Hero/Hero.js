@@ -5,10 +5,17 @@ export default function Hero() {
       <div className={classes.about}>
         <div className={classes.about_top}>
           <div className={classes.about_info}>
-            Hi there 👋, I am
+            Hi there{" "}
+            <img
+              style={{ height: "24px" }}
+              src="https://img.icons8.com/emoji/48/000000/waving-hand-emoji.png"
+            />
+            , I am
             <br />
             <span className={classes.info_name}>Bernard Yang </span>
-            <br /> a web developer in Vancouver
+            <br /> a{" "}
+            <span className={classes.job_title}>front end developer</span> in
+            Vancouver
             <div className={classes.hero_buttons}>
               <a href="#form">
                 <button>CONTACT ME</button>

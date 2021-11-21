@@ -4,7 +4,7 @@ import { projects } from "../../data/project-data";
 export default function Projects() {
   return (
     <>
-      <h2 className={classes.title}>Projects</h2>
+      <p className={classes.title}>Projects</p>
       <div className={classes.wrapper}>
         {projects.map((project) => {
           return (
