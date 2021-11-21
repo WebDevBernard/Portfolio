@@ -22,6 +22,7 @@
   padding: 0.6rem;
   width: 100%;
   resize: none;
+  background-color: rgb(218, 232, 245);
 }
 
 .control input::placeholder,

@@ -4,4 +4,6 @@
 
 ### About:
 
-- This app contains my portfolio page. I made this app to practice HTML/CSS, React, NextJS, and deploying on Netlify.
+- This app contains my portfolio page and resume.
+- Made with NextJS and hosted on Netlify
+- Animation from [StorySet](https://storyset.com/)
