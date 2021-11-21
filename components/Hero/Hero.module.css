@@ -33,7 +33,7 @@
 
 .resume_button:after {
   content: "";
-  background-color: rgb(253, 230, 138);
+  background-color: rgb(205, 214, 253);
   width: 100%;
   z-index: -1;
   position: absolute;
