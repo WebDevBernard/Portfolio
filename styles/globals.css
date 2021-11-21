@@ -24,10 +24,11 @@ a {
 }
 
 button {
-  font-family: "Inter", sans-serif;
+  line-height: 1;
+  letter-spacing: 0.08rem;
+  font-family: "Roboto Mono", sans-serif;
   outline: 0;
   padding: 1rem 4rem;
-  line-height: 0em;
   text-transform: uppercase;
   user-select: none;
   max-height: 4rem;

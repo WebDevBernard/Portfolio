@@ -31,7 +31,16 @@
   user-select: none;
 }
 
-.resume_button:hover {
+.resume_button:after {
+  content: "";
+  background-color: rgb(253, 230, 138);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
 }
 
 @media only screen and (max-width: 720px) {

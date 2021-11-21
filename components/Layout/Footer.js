@@ -2,14 +2,25 @@ import classes from "./Footer.module.css";
 export default function Footer() {
   return (
     <div className={classes.footer}>
-      <a
-        className={classes.slideup}
-        href="https://icons8.com/icon/9d0casenOiHS/up"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Up Arrow icon by Icons8
-      </a>
+      <div>
+        <a
+          className={classes.slideup}
+          href="https://icons8.com/icon/9d0casenOiHS/up"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Up Arrow icon by Icons8
+        </a>
+
+        <a
+          className={classes.slideup}
+          href="https://storyset.com/illustration/programming/amico/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Animation by Storyset
+        </a>
+      </div>
       <div>
         <a
           href="https://www.linkedin.com/in/bernard-yang/"

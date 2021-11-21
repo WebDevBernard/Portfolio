@@ -32,7 +32,9 @@ export default function Form({ contactRef }) {
       </p>
       <div data-netlify-recaptcha="true"></div>
       <p className={classes.actions}>
-        <button type="submit">SUBMIT</button>
+        <button className={classes.button} type="submit">
+          SUBMIT
+        </button>
       </p>
     </form>
   );
