@@ -6,6 +6,7 @@ export default function Header() {
       <div className={classes.logo}>
         <Link href="https://www.bernardyang.com/">Bernard Yang</Link>
       </div>
+
       <nav className={classes.web}>
         <div className={classes.web_option}>
           <a href="#about">About</a>

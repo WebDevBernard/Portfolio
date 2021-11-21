@@ -41,7 +41,7 @@ export default function Projects({
           )}
         </div>
         <p>{description}</p>
-        <div className={classes.project_tag}>
+        {/* <div className={classes.project_tag}>
           {tags.map((tag) => {
             return (
               <label key={Math.random()} className={classes.tag}>
@@ -49,7 +49,7 @@ export default function Projects({
               </label>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

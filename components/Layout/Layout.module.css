@@ -1,5 +1,9 @@
 .main {
   margin: 2rem auto;
-  width: 65%;
-  max-width: 65%;
+  width: 968px;
+}
+@media only screen and (max-width: 1024px) {
+  .main {
+    width: 65%;
+  }
 }

@@ -2,9 +2,22 @@
   flex: 1;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3em, 30em;
   gap: 2rem;
 }
 .title {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
 }
