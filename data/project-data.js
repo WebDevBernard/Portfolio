@@ -4,7 +4,8 @@ export const projects = [
     title: "Raider.io API Data",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/raiderio.png",
-    description: "A chart of WoW M+ player engagement data with AWS backend.",
+    description:
+      "An app that calculates player count in WoW by fetching data from an external API and saving it to a database.",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicplus.vercel.app/",
     tags: ["React", "AWS Lambda"],

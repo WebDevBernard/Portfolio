@@ -21,6 +21,7 @@
 .skill_icon {
   margin-right: 16px;
   font-size: 40px;
+  color: linear-gradient(to right, #cdd6fd, #a3e8dd);
 }
 .skill_name {
   font-size: 18px;
