@@ -3,6 +3,7 @@ export default function Footer() {
   return (
     <div className={classes.footer}>
       <div>
+        <a className={classes.slideup}>Built with Next.js</a>
         <a
           className={classes.slideup}
           href="https://icons8.com/icon/9d0casenOiHS/up"

@@ -10,12 +10,13 @@ export default function About({ aboutRef }) {
         <p className={classes.project_title}>About me</p>
         <div>
           <p className={classes.aboutcard}>
-            Having recently completed the Lighthouse Labs Web Development
-            Program, I am excited to take on the next big challenge. I am
-            currently taking a deep dive into React and NodeJS. Eventually, I
-            would like to start building apps in the DeFi space. In my free
-            time, I enjoy running outdoors, watching movies and playing
-            videogames.
+            I am a front end developer who recently completed the Lighthouse
+            Labs Web Development Program. What I enjoy the most about coding is
+            making my personal projects and learning how to automate things with
+            code. I am eager to learn any languages and skills that will help me
+            become a better programmer. When I'm not coding, I enjoying watching
+            movies and playing videogames. If you would like to chat, leave a
+            message below and I will respond shortly.
           </p>
         </div>
       </span>
