@@ -14,9 +14,9 @@ export default function About({ aboutRef }) {
             Labs Web Development Program. What I enjoy the most about coding is
             making my personal projects and learning how to automate things with
             code. I am eager to learn any languages and skills that will help me
-            become a better programmer. When I'm not coding, I enjoying watching
-            movies and playing videogames. If you would like to chat, leave a
-            message below and I will respond shortly.
+            become a better programmer. When I am not coding, I enjoying
+            watching movies and playing videogames. If you would like to chat,
+            leave a message below and I will respond shortly.
           </p>
         </div>
       </span>
