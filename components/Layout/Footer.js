@@ -14,11 +14,11 @@ export default function Footer() {
 
         <a
           className={classes.slideup}
-          href="https://storyset.com/illustration/programming/amico/"
+          href="https://storyset.com/web"
           target="_blank"
           rel="noreferrer"
         >
-          Animation by Storyset
+          Web illustrations by Storyset
         </a>
       </div>
       <div>
