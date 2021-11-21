@@ -28,8 +28,9 @@
 .control input::placeholder,
 .control textarea::placeholder {
   font-size: 16px;
-  font-family: "Inter", monospace;
+  font-family: "Roboto mono", monospace;
   letter-spacing: 0.08rem;
+  text-transform: uppercase;
 }
 
 .control input:focus,

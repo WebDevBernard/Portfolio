@@ -26,9 +26,8 @@ export default function Projects({ title, link, github, description, image }) {
               rel="noreferrer"
             >
               <div className={classes.link_button}>
-                {" "}
                 <i className="devicon-github-original"></i>
-                Github
+                GitHub
               </div>
             </a>
           )}

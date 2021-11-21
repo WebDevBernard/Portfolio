@@ -34,7 +34,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          Github
+          GitHub
         </a>
         <a
           href="https://www.twitter.com/WebDevBernard"

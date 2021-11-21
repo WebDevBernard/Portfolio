@@ -17,20 +17,32 @@ export default function Form({ contactRef }) {
         </label>
       </p>
       <p className={classes.control}>
-        <input ref={contactRef} placeholder="Name*" name="name" required />
+        <input
+          autocomplete="off"
+          ref={contactRef}
+          placeholder="Name*"
+          name="name"
+          required
+        />
       </p>
       <p className={classes.control}>
-        <input type="email" name="email" placeholder="Email*" required />
+        <input
+          autocomplete="off"
+          type="email"
+          name="email"
+          placeholder="Email*"
+          required
+        />
       </p>
       <p className={classes.control}>
         <textarea
+          autocomplete="off"
           name="message"
           placeholder="Message*"
           rows="5"
           required
         ></textarea>
       </p>
-      <div data-netlify-recaptcha="true"></div>
       <p className={classes.actions}>
         <button className={classes.button} type="submit">
           SUBMIT
