@@ -15,7 +15,7 @@ export default function About({ aboutRef }) {
             making my personal projects and learning how to automate things with
             code. I am really interested in developing in the DeFi space but am
             open to learning anything that will help me become a better
-            programmer. When I am not coding, I enjoying watching movies and
+            programmer. When I am not coding, I enjoy watching movies and
             playing videogames.
           </p>
         </div>
