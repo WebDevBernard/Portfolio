@@ -5,7 +5,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/raiderio.png",
     description:
-      "An app that calculates player count in WoW by fetching data from an external API and saving it to a database.",
+      "An app that calculates WoW in-game player count using automation with AWS Lambda / CloudWatch.",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicplus.vercel.app/",
     tags: ["React", "AWS Lambda"],
@@ -16,7 +16,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/twitter.png",
     description:
-      "A simple Twitter like app that uses resuable React components.",
+      "A simple twitter like app with login validation, reusable react components and Express / MongoDB back end.",
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitterreact.vercel.app/",
     tags: ["React", "NodeJs", "MongoDB"],
@@ -26,7 +26,8 @@ export const projects = [
     title: "Make My Day",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/kanban.png",
-    description: "A project management app and Kanban board.",
+    description:
+      "A project management app and Kanban board for teams to manage projects and organize tasks.",
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.vercel.app/",
     tags: ["React", "NodeJS", "PostgreSQL"],
