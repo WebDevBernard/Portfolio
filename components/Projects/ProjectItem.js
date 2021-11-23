@@ -32,7 +32,9 @@ export default function Projects({ title, link, github, description, image }) {
             </a>
           )}
         </div>
-        <p>{description}</p>
+        <footer>
+          <p>{description}</p>
+        </footer>
       </div>
     </div>
   );

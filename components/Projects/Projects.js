@@ -6,7 +6,6 @@ export default function Projects({ projectsRef }) {
     <>
       <div></div>
       <p ref={projectsRef} className={classes.title}>
-        <img src="https://img.icons8.com/cotton/64/000000/code.png" />
         Projects
       </p>
       <div className={classes.wrapper}>

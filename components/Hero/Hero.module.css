@@ -31,18 +31,6 @@
   user-select: none;
 }
 
-.resume_button:after {
-  content: "";
-  background-color: rgb(205, 214, 253);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-}
-
 @media only screen and (max-width: 720px) {
   .about_top {
     flex-direction: column;
