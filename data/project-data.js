@@ -5,7 +5,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/raiderio.png",
     description:
-      "An app that calculates WoW in-game player count using automation with AWS Lambda and CloudWatch",
+      "An app that calculates WoW in-game player count using automation with AWS Lambda and CloudWatch.",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicplus.vercel.app/",
     tags: ["React", "AWS Lambda"],
@@ -16,7 +16,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/twitter.png",
     description:
-      "A simple twitter like app with login validation, reusable react components",
+      "A simple Twitter like app with login validation, reusable React components",
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitterreact.vercel.app/",
     tags: ["React", "NodeJs", "MongoDB"],
