@@ -27,7 +27,7 @@ export default function Hero({ scrollContact }) {
             <img
               className={classes.picture}
               src={
-                "https://raw.githubusercontent.com/WebDevBernard/Portfolio/c23100d283593d22a3e6061dd85dbc702d33ca7a/docs/programming-animate.svg"
+                "https://raw.githubusercontent.com/WebDevBernard/Portfolio/0ff3a880e8e1ce72f50c9da0c3a097ed089cf9ea/docs/programming-animate.svg"
               }
             />
           </div>
