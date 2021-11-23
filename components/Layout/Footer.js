@@ -6,20 +6,28 @@ export default function Footer() {
         <a className={classes.slideup}>Built with Next.js</a>
         <a
           className={classes.slideup}
+          href="https://storyset.com/web"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Web illustrations by Storyset
+        </a>
+
+        <a
+          className={classes.slideup}
           href="https://icons8.com/icon/9d0casenOiHS/up"
           target="_blank"
           rel="noreferrer"
         >
           Up Arrow icon by Icons8
         </a>
-
         <a
           className={classes.slideup}
-          href="https://storyset.com/web"
           target="_blank"
           rel="noreferrer"
+          href="https://icons8.com/icon/NXAECrAk3Vkg/code"
         >
-          Web illustrations by Storyset
+          Code icon by Icons8
         </a>
       </div>
       <div className={classes.socials}>

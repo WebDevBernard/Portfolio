@@ -7,7 +7,10 @@ export default function About({ aboutRef }) {
       <Skills />
 
       <span>
-        <p className={classes.project_title}>About me</p>
+        <p className={classes.project_title}>
+          <img src="https://img.icons8.com/cotton/64/000000/code.png" />
+          About me
+        </p>
         <div>
           <p className={classes.aboutcard}>
             I am a front end developer who recently completed the Lighthouse
