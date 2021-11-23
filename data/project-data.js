@@ -16,7 +16,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/twitter.png",
     description:
-      "A simple Twitter like app with login validation, reusable React components.",
+      "A simple Twitter like app with login validation, and reusable React components.",
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitterreact.vercel.app/",
     tags: ["React", "NodeJs", "MongoDB"],
@@ -38,7 +38,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
     description:
-      "A smart todo list that auto-organize tasks to a to buy, to eat, to watch, to read category.",
+      "A smart todo list that auto-organize tasks into a things to buy, to eat, to watch, to read category.",
     github: "https://github.com/WebDevBernard/smart-to-do",
     link: "",
     tags: ["JQuery", "NodeJS", "PostgreSQL"],
