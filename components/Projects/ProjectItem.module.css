@@ -15,7 +15,8 @@
   border-radius: 4px;
 }
 .project_title {
-  font-weight: 700;
+  font-weight: 500;
+  color: black;
 }
 
 .project_text {
