@@ -8,12 +8,14 @@
 
 .project_card {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-top: 12px;
 
   background-color: rgba(199, 210, 254, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 4px;
+}
+.project_title {
+  font-weight: 700;
 }
 
 .project_text {
@@ -29,6 +31,7 @@
 .project_link {
   margin-top: 6px;
   display: flex;
+  justify-content: space-around;
   user-select: none;
 }
 

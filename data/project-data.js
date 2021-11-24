@@ -38,7 +38,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
     description:
-      "A smart todo list that auto-organize tasks into a things to buy, things to eat, things to watch, or things to read category.",
+      "A smart to-do list that auto-organize tasks into a things to buy, things to eat, things to watch, or things to read category.",
     github: "https://github.com/WebDevBernard/smart-to-do",
     link: "",
     tags: ["JQuery", "NodeJS", "PostgreSQL"],
