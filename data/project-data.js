@@ -16,7 +16,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/twitter.png",
     description:
-      "A simple Twitter like app with login validation, and reusable React components.",
+      "A simple Twitter like app with reusable React components and sign-up validation.",
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitterreact.vercel.app/",
     tags: ["React", "NodeJs", "MongoDB"],
