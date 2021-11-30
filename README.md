@@ -5,4 +5,4 @@
 ### About:
 
 - Welcome to my portfolio page and resume
-- Made with NextJS and hosted on Netlify
+- Made with NextJS and deployed with Netlify 😜
