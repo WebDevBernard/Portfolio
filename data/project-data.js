@@ -1,11 +1,11 @@
 export const projects = [
   {
     id: "m1",
-    title: "M+ Player Count",
+    title: "Mythic+ Player Count",
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/raiderio.png",
     description:
-      "An app that calculates WoW in-game player count using automation with AWS Lambda and EventBridge.",
+      "An app that calculates player count in WoW using automation with AWS Serverless Computing",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicplus.vercel.app/",
     tags: ["React", "AWS Lambda"],
