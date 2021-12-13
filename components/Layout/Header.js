@@ -1,11 +1,10 @@
-import { useRef } from "react";
 import Link from "next/link";
 import classes from "./Header.module.css";
 export default function Header({ scrollAbout, scrollContact, scrollProjects }) {
   return (
     <div className={classes.header}>
       <div className={classes.logo}>
-        <Link href="https://www.bernardyang.com/">Bernard Yang</Link>
+        <Link href="/">Bernard Yang</Link>
       </div>
 
       <nav className={classes.web}>

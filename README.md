@@ -4,5 +4,4 @@
 
 ### About:
 
-- Welcome to my portfolio page and resume
-- Built with NextJS and deployed with Netlify 😜
+- Just a simple portfolio page built with NextJS and deployed to Netlify 😜

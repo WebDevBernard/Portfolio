@@ -40,10 +40,12 @@
 
 @media only screen and (max-width: 720px) {
   .header {
-    margin-left: -3.7rem;
-    display: block;
-    justify-content: right;
+    justify-content: space-between;
   }
   .logo {
+    display: none;
+  }
+  .web_option {
+    margin: 0 32px;
   }
 }
