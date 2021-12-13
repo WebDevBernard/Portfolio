@@ -9,9 +9,20 @@
   font-size: 22px;
   margin-top: 2rem;
 }
-
+/* https://max.hn/thoughts/how-to-create-a-highlighter-marker-effect-in-css */
 .job_title {
-  background: linear-gradient(to top, rgb(167, 243, 208), transparent 50%);
+  margin: 0 -0.4em;
+  padding: 0em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(167, 243, 208, 0.1),
+    rgba(167, 243, 208, 0.7) 4%,
+    rgba(167, 243, 208, 0.9)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .info_name {
   font-weight: 700;
