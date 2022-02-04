@@ -1,7 +1,8 @@
-### Visit the Portfolio:
+## Link
 
-### [https://www.bernardyang.com/](https://www.bernardyang.com/)
+### [View Live](https://www.bernardyang.com/)
 
-### About:
+## About:
 
-- Just a simple portfolio page built with NextJS and deployed to Netlify 😜
+- Created in React and Next.js
+- Deployed to Netlify

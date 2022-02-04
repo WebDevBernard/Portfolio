@@ -11,7 +11,7 @@ export default function About({ aboutRef }) {
         <div>
           <p className={classes.aboutcard}>
             I am a front end developer who recently completed the Lighthouse
-            Labs Web Development Program. What I enjoy the most about coding is
+            Labs web development program. What I enjoy the most about coding is
             making my personal projects and learning how to automate things with
             code. I am really interested in developing in the DeFi space, but am
             open to learn anything that will help me become a better programmer.
