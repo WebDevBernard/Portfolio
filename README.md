@@ -4,5 +4,5 @@
 
 ## About:
 
-- Created in React and Next.js
+- Created with React and Next.js
 - Deployed to Netlify
