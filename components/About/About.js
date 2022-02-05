@@ -13,8 +13,10 @@ export default function About({ aboutRef }) {
             I am a front end developer who enjoys finding ways to automate
             things with code. I love working on my personal projects and I
             always spend extra time on the design and try to make them look
-            good. When I am not coding, I enjoy watching movies or playing a bit
-            of WoW.
+            good. I am interested in making apps in the DeFi space but am also
+            open to learn anything that will help me become a better programmer.
+            When I am not coding, I enjoy watching movies or playing a bit of
+            WoW.
           </p>
         </div>
       </span>
