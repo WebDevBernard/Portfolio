@@ -12,7 +12,7 @@ export default function About({ aboutRef }) {
           <p className={classes.aboutcard}>
             I am a front end developer who enjoys making apps that help automate
             simple tasks. Alongside web development, I am interested in learning
-            about developing in the DeFi space. When I'm not coding, I enjoy
+            about developing in the DeFi space. When I am not coding, I enjoy
             watching movies or playing a bit of WoW.
           </p>
         </div>
