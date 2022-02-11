@@ -10,11 +10,11 @@ export default function About({ aboutRef }) {
         <p className={classes.project_title}>About me</p>
         <div>
           <p className={classes.aboutcard}>
-            I am a front end developer who enjoys finding ways to automate
-            things with code. I love working on my personal projects and I
-            always spend extra time on the design and try to make them look
-            good. When I am not coding, I enjoy watching movies or playing a bit
-            of WoW.
+            I am a software developer focused on full-stack web development. I
+            enjoy working on projects that are more front-end focused. As I grow
+            as a developer, I would like to learn more about mobile development,
+            fintech, and blockchain tech. When I am not coding, I enjoy watching
+            movies or playing a bit of WoW.
           </p>
         </div>
       </span>

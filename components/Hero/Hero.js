@@ -7,7 +7,7 @@ export default function Hero({ scrollContact }) {
           <div className={classes.about_info}>
             <span className={classes.info_name}> Hello!</span>
             <br /> I am Bernard, <br />a{" "}
-            <span className={classes.job_title}>front end developer</span> in
+            <span className={classes.job_title}>software developer</span> in
             Vancouver
             <div className={classes.hero_buttons}>
               <button onClick={scrollContact}>CONTACT ME</button>
