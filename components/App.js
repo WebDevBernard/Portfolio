@@ -70,6 +70,7 @@ export default function App() {
           onClick={scrollToTop}
           className={showButton ? classes.button : classes.hide}
           src="https://img.icons8.com/fluency/96/000000/up.png"
+          alt="up logo"
         />
       </Layout>
     </>

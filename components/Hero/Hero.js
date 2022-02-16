@@ -27,6 +27,7 @@ export default function Hero({ scrollContact }) {
               src={
                 "https://raw.githubusercontent.com/WebDevBernard/Portfolio/48b9f22660231fc9dfa6e2c7f20f00a91a0998af/docs/programming-animate.svg"
               }
+              alt="programmer guy"
             />
           </div>
         </div>
