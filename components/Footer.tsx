@@ -1,36 +1,26 @@
-import classes from "./Footer.module.css";
 export default function Footer() {
   return (
-    <div className={classes.footer}>
-      <div>
-        <a className={classes.slideup}>Built with Next.js</a>
+    <div className="flex flex-col items-center justify-between border-t border-slate-600 p-4 md:flex-row">
+      <div className="flex flex-row text-xs divide-x divide-slate-600">
+        <p className="pr-6">Built with Next.js and Tailwind CSS</p>
         <a
-          className={classes.slideup}
+          className="px-6"
           href="https://storyset.com/web"
           target="_blank"
           rel="noreferrer"
         >
           Web illustrations by Storyset
         </a>
-
         <a
-          className={classes.slideup}
-          href="https://icons8.com/icon/9d0casenOiHS/up"
+          className="pl-6"
+          href="https://icons8.com/icon/63701/xbox-b"
           target="_blank"
           rel="noreferrer"
         >
-          Up Arrow icon by Icons8
-        </a>
-        <a
-          className={classes.slideup}
-          target="_blank"
-          rel="noreferrer"
-          href="https://icons8.com/icon/NXAECrAk3Vkg/code"
-        >
-          Code icon by Icons8
+          Xbox B icon by Icons8
         </a>
       </div>
-      <div className={classes.socials}>
+      <div className="mt-20 md:mt-0 font-bold text-indigo-900">
         <a
           href="https://www.linkedin.com/in/bernard-yang/"
           target="_blank"
@@ -39,6 +29,7 @@ export default function Footer() {
           Linkedin
         </a>
         <a
+          className="px-6"
           href="https://www.github.com/webdevbernard"
           target="_blank"
           rel="noreferrer"

@@ -1,4 +1,13 @@
-export const projects = [
+interface Projects {
+  id: string;
+  title: string;
+  image: string;
+  description: string;
+  github: string;
+  link: string;
+}
+
+export const projects: Projects[] = [
   {
     id: "m1",
     title: "Mythic+ Player Count",
@@ -8,7 +17,6 @@ export const projects = [
       "An app that displays player count in World of Warcraft Mythic+ dungeons using automation with AWS.",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicplus.vercel.app/",
-    tags: ["React", "AWS Lambda"],
   },
   {
     id: "m2",
@@ -19,7 +27,6 @@ export const projects = [
       "A simple Twitter-like React app with Firebase authentication.",
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitterreact.vercel.app/",
-    tags: ["React", "NodeJs", "MongoDB"],
   },
   {
     id: "m3",
@@ -30,7 +37,6 @@ export const projects = [
       "A project management app and Kanban board for teams to manage projects and organize tasks.",
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.vercel.app/",
-    tags: ["React", "NodeJS", "PostgreSQL"],
   },
   {
     id: "m4",
@@ -38,9 +44,8 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
     description:
-      "A smart to-do list that auto-organize tasks into a things to buy, things to eat, things to watch, or things to read category.",
+      "A smart to-do list that auto-organize tasks into a things to buy / eat / watch / read category.",
     github: "https://github.com/WebDevBernard/smart-to-do",
     link: "",
-    tags: ["JQuery", "NodeJS", "PostgreSQL"],
   },
 ];
