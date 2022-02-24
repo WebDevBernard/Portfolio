@@ -8,13 +8,8 @@ export default function Document() {
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-        ></link>
-        <link
-          rel="preload"
-          href="../fonts/sofia-pro.otf"
-          as="font"
-          crossOrigin=""
         />
+        <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
       </Head>
       <body>
         <Main />
