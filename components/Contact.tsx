@@ -26,7 +26,6 @@ export default function Contact() {
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
-        // data-netlify-recaptcha="true"
       >
         <input type="hidden" name="form" value="contact" />
         <p className="hidden">
@@ -34,36 +33,37 @@ export default function Contact() {
             Don’t fill this out if you’re human: <input name="bot-field" />
           </label>
         </p>
-        <p className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900">
-          <input autoComplete="off" placeholder="Name*" name="name" required />
-        </p>
-        <p className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900">
-          <input
-            autoComplete="off"
-            type="email"
-            name="email"
-            placeholder="Email*"
-            required
-          />
-        </p>
-        <p className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900">
-          <textarea
-            autoComplete="off"
-            name="message"
-            placeholder="Message*"
-            rows={5}
-            required
-          ></textarea>
-        </p>
-        <p>
-          <button
-            className="btn btn-primary inline-block self-end uppercase mt-4"
-            type="submit"
-          >
-            Submit
-          </button>
-        </p>
-      </form>
+        <input
+          className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
+          autoComplete="off"
+          placeholder="Name*"
+          name="name"
+          required
+        />
+        <input
+          className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
+          autoComplete="off"
+          type="email"
+          name="email"
+          placeholder="Email*"
+          required
+        />
+        <textarea
+          className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
+          autoComplete="off"
+          name="message"
+          placeholder="Message*"
+          rows={5}
+          required
+        ></textarea>
+
+        <button
+          className="btn btn-primary inline-block self-end uppercase mt-4"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>{" "}
     </div>
   );
 }
