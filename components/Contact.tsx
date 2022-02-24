@@ -1,4 +1,4 @@
-import { encode } from "punycode";
+// https://jama-ai.medium.com/next-js-typescript-netlify-forms-the-no-redirect-version-d9bf859502cd
 import React, { useState } from "react";
 interface FormPost {
   Name?: string;
@@ -71,6 +71,7 @@ export default function Contact() {
             placeholder="Name*"
             name="name"
             required
+            onChange={handleChange}
           />
           <input
             className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
@@ -79,15 +80,16 @@ export default function Contact() {
             name="email"
             placeholder="Email*"
             required
+            onChange={handleChange}
           />
-          <textarea
+          <input
             className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
             autoComplete="off"
             name="message"
             placeholder="Message*"
-            rows={5}
             required
-          ></textarea>
+            onChange={handleChange}
+          ></input>
 
           <button
             className="btn btn-primary inline-block self-end uppercase mt-4"
@@ -97,7 +99,11 @@ export default function Contact() {
           </button>
         </form>
       )}
-      {submitted && <h5>Thanks for submitting, I will contact you shortly.</h5>}
+      {submitted && (
+        <p className="self-center text-lg font-bold text-indigo-900">
+          Thanks for submitting, I will contact you shortly.
+        </p>
+      )}
     </div>
   );
 }
