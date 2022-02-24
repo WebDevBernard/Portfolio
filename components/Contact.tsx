@@ -22,17 +22,9 @@ export default function Contact() {
       </span>
       <form
         className="mx-auto w-full flex flex-col space-y-4 md:items-center"
-        name="contact"
         method="POST"
-        netlify-honeypot="bot-field"
         data-netlify="true"
       >
-        <input type="hidden" name="form" value="contact" />
-        <p className="hidden">
-          <label>
-            Don’t fill this out if you’re human: <input name="bot-field" />
-          </label>
-        </p>
         <input
           className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
           autoComplete="off"

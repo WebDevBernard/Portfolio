@@ -9,9 +9,11 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
         />
-        <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
+        <link
+          href="https://fonts.cdnfonts.com/css/sofia-pro"
+          rel="stylesheet"
+        />
       </Head>
-      <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
       <body>
         <Main />
         <NextScript />
