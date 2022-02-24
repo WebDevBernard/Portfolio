@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Sofia Pro";
+  src: local(""), url(../fonts/sofia-pro.otf) format("otf");
+}
+
 .btn-primary {
   @apply text-white bg-violet-500 hover:bg-violet-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-md text-sm text-center dark:bg-violet-500 dark:hover:bg-violet-600 dark:focus:ring-purple-900 tracking-widest flex justify-center items-center select-none px-5 py-2.5;
 }

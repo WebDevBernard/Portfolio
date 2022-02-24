@@ -30,7 +30,6 @@ const Home: NextPage = () => {
           <About />
           <Skills />
           <Contact />
-
           <Footer />
         </Layout>
       </body>

@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        body: ["Sofia Pro"],
+        sans: ["Sofia Pro"],
       },
     },
   },

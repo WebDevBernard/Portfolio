@@ -10,9 +10,11 @@ export default function Document() {
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
         ></link>
         <link
-          href="http://fonts.cdnfonts.com/css/sofia-pro"
-          rel="stylesheet"
-        ></link>
+          rel="preload"
+          href="../fonts/sofia-pro.otf"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
       <body>
         <Main />
