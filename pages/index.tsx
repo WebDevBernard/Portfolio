@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Layout from "../components/Layout";
@@ -10,6 +11,22 @@ import ProjectList from "../components/ProjectList";
 import Skills from "../components/Skills";
 
 const Home: NextPage = () => {
+  const projectsRef = useRef<HTMLHeadingElement>(null);
+  const aboutRef = useRef<HTMLHeadingElement>(null);
+  const contactRef = useRef<HTMLHeadingElement>(null);
+
+  const scrollProjects = () => {
+    projectsRef.current!.scrollIntoView({
+      block: "center",
+      behavior: "smooth",
+    });
+  };
+  const scrollContact = () => {
+    contactRef.current!.scrollIntoView({ block: "center", behavior: "smooth" });
+  };
+  const scrollAbout = () => {
+    aboutRef.current!.scrollIntoView({ block: "center", behavior: "smooth" });
+  };
   return (
     <>
       <Head>
@@ -22,17 +39,21 @@ const Home: NextPage = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <body className="bg-hero-pattern bg-cover font-body selection:bg-[#c7d2fe]">
-        <Header />
+      <div className="bg-hero-pattern bg-cover font-body selection:bg-[#c7d2fe]">
+        <Header
+          scrollAbout={scrollAbout}
+          scrollContact={scrollContact}
+          scrollProjects={scrollProjects}
+        />
         <Layout>
-          <Hero />
-          <ProjectList />
-          <About />
+          <Hero scrollContact={scrollContact} />
+          <ProjectList projectsRef={projectsRef} />
+          <About aboutRef={aboutRef} />
           <Skills />
-          <Contact />
+          <Contact contactRef={contactRef} />
           <Footer />
         </Layout>
-      </body>
+      </div>
     </>
   );
 };

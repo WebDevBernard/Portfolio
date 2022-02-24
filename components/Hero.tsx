@@ -1,9 +1,10 @@
-export default function Hero() {
+import { FC } from "react";
+const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
   return (
     <div className="flex justify-evenly items-center flex-col md:flex-row">
       {/* left */}
       <div className="flex flex-col justify-center items-center md:items-start md:w-1/2">
-        <h1 className="text-2xl leading-tight tracking-wider">
+        <h1 className="ml-10 md:ml-0  text-2xl leading-tight tracking-wider">
           <span className="font-bold text-4xl text-indigo-900 mb-24">
             Hello!
           </span>
@@ -11,14 +12,16 @@ export default function Hero() {
             <br />
             I am Bernard,
             <br />a{" "}
-            <span className="underline underline-offset-2 decoration-4 decoration-pink-500">
+            <span className="underline underline-offset-2 decoration-8 decoration-lime-500">
               software developer
             </span>{" "}
           </span>
           in Vancouver
         </h1>
         <div className="flex justify-start mt-12 md:mt-6">
-          <button className="btn btn-primary mr-2">CONTACT ME</button>
+          <button onClick={scrollContact} className="btn btn-primary mr-2">
+            CONTACT ME
+          </button>
           <a
             href="/resume.pdf"
             // target="_blank" rel="noreferrer"
@@ -37,4 +40,6 @@ export default function Hero() {
       />
     </div>
   );
-}
+};
+
+export default Hero;

@@ -1,11 +1,15 @@
-// https://jama-ai.medium.com/next-js-typescript-netlify-forms-the-no-redirect-version-d9bf859502cd
-import React, { useState } from "react";
+import React, { useState, FC } from "react";
 interface FormPost {
   Name?: string;
   Email?: string;
   Message?: string;
 }
-export default function Contact() {
+interface RefObject<T> {
+  readonly current: T | null;
+}
+const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
+  contactRef,
+}) => {
   const encode = (data: any) => {
     return Object.keys(data)
       .map(
@@ -53,8 +57,11 @@ export default function Contact() {
               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
             />
           </svg>
-          <h2 className="self-start text-lg font-bold text-indigo-900">
-            Contact Me
+          <h2
+            ref={contactRef}
+            className="self-start text-lg font-bold text-indigo-900"
+          >
+            Work With Me
           </h2>
         </span>
       )}
@@ -108,4 +115,6 @@ export default function Contact() {
       )}
     </div>
   );
-}
+};
+
+export default Contact;

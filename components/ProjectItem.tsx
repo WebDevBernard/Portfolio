@@ -24,17 +24,6 @@ const ProjectItem: FC<ProjectProps> = (props) => {
           {props.description}
         </p>
         <footer className=" flex justify-between border-t border-slate-600 pt-4 mt-8">
-          {props.link && (
-            <button className="btn btn-secondary mr-2">
-              <a href={props.link} target="_blank" rel="noreferrer">
-                <i
-                  className="devicon-react-original mr-2"
-                  title="website link icon"
-                />
-                Demo
-              </a>
-            </button>
-          )}
           {props.github && (
             <button className="btn btn-secondary">
               <a href={props.github} target="_blank" rel="noreferrer">
@@ -43,6 +32,17 @@ const ProjectItem: FC<ProjectProps> = (props) => {
                   title="github link icon"
                 />
                 GitHub
+              </a>
+            </button>
+          )}
+          {props.link && (
+            <button className="btn btn-secondary mr-2">
+              <a href={props.link} target="_blank" rel="noreferrer">
+                <i
+                  className="devicon-react-original mr-2"
+                  title="website link icon"
+                />
+                Demo
               </a>
             </button>
           )}
