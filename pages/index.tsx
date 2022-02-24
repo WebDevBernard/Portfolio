@@ -21,10 +21,6 @@ const Home: NextPage = () => {
           content="Hi there, I am Bernard Yang, a software developer in Vancouver"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-        ></link>
       </Head>
       <body className="bg-hero-pattern bg-cover font-body selection:bg-[#c7d2fe]">
         <Header />
