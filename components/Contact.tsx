@@ -34,18 +34,11 @@ export default function Contact() {
             Don’t fill this out if you’re human: <input name="bot-field" />
           </label>
         </p>
-        <p>
-          <input
-            className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
-            autoComplete="off"
-            placeholder="Name*"
-            name="name"
-            required
-          />
+        <p className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900">
+          <input autoComplete="off" placeholder="Name*" name="name" required />
         </p>
-        <p>
+        <p className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900">
           <input
-            className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
             autoComplete="off"
             type="email"
             name="email"
@@ -53,9 +46,8 @@ export default function Contact() {
             required
           />
         </p>
-        <p>
+        <p className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900">
           <textarea
-            className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
             autoComplete="off"
             name="message"
             placeholder="Message*"
