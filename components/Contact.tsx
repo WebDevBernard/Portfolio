@@ -1,6 +1,42 @@
+import { encode } from "punycode";
+import React, { useState } from "react";
+interface FormPost {
+  Name?: string;
+  Email?: string;
+  Message?: string;
+}
 export default function Contact() {
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+  const [state, setState] = useState<FormPost>();
+  const [submitted, setSubmitted] = useState(false);
+
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...state }),
+    })
+      .then(() => console.log("Success!"))
+      .catch((error) => console.log(error));
+    event.preventDefault();
+    setSubmitted(true);
+  };
+
+  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+    setState({
+      ...state,
+      [e.currentTarget.id]: e.currentTarget.value,
+    });
+  };
+
   return (
-    <div className="mx-auto flex flex-col  md:w-4/5">
+    <div className="space-y-6 mx-auto flex flex-col  md:w-4/5">
       <span className="col-span-2 flex self-start items-center space-x-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -20,42 +56,48 @@ export default function Contact() {
           Contact Me
         </h2>
       </span>
-      <form
-        className="mx-auto w-full flex flex-col space-y-4 md:items-center"
-        method="POST"
-        data-netlify="true"
-      >
-        <input
-          className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
-          autoComplete="off"
-          placeholder="Name*"
-          name="name"
-          required
-        />
-        <input
-          className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
-          autoComplete="off"
-          type="email"
-          name="email"
-          placeholder="Email*"
-          required
-        />
-        <textarea
-          className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
-          autoComplete="off"
-          name="message"
-          placeholder="Message*"
-          rows={5}
-          required
-        ></textarea>
-
-        <button
-          className="btn btn-primary inline-block self-end uppercase mt-4"
-          type="submit"
+      {!submitted && (
+        <form
+          className="mx-auto w-full flex flex-col space-y-4 md:items-center"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit={onSubmit}
         >
-          Submit
-        </button>
-      </form>{" "}
+          <input type="hidden" name="form-name" value="contact" />
+          <input
+            className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
+            autoComplete="off"
+            placeholder="Name*"
+            name="name"
+            required
+          />
+          <input
+            className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
+            autoComplete="off"
+            type="email"
+            name="email"
+            placeholder="Email*"
+            required
+          />
+          <textarea
+            className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
+            autoComplete="off"
+            name="message"
+            placeholder="Message*"
+            rows={5}
+            required
+          ></textarea>
+
+          <button
+            className="btn btn-primary inline-block self-end uppercase mt-4"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      )}
+      {submitted && <h5>Thanks for submitting, I will contact you shortly.</h5>}
     </div>
   );
 }
