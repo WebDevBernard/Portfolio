@@ -18,12 +18,12 @@ const ProjectItem: FC<ProjectProps> = (props) => {
         alt="project image"
       />
 
-      <div className="p-4 flex flex-col">
+      <div className="p-4">
         <h1 className=" text-lg font-bold text-indigo-900 ">{props.title}</h1>
-        <p className=" text-gray-600 leading-tight mb-auto flex-grow">
+        <p className=" text-gray-600 leading-tight  mt-2">
           {props.description}
-        </p>{" "}
-        <footer className=" flex justify-between border-t border-slate-600 mt-2 pt-4">
+        </p>
+        <footer className=" flex justify-between border-t border-slate-600 pt-4 mt-8">
           {props.link && (
             <button className="btn btn-secondary mr-2">
               <a href={props.link} target="_blank" rel="noreferrer">
