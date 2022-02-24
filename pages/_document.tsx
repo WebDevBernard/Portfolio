@@ -11,10 +11,7 @@ export default function Document() {
         />
         <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
       </Head>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap"
-        rel="stylesheet"
-      />
+      <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
       <body>
         <Main />
         <NextScript />
