@@ -1,8 +1,9 @@
+import Image from "next/image";
 export default function Header() {
   return (
     <div className="md:max-w-lg m-auto p-4 flex flex-row text-indigo-900 font-bold justify-between">
       <div>
-        <img
+        <Image
           className="object-scale-down h-16 inline mr-2 border-4 border-indigo-900 rounded-full cursor-pointer"
           src="https://avatars.githubusercontent.com/u/72034695?v=4"
           alt="profile image"

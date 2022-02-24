@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Hero() {
   return (
     <div className="flex justify-evenly items-center flex-col md:flex-row">
@@ -28,7 +29,7 @@ export default function Hero() {
         </div>
         {/* right */}
       </div>
-      <img
+      <Image
         className="h-[360px] md:h-[420px] mt-16 md:object-contain"
         src={
           "https://raw.githubusercontent.com/WebDevBernard/Portfolio/48b9f22660231fc9dfa6e2c7f20f00a91a0998af/docs/programming-animate.svg"
