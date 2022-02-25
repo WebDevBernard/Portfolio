@@ -61,7 +61,7 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
             ref={contactRef}
             className="self-start text-lg font-bold text-indigo-900"
           >
-            Contact Me
+            Send Me a Message
           </h2>
         </span>
       )}
