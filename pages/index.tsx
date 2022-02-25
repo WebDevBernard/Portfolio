@@ -17,15 +17,15 @@ const Home: NextPage = () => {
 
   const scrollProjects = () => {
     projectsRef.current!.scrollIntoView({
-      block: "center",
+      block: "start",
       behavior: "smooth",
     });
   };
   const scrollContact = () => {
-    contactRef.current!.scrollIntoView({ block: "center", behavior: "smooth" });
+    contactRef.current!.scrollIntoView({ block: "start", behavior: "smooth" });
   };
   const scrollAbout = () => {
-    aboutRef.current!.scrollIntoView({ block: "center", behavior: "smooth" });
+    aboutRef.current!.scrollIntoView({ block: "start", behavior: "smooth" });
   };
   return (
     <>
