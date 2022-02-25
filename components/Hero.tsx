@@ -11,11 +11,8 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
           <span className="whitespace-nowrap">
             <br />
             I am Bernard,
-            <br />a{" "}
-            <span className="underline underline-offset-2 decoration-8 decoration-lime-500">
-              software developer
-            </span>{" "}
-            in Vancouver{" "}
+            <br />a <span className="highlight ">software developer</span> in
+            Vancouver{" "}
           </span>
         </h1>
         <div className="flex justify-start mt-12 md:mt-6">

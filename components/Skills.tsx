@@ -2,12 +2,12 @@ import { skillsData } from "../data/skills-data";
 
 const Skills = () => {
   return (
-    <div className="flex justify-center items-center border-t border-b border-slate-600 py-8">
-      <div className=" no-scrollbar flex overflow-x-auto text-xl font-bold text-indigo-900">
+    <div className="flex justify-start md:justify-center items-center border-t border-b border-slate-600 ">
+      <div className="flex no-scrollbar overflow-x-scroll text-xl font-bold text-indigo-900 py-8">
         {skillsData.map((skill: any) => {
           return (
             <li
-              className="list-none px-3 flex justify-center items-center"
+              className="list-none px-3 flex justify-center items-center "
               key={skill.id}
             >
               <i className={`mr-2 ${skill.icon}`} title="dev icon" />
