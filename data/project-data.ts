@@ -14,7 +14,7 @@ export const projects: Projects[] = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/raiderio.png",
     description:
-      "An app that displays player count in World of Warcraft Mythic+ dungeons using automation with AWS.",
+      "An app that displays a graph of player count in World of Warcraft Mythic+ dungeons. It uses automation with AWS Lambda/Eventbridge to call Raider.io API.",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicplus.vercel.app/",
   },
@@ -44,7 +44,7 @@ export const projects: Projects[] = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/smart-to-do.png",
     description:
-      "A smart to-do list that auto-organize tasks into a things to buy / eat / watch / read category.",
+      "A smart to-do list that uses API calls to auto-organize tasks into a things to buy / eat / watch / read category.",
     github: "https://github.com/WebDevBernard/smart-to-do",
     link: "",
   },

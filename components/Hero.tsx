@@ -11,7 +11,7 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
           <span>
             <br />
             I am Bernard,
-            <br />a <span className="highlight ">software developer</span> in
+            <br />a <span className="highlight ">software engineer</span> in
             Vancouver{" "}
           </span>
         </h1>

@@ -32,7 +32,10 @@ const About: FC<{ aboutRef: RefObject<HTMLHeadingElement> }> = ({
       </span>
       <div>
         <div className="bg-[#E1E3EA] shadow-xl rounded-lg overflow-hidden">
-          <p className="inline-block p-4 text-lg">{aboutData}</p>
+          <p className="p-4 text-lg">{aboutData[0]}</p>
+          <p className="p-4 text-lg">{aboutData[1]}</p>
+          <p className="p-4 text-lg">{aboutData[2]}</p>
+          <p className="p-4 text-lg">{aboutData[3]}</p>
         </div>
       </div>
     </div>
