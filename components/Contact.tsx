@@ -109,8 +109,8 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
         </form>
       )}
       {submitted && (
-        <p className="self-center text-lg font-bold text-indigo-900">
-          Thanks for submitting, I will contact you shortly.
+        <p className="motion-safe:animate-bounce  self-center text-lg font-bold text-indigo-900">
+          Thank you for submitting, I will contact you shortly!
         </p>
       )}
     </div>

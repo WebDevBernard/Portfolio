@@ -21,6 +21,13 @@ const Header: FC<Props> = ({ scrollAbout, scrollContact, scrollProjects }) => {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="py-10 md:py-0">
       <nav
@@ -32,7 +39,8 @@ const Header: FC<Props> = ({ scrollAbout, scrollContact, scrollProjects }) => {
       >
         <div>
           <img
-            className="object-scale-down h-16 inline mr-2 border-4 border-indigo-900 rounded-full"
+            onClick={scrollToTop}
+            className="object-scale-down h-16 inline mr-2 border-4 border-indigo-900 rounded-full cursor-pointer select-none"
             src="https://avatars.githubusercontent.com/u/72034695?v=4"
             alt="profile image"
           />

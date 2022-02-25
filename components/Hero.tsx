@@ -4,29 +4,29 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
     <div className="flex justify-evenly items-center flex-col md:flex-row">
       {/* left */}
       <div className="flex flex-col justify-center items-center md:items-start md:w-1/2">
-        <h1 className="ml-10 md:ml-0  text-2xl leading-tight tracking-wider">
+        <h1 className="ml-1 md:ml-0  text-2xl leading-tight tracking-wider">
           <span className="font-bold text-4xl text-indigo-900 mb-24">
             Hello!
           </span>
-          <span>
+          <span className="whitespace-nowrap">
             <br />
             I am Bernard,
             <br />a{" "}
             <span className="underline underline-offset-2 decoration-8 decoration-lime-500">
               software developer
             </span>{" "}
+            in Vancouver{" "}
           </span>
-          in Vancouver
         </h1>
         <div className="flex justify-start mt-12 md:mt-6">
           <button onClick={scrollContact} className="btn btn-primary mr-2">
-            CONTACT ME
+            Work With Me
           </button>
           <a
             href="/resume.pdf"
             // target="_blank" rel="noreferrer"
           >
-            <button className="btn btn-primary">VIEW RESUME</button>
+            <button className="btn btn-primary">View Resume</button>
           </a>
         </div>
         {/* right */}

@@ -2,8 +2,8 @@ import { skillsData } from "../data/skills-data";
 
 const Skills = () => {
   return (
-    <div className="relative overflow-hidden flex justify-center items-center border-t border-b border-slate-600 py-8">
-      <div className="no-scrollbar flex overflow-x-auto text-xl font-bold text-indigo-900">
+    <div className="flex justify-center items-center border-t border-b border-slate-600 py-8">
+      <div className=" no-scrollbar flex overflow-x-auto text-xl font-bold text-indigo-900">
         {skillsData.map((skill: any) => {
           return (
             <li
