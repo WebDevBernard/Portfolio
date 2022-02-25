@@ -9,21 +9,24 @@ interface ProjectProps {
 const ProjectItem: FC<ProjectProps> = (props) => {
   return (
     <div
-      className=" bg-indigo-50
-     rounded-lg shadow-xl overflow-hidden"
+      className="flex flex-col justify-between bg-indigo-50
+     rounded-lg shadow-xl overflow-hidden "
     >
-      <img
-        className="w-full h-[10rem] object-cover "
-        src={props.image}
-        alt="project image"
-      />
-
-      <div className="p-4">
-        <h1 className=" text-lg font-bold text-indigo-900 ">{props.title}</h1>
-        <p className=" text-gray-600 leading-tight  mt-2">
-          {props.description}
-        </p>
-        <footer className=" flex justify-between border-t border-slate-600 pt-4 mt-8">
+      <div>
+        <img
+          className="w-full h-[10rem] object-cover "
+          src={props.image}
+          alt="project image"
+        />
+        <div className="p-4">
+          <h1 className=" text-lg font-bold text-indigo-900 ">{props.title}</h1>
+          <p className=" text-gray-600 leading-tight  mt-2">
+            {props.description}
+          </p>
+        </div>
+      </div>
+      <div className="px-4">
+        <footer className=" flex justify-between border-t border-slate-600 py-4">
           {props.github && (
             <button className="btn btn-secondary">
               <a href={props.github} target="_blank" rel="noreferrer">

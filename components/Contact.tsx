@@ -61,7 +61,7 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
             ref={contactRef}
             className="self-start text-lg font-bold text-indigo-900"
           >
-            Work With Me
+            Contact Me
           </h2>
         </span>
       )}
@@ -109,8 +109,11 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
         </form>
       )}
       {submitted && (
-        <p className="motion-safe:animate-bounce  self-center text-lg font-bold text-indigo-900">
-          Thank you for submitting, I will contact you shortly!
+        <p className="motion-safe:animate-bounce p-4 rounded-full self-center text-lg font-bold text-indigo-900">
+          <span className="underline decoration-4 underline-offset-8">
+            Thank you
+          </span>{" "}
+          for submitting, I will reply shortly!
         </p>
       )}
     </div>
