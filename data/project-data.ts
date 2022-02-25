@@ -24,7 +24,7 @@ export const projects: Projects[] = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/twitter.png",
     description:
-      "A simple Twitter-like React app with Firebase authentication.",
+      "A simple Twitter-like React app with Firebase authentication.  Users can tweet, like, comment on other tweets.",
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitterreact.vercel.app/",
   },

@@ -5,5 +5,5 @@ export const aboutData: string[] = [
 
   "After bootcamp, I wanted to invest more time learning React and frontend development in general.  I have since made a few apps and would welcome any feedback on how my code could improve.",
 
-  "Lets connect! Email me at ybernard@gmail.com, or message me on Linkedin.",
+  "Lets connect!  Email me at ybernard@gmail.com, or message me on Linkedin.",
 ];
