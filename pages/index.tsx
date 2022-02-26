@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         <meta name="keywords" content="Bernard Yang" />
         <meta
           name="description"
-          content="Hi there, I am Bernard Yang, a software developer in Vancouver"
+          content="Hi there, I am Bernard Yang, a software engineer in Vancouver."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>

@@ -4,15 +4,15 @@ const Skills = () => {
   return (
     <div className="flex justify-start md:justify-center items-center border-t border-b border-slate-600 ">
       <div className="flex no-scrollbar overflow-x-scroll text-xl font-bold text-indigo-900 py-8">
-        {skillsData.map((skill: any) => {
+        {skillsData.map((skill: { id: string; icon: string; name: string }) => {
           return (
-            <li
-              className="list-none px-3 flex justify-center items-center "
+            <div
               key={skill.id}
+              className="list-none px-3 flex justify-center items-center "
             >
               <i className={`mr-2 ${skill.icon}`} title="dev icon" />
               <label>{skill.name}</label>
-            </li>
+            </div>
           );
         })}
       </div>
