@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 interface ProjectProps {
   title: string;
@@ -28,26 +29,30 @@ const ProjectItem: FC<ProjectProps> = (props) => {
       <div className="px-4">
         <footer className=" flex justify-between border-t border-slate-600 py-4">
           {props.github && (
-            <button className="btn btn-secondary">
-              <a href={props.github} target="_blank" rel="noreferrer">
-                <i
-                  className="devicon-github-original mr-2"
-                  title="github link icon"
-                />
-                GitHub
+            <Link href={props.github} passHref>
+              <a target="_blank" rel="noreferrer">
+                <div className="btn btn-secondary">
+                  <i
+                    className="devicon-github-original mr-2"
+                    title="github link icon"
+                  />
+                  GitHub
+                </div>
               </a>
-            </button>
+            </Link>
           )}
           {props.link && (
-            <button className="btn btn-secondary mr-2">
-              <a href={props.link} target="_blank" rel="noreferrer">
-                <i
-                  className="devicon-react-original mr-2"
-                  title="website link icon"
-                />
-                Demo
+            <Link href={props.link} passHref>
+              <a target="_blank" rel="noreferrer">
+                <div className="btn btn-secondary mr-2">
+                  <i
+                    className="devicon-react-original mr-2"
+                    title="website link icon"
+                  />
+                  Demo
+                </div>{" "}
               </a>
-            </button>
+            </Link>
           )}
         </footer>
       </div>
