@@ -6,7 +6,7 @@ import useScroll from "../hooks/useScroll";
 const Skills = () => {
   const [ref, controls] = useScroll();
   return (
-    <div className="flex justify-start md:justify-center items-center border-t border-b border-slate-400">
+    <div className="hidden md:flex justify-start md:justify-center items-center border-t border-b border-slate-400">
       <div className="flex no-scrollbar overflow-x-scroll text-xl font-bold text-indigo-900 py-8 ">
         {skillsData.map((skill: { id: string; icon: string; name: string }) => {
           return (
