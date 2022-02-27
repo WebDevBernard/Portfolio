@@ -31,7 +31,7 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
       x: 0,
       opacity: 1,
       transition: {
-        delay: 0.2,
+        delay: 0.6,
       },
     },
   };
