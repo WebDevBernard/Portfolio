@@ -13,7 +13,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
   return (
     <motion.div
       className="flex flex-col justify-between bg-indigo-50
-     rounded-lg shadow-xl overflow-hidden "
+     rounded-md shadow-lg overflow-hidden "
     >
       <div>
         <img
@@ -29,7 +29,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
         </div>
       </div>
       <div className="px-4">
-        <footer className=" flex justify-between border-t border-slate-600 py-4">
+        <footer className=" flex justify-between border-t border-slate-400 py-4">
           {props.github && (
             <Link href={props.github} passHref>
               <a target="_blank" rel="noreferrer">

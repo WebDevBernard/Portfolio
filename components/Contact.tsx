@@ -32,7 +32,9 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
     setSubmitted(true);
   };
 
-  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: React.FormEvent<HTMLInputElement> | React.FormEvent<HTMLTextAreaElement>
+  ) => {
     setState({
       ...state,
       [e.currentTarget.name]: e.currentTarget.value,
@@ -91,14 +93,15 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
             required
             onChange={handleChange}
           />
-          <input
+          <textarea
             className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
             autoComplete="off"
             name="message"
             placeholder="Enter your message"
             required
             onChange={handleChange}
-          ></input>
+            rows={5}
+          ></textarea>
 
           <button
             className="btn btn-primary inline-block self-end uppercase mt-4"

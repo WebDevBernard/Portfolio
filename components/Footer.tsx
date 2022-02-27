@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center justify-between border-t border-slate-600 p-4 md:flex-row">
+    <div className="flex flex-col items-center justify-between border-t border-slate-400 p-4 md:flex-row">
       <div className="flex flex-row text-xs divide-x divide-slate-600">
         <p className="pr-6">Built with Next.js and Tailwind CSS</p>
         <a

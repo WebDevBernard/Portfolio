@@ -31,7 +31,7 @@ const About: FC<{ aboutRef: RefObject<HTMLHeadingElement> }> = ({
         </h2>
       </span>
       <div>
-        <div className="bg-[#E1E3EA] shadow-xl rounded-lg overflow-hidden">
+        <div className="bg-[#E1E3EA] shadow-lg rounded-md overflow-hidden">
           <p className="p-4 text-lg">{aboutData[0]}</p>
           <p className="p-4 text-lg">{aboutData[1]}</p>
           <p className="p-4 text-lg">{aboutData[2]}</p>
