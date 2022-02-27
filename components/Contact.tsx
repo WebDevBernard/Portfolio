@@ -1,4 +1,4 @@
-import React, { useState, FC } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { skillsUpAnimation } from "../styles/variants";
 import useScroll from "../hooks/useScroll";
@@ -7,12 +7,8 @@ interface FormPost {
   Email?: string;
   Message?: string;
 }
-interface RefObject<T> {
-  readonly current: T | null;
-}
-const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
-  contactRef,
-}) => {
+
+const Contact = () => {
   const encode = (data: any) => {
     return Object.keys(data)
       .map(
@@ -62,10 +58,7 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
             />
           </svg>
-          <h2
-            ref={contactRef}
-            className="self-start text-lg font-bold text-indigo-900"
-          >
+          <h2 className="self-start text-lg font-bold text-indigo-900">
             Send Me a Message
           </h2>
         </span>

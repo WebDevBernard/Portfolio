@@ -1,6 +1,15 @@
-export default function Footer() {
+import { FC } from "react";
+interface RefObject<T> {
+  readonly current: T | null;
+}
+const Footer: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
+  contactRef,
+}) => {
   return (
-    <div className="flex flex-col items-center justify-between border-t border-slate-400 p-4 md:flex-row">
+    <div
+      ref={contactRef}
+      className="flex flex-col items-center justify-between border-t border-slate-400 p-4 md:flex-row"
+    >
       <div className="flex flex-row text-xs divide-x divide-slate-600">
         <p className="pr-6">Built with Next.js and Tailwind CSS</p>
         <a
@@ -46,4 +55,6 @@ export default function Footer() {
       </div>
     </div>
   );
-}
+};
+
+export default Footer;

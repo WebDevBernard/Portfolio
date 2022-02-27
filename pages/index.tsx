@@ -13,7 +13,7 @@ import Skills from "../components/Skills";
 const Home: NextPage = () => {
   const projectsRef = useRef<HTMLHeadingElement>(null);
   const aboutRef = useRef<HTMLHeadingElement>(null);
-  const contactRef = useRef<HTMLHeadingElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
 
   const scrollProjects = () => {
     projectsRef.current!.scrollIntoView({
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
     });
   };
   const scrollContact = () => {
-    contactRef.current!.scrollIntoView({ block: "start", behavior: "smooth" });
+    contactRef.current!.scrollIntoView({ block: "end", behavior: "smooth" });
   };
   const scrollAbout = () => {
     aboutRef.current!.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -50,8 +50,8 @@ const Home: NextPage = () => {
           <ProjectList projectsRef={projectsRef} />
           <About aboutRef={aboutRef} />
           <Skills />
-          <Contact contactRef={contactRef} />
-          <Footer />
+          <Contact />
+          <Footer contactRef={contactRef} />
         </Layout>
       </main>
     </>

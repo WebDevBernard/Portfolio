@@ -1,4 +1,5 @@
 import { useState, useEffect, FC } from "react";
+
 interface Props {
   scrollAbout: () => void;
   scrollContact: () => void;
