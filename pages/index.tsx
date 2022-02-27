@@ -47,13 +47,11 @@ const Home: NextPage = () => {
         />
         <Layout>
           <Hero scrollContact={scrollContact} />
-          <section className="space-y-20">
-            <ProjectList projectsRef={projectsRef} />
-            <About aboutRef={aboutRef} />
-            <Skills />
-            <Contact contactRef={contactRef} />
-            <Footer />
-          </section>
+          <ProjectList projectsRef={projectsRef} />
+          <About aboutRef={aboutRef} />
+          <Skills />
+          <Contact contactRef={contactRef} />
+          <Footer />
         </Layout>
       </main>
     </>
