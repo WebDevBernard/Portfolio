@@ -37,7 +37,7 @@ const Header: FC<Props> = ({ scrollAbout, scrollContact, scrollProjects }) => {
       <nav
         className={
           showHeader
-            ? "transition duration-1000  md:max-w-[868px] md:rounded-2xl bg-indigo-100 opacity-95 md:top-3 inset-x-0 " +
+            ? "z-50 transition duration-1000  md:max-w-[868px] md:rounded-2xl bg-indigo-100 opacity-95 md:top-3 inset-x-0 " +
               tailwindStyle
             : tailwindStyle
         }
