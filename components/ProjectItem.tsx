@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+
 import { FC } from "react";
 interface ProjectProps {
   title: string;
@@ -11,7 +12,7 @@ interface ProjectProps {
 
 const ProjectItem: FC<ProjectProps> = (props) => {
   return (
-    <motion.div
+    <div
       className="flex flex-col justify-between bg-indigo-50
      rounded-md shadow-lg overflow-hidden "
     >
@@ -58,7 +59,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
           )}
         </footer>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

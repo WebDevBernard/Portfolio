@@ -29,7 +29,7 @@ const Header: FC<Props> = ({ scrollAbout, scrollContact, scrollProjects }) => {
   };
 
   const tailwindStyle =
-    "max-w-lg m-auto px-4 py-2 flex flex-row text-indigo-900 font-bold justify-between fixed top-0 inset-x-1";
+    " max-w-lg m-auto px-4 py-2 flex flex-row text-indigo-900 font-bold justify-between fixed top-0 inset-x-1";
 
   return (
     <div className="py-10 md:py-0">

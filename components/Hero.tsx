@@ -1,6 +1,6 @@
 import { useRef, FC } from "react";
 import { motion } from "framer-motion";
-import { heroBottomAnimation, heroTopAnimation } from "../styles/animation";
+import { heroBottomAnimation, heroTopAnimation } from "../styles/variants";
 import useScroll from "../hooks/useScroll";
 
 const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
@@ -9,7 +9,7 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
   return (
     <div className="flex justify-evenly items-center flex-col md:flex-row">
       {/* left */}
-      <div className="w-full flex flex-col justify-center items-center md:items-start md:w-1/2 md:h-screen">
+      <div className="w-full flex flex-col justify-center items-center md:items-start md:w-1/2">
         <h1 className="ml-8 md:ml-0  text-2xl leading-tight tracking-wider">
           <motion.div
             ref={ref}
@@ -54,7 +54,7 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
       </div>
 
       <img
-        className="h-[360px] md:h-[450px] mt-16 md:object-contain"
+        className="h-[360px] md:h-[420px] mt-16 md:object-contain"
         src={
           "https://raw.githubusercontent.com/WebDevBernard/Portfolio/48b9f22660231fc9dfa6e2c7f20f00a91a0998af/docs/programming-animate.svg"
         }

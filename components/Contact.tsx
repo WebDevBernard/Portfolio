@@ -1,4 +1,7 @@
 import React, { useState, FC } from "react";
+import { motion } from "framer-motion";
+import { skillsUpAnimation } from "../styles/variants";
+import useScroll from "../hooks/useScroll";
 interface FormPost {
   Name?: string;
   Email?: string;
@@ -40,7 +43,7 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
       [e.currentTarget.name]: e.currentTarget.value,
     });
   };
-
+  const [ref, controls] = useScroll();
   return (
     <div className="space-y-6 mx-auto flex flex-col  md:w-4/5">
       {!submitted && (
@@ -112,9 +115,14 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
         </form>
       )}
       {submitted && (
-        <p className="motion-safe:animate-bounce p-4 rounded-full self-center text-lg font-bold text-indigo-900 underline decoration-4 underline-offset-8">
+        <motion.div
+          ref={ref}
+          animate={controls}
+          variants={skillsUpAnimation}
+          className=" p-4 rounded-full self-center text-lg font-bold text-indigo-900 underline decoration-4 underline-offset-8"
+        >
           Thank you! I will reply to you shortly.
-        </p>
+        </motion.div>
       )}
     </div>
   );
