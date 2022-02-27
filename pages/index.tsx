@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <div className="bg-hero-pattern bg-cover font-body selection:bg-[#c7d2fe]">
+      <main className="bg-hero-pattern bg-cover font-body selection:bg-[#c7d2fe]">
         <Header
           scrollAbout={scrollAbout}
           scrollContact={scrollContact}
@@ -47,13 +47,15 @@ const Home: NextPage = () => {
         />
         <Layout>
           <Hero scrollContact={scrollContact} />
-          <ProjectList projectsRef={projectsRef} />
-          <About aboutRef={aboutRef} />
-          <Skills />
-          <Contact contactRef={contactRef} />
-          <Footer />
+          <section className="space-y-20">
+            <ProjectList projectsRef={projectsRef} />
+            <About aboutRef={aboutRef} />
+            <Skills />
+            <Contact contactRef={contactRef} />
+            <Footer />
+          </section>
         </Layout>
-      </div>
+      </main>
     </>
   );
 };

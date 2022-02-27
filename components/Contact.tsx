@@ -77,7 +77,7 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
           <input
             className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
             autoComplete="off"
-            placeholder="Name*"
+            placeholder="Enter your first name"
             name="name"
             required
             onChange={handleChange}
@@ -87,7 +87,7 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
             autoComplete="off"
             type="email"
             name="email"
-            placeholder="Email*"
+            placeholder="Enter your email address"
             required
             onChange={handleChange}
           />
@@ -95,7 +95,7 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
             className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
             autoComplete="off"
             name="message"
-            placeholder="Message*"
+            placeholder="Enter your message"
             required
             onChange={handleChange}
           ></input>
@@ -109,11 +109,8 @@ const Contact: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
         </form>
       )}
       {submitted && (
-        <p className="motion-safe:animate-bounce p-4 rounded-full self-center text-lg font-bold text-indigo-900">
-          <span className="underline decoration-4 underline-offset-8">
-            Thank you
-          </span>{" "}
-          for submitting, I will reply shortly!
+        <p className="motion-safe:animate-bounce p-4 rounded-full self-center text-lg font-bold text-indigo-900 underline decoration-4 underline-offset-8">
+          Thank you! I will reply to you shortly.
         </p>
       )}
     </div>
