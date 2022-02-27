@@ -1,9 +1,21 @@
-export const heroTextAnimation = {
+export const heroTopAnimation = {
   hidden: { x: -100, opacity: 0 },
-  show: { x: 1, opacity: 1 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.4,
+    },
+  },
 };
 
-export const heroImageAnimation = {
-  hidden: { scale: 2, opacity: 0 },
-  show: { scale: 1, opacity: 1 },
+export const heroBottomAnimation = {
+  hidden: { x: -150, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
 };

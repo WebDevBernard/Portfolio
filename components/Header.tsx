@@ -28,13 +28,17 @@ const Header: FC<Props> = ({ scrollAbout, scrollContact, scrollProjects }) => {
     });
   };
 
+  const tailwindStyle =
+    "max-w-lg m-auto px-4 py-2 flex flex-row text-indigo-900 font-bold justify-between fixed top-0 inset-x-1";
+
   return (
     <div className="py-10 md:py-0">
       <nav
         className={
           showHeader
-            ? "transition duration-1000 max-w-lg md:max-w-[868px] md:rounded-2xl bg-indigo-100 opacity-95 m-auto px-4 py-2 flex flex-row text-indigo-900 font-bold justify-between fixed top-0 md:top-3 inset-x-0"
-            : "max-w-lg m-auto px-4 py-2 flex flex-row text-indigo-900 font-bold justify-between fixed top-0 inset-x-1"
+            ? "transition duration-1000  md:max-w-[868px] md:rounded-2xl bg-indigo-100 opacity-95 md:top-3 inset-x-0 " +
+              tailwindStyle
+            : tailwindStyle
         }
       >
         <div>

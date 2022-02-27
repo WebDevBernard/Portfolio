@@ -1,10 +1,4 @@
-interface Skills {
-  id: string;
-  name: string;
-  icon: string;
-}
-
-export const skillsData: Skills[] = [
+export const skillsData = [
   {
     id: "m1",
     name: "Javascript",

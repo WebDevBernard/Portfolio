@@ -1,13 +1,4 @@
-interface Projects {
-  id: string;
-  title: string;
-  image: string;
-  description: string;
-  github: string;
-  link: string;
-}
-
-export const projects: Projects[] = [
+export const projects = [
   {
     id: "m1",
     title: "Mythic+ Player Count",
