@@ -36,7 +36,7 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
     },
   };
   return (
-    <div className="flex justify-evenly items-center flex-col md:flex-row md:h-screen">
+    <div className="flex justify-evenly items-center flex-col md:flex-row">
       {/* left */}
       <div className="w-full flex flex-col justify-center items-center md:items-start md:w-1/2">
         <h1 className="ml-8 md:ml-0  text-2xl leading-tight tracking-wider">
