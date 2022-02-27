@@ -1,18 +1,68 @@
-import { FC } from "react";
+import { useEffect, FC } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+
+  const heroLeftAnimation = {
+    hidden: { x: -100, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+      },
+    },
+  };
+
+  const heroRightAnimation = {
+    hidden: { x: 100, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+      },
+    },
+  };
   return (
     <div className="flex justify-evenly items-center flex-col md:flex-row md:h-screen">
       {/* left */}
       <div className="w-full flex flex-col justify-center items-center md:items-start md:w-1/2">
         <h1 className="ml-8 md:ml-0  text-2xl leading-tight tracking-wider">
-          <span className="font-bold text-4xl text-indigo-900 mb-24">
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={heroLeftAnimation}
+            className="font-bold text-4xl text-indigo-900  inline-block"
+          >
             Hello!
-          </span>
+          </motion.div>
           <span>
             <br />
             I am Bernard,
-            <br />a <span className="highlight ">software engineer</span> in
-            Vancouver{" "}
+            <br />a{" "}
+            <motion.div
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+              variants={heroRightAnimation}
+              className="highlight inline-block"
+            >
+              software engineer
+            </motion.div>{" "}
+            in Vancouver{" "}
           </span>
         </h1>
         <div className="flex justify-start mt-12 md:mt-6">
@@ -28,6 +78,7 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
         </div>
         {/* right */}
       </div>
+
       <img
         className="h-[360px] md:h-[420px] mt-16 md:object-contain"
         src={
