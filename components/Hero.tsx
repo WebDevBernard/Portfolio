@@ -8,7 +8,7 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
   const spanRef = useRef<HTMLSpanElement | null>(null);
   const [ref, controls] = useScroll();
   return (
-    <div className="flex flex-col justify-evenly md:h-screen">
+    <div className="flex flex-col justify-around md:h-screen">
       <div>
         <div className="flex justify-evenly items-center flex-col md:flex-row">
           {/* left */}
@@ -63,13 +63,14 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
               alt="programmer guy"
               layout="fill"
               objectFit="contain"
+              priority
             />
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="left-[50%] bottom-[5%] absolute">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="text-indigo-900 motion-safe:animate-bounce h-[40px] w-[40px]"
+            className="text-indigo-900 motion-safe:animate-bounce h-[40px] w-[40px] hidden md:flex"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
