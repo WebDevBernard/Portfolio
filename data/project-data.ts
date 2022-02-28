@@ -5,7 +5,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/WebDevBernard/Portfolio/main/docs/raiderio.png",
     description:
-      "An app that displays a graph of player count in World of Warcraft Mythic+ dungeons. Uses AWS Lambda/Eventbridge to automate calling a different API path depending on a given week.",
+      "An app that displays a graph of player count in World of Warcraft Mythic+ dungeons. Uses AWS Lambda / Eventbridge to automate calling a different API path depending on a given week.",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicplus.vercel.app/",
   },
