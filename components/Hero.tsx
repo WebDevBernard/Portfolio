@@ -9,9 +9,9 @@ interface RefObject<T> {
 }
 const Hero: FC<{
   scrollContact: () => void;
-  scrollArrow: () => void;
-  arrowRef: RefObject<HTMLDivElement>;
-}> = ({ scrollContact, scrollArrow, arrowRef }) => {
+  scrollProjects: () => void;
+  projectRef: RefObject<HTMLDivElement>;
+}> = ({ scrollContact, scrollProjects, projectRef }) => {
   const spanRef = useRef<HTMLSpanElement | null>(null);
   const [ref, controls] = useScroll();
   return (
@@ -76,8 +76,8 @@ const Hero: FC<{
         </div>
         <div
           className="left-[50%] bottom-[5%] absolute"
-          onClick={scrollArrow}
-          ref={arrowRef}
+          onClick={scrollProjects}
+          ref={projectRef}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

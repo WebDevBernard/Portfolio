@@ -11,19 +11,12 @@ import ProjectList from "../components/ProjectList";
 import Skills from "../components/Skills";
 
 const Home: NextPage = () => {
-  const projectsRef = useRef<HTMLHeadingElement>(null);
+  const projectRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLHeadingElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
-  const arrowRef = useRef<HTMLDivElement>(null);
 
-  const scrollArrow = () => {
-    arrowRef.current!.scrollIntoView({
-      block: "start",
-      behavior: "smooth",
-    });
-  };
   const scrollProjects = () => {
-    projectsRef.current!.scrollIntoView({
+    projectRef.current!.scrollIntoView({
       block: "start",
       behavior: "smooth",
     });
@@ -33,7 +26,7 @@ const Home: NextPage = () => {
     contactRef.current!.scrollIntoView({ block: "end", behavior: "smooth" });
   };
   const scrollAbout = () => {
-    aboutRef.current!.scrollIntoView({ block: "start", behavior: "smooth" });
+    aboutRef.current!.scrollIntoView({ block: "center", behavior: "smooth" });
   };
   return (
     <>
@@ -49,18 +42,17 @@ const Home: NextPage = () => {
       </Head>
       <main className="bg-hero-pattern bg-cover font-body selection:bg-[#c7d2fe]">
         <Header
+          scrollProjects={scrollProjects}
           scrollAbout={scrollAbout}
           scrollContact={scrollContact}
-          scrollProjects={scrollProjects}
         />
-
         <Hero
           scrollContact={scrollContact}
-          scrollArrow={scrollArrow}
-          arrowRef={arrowRef}
+          projectRef={projectRef}
+          scrollProjects={scrollProjects}
         />
         <Layout>
-          <ProjectList projectsRef={projectsRef} />
+          <ProjectList />
           <About aboutRef={aboutRef} />
           <Skills />
           <Contact />

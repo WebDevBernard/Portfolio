@@ -52,11 +52,11 @@ const Header: FC<Props> = ({ scrollAbout, scrollContact, scrollProjects }) => {
           <p className="text-lg hidden md:inline-block ml-2 ">Bernard</p>
         </div>
         <div className="flex items-center cursor-pointer">
-          <a onClick={scrollAbout} className="m-2">
-            About
-          </a>
           <a onClick={scrollProjects} className="m-2">
             Projects
+          </a>
+          <a onClick={scrollAbout} className="m-2">
+            About
           </a>
           <a onClick={scrollContact} className="m-2">
             Contact
