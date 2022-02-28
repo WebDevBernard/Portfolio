@@ -1,7 +1,11 @@
 import { useRef, FC } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { heroBottomAnimation, heroTopAnimation } from "../styles/variants";
+import {
+  heroBottomAnimation,
+  heroTopAnimation,
+  arrowAnimation,
+} from "../styles/variants";
 import useScroll from "../hooks/useScroll";
 
 interface RefObject<T> {
@@ -74,26 +78,33 @@ const Hero: FC<{
             />
           </div>
         </div>
-        <div
-          className="left-[50%] bottom-[5%] absolute"
-          onClick={scrollProjects}
-          ref={projectRef}
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={arrowAnimation}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="text-indigo-900 motion-safe:animate-bounce h-[40px] w-[40px] hidden lg:flex cursor-pointer"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+          <div
+            className="left-[50%] bottom-[5%] absolute"
+            onClick={scrollProjects}
+            ref={projectRef}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
-            />
-          </svg>
-        </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="text-indigo-900 motion-safe:animate-bounce h-[40px] w-[40px] hidden lg:flex cursor-pointer"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
