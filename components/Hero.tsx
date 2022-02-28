@@ -4,10 +4,14 @@ import { motion } from "framer-motion";
 import { heroBottomAnimation, heroTopAnimation } from "../styles/variants";
 import useScroll from "../hooks/useScroll";
 
-const Hero: FC<{ scrollContact: () => void; scrollProjects: () => void }> = ({
-  scrollContact,
-  scrollProjects,
-}) => {
+interface RefObject<T> {
+  readonly current: T | null;
+}
+const Hero: FC<{
+  scrollContact: () => void;
+  scrollArrow: () => void;
+  arrowRef: RefObject<HTMLDivElement>;
+}> = ({ scrollContact, scrollArrow, arrowRef }) => {
   const spanRef = useRef<HTMLSpanElement | null>(null);
   const [ref, controls] = useScroll();
   return (
@@ -72,7 +76,8 @@ const Hero: FC<{ scrollContact: () => void; scrollProjects: () => void }> = ({
         </div>
         <div
           className="left-[50%] bottom-[5%] absolute"
-          onClick={scrollProjects}
+          onClick={scrollArrow}
+          ref={arrowRef}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

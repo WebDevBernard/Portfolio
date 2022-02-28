@@ -14,7 +14,14 @@ const Home: NextPage = () => {
   const projectsRef = useRef<HTMLHeadingElement>(null);
   const aboutRef = useRef<HTMLHeadingElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+  const arrowRef = useRef<HTMLDivElement>(null);
 
+  const scrollArrow = () => {
+    arrowRef.current!.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+    });
+  };
   const scrollProjects = () => {
     projectsRef.current!.scrollIntoView({
       block: "start",
@@ -47,7 +54,11 @@ const Home: NextPage = () => {
           scrollProjects={scrollProjects}
         />
 
-        <Hero scrollContact={scrollContact} scrollProjects={scrollProjects} />
+        <Hero
+          scrollContact={scrollContact}
+          scrollArrow={scrollArrow}
+          arrowRef={arrowRef}
+        />
         <Layout>
           <ProjectList projectsRef={projectsRef} />
           <About aboutRef={aboutRef} />
