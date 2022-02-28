@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 import { heroBottomAnimation, heroTopAnimation } from "../styles/variants";
 import useScroll from "../hooks/useScroll";
 
-const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
+const Hero: FC<{ scrollContact: () => void; scrollProjects: () => void }> = ({
+  scrollContact,
+  scrollProjects,
+}) => {
   const spanRef = useRef<HTMLSpanElement | null>(null);
   const [ref, controls] = useScroll();
   return (
@@ -67,10 +70,13 @@ const Hero: FC<{ scrollContact: () => void }> = ({ scrollContact }) => {
             />
           </div>
         </div>
-        <div className="left-[50%] bottom-[5%] absolute">
+        <div
+          className="left-[50%] bottom-[5%] absolute"
+          onClick={scrollProjects}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="text-indigo-900 motion-safe:animate-bounce h-[40px] w-[40px] hidden md:flex"
+            className="text-indigo-900 motion-safe:animate-bounce h-[40px] w-[40px] hidden md:flex cursor-pointer"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

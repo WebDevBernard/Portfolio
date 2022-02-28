@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           scrollProjects={scrollProjects}
         />
         <Layout>
-          <Hero scrollContact={scrollContact} />
+          <Hero scrollContact={scrollContact} scrollProjects={scrollProjects} />
           <ProjectList projectsRef={projectsRef} />
           <About aboutRef={aboutRef} />
           <Skills />
