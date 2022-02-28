@@ -41,7 +41,7 @@ const Contact = () => {
   };
   const [ref, controls] = useScroll();
   return (
-    <div className="space-y-6 mx-auto flex flex-col  md:w-4/5">
+    <div className="space-y-4 mx-auto flex flex-col  md:w-4/5">
       {!submitted && (
         <span className="col-span-2 flex self-start items-center space-x-2">
           <svg

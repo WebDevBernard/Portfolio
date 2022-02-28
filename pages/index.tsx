@@ -21,6 +21,7 @@ const Home: NextPage = () => {
       behavior: "smooth",
     });
   };
+
   const scrollContact = () => {
     contactRef.current!.scrollIntoView({ block: "end", behavior: "smooth" });
   };
@@ -45,8 +46,9 @@ const Home: NextPage = () => {
           scrollContact={scrollContact}
           scrollProjects={scrollProjects}
         />
+
+        <Hero scrollContact={scrollContact} scrollProjects={scrollProjects} />
         <Layout>
-          <Hero scrollContact={scrollContact} scrollProjects={scrollProjects} />
           <ProjectList projectsRef={projectsRef} />
           <About aboutRef={aboutRef} />
           <Skills />
