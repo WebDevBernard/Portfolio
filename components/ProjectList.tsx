@@ -8,7 +8,7 @@ const Project: FC<{ projectRef: RefObject<HTMLDivElement> }> = ({
   projectRef,
 }) => {
   return (
-    <div className="nth-child-2:bg-blue-100 grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2">
+    <div className="nth-child-2:bg-indigo-50 grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2">
       <span className="md:col-span-2 flex self-start items-center space-x-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
