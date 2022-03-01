@@ -16,7 +16,7 @@ export const heroBottomAnimation = {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 3,
+      duration: 2,
     },
   },
 };
@@ -37,7 +37,7 @@ export const arrowAnimation = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 4,
+      delay: 2.5,
       duration: 1.5,
     },
   },

@@ -17,7 +17,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
     >
       <div>
         <img
-          className="w-full h-[10rem] object-cover "
+          className="w-full h-[10rem] object-cover"
           src={props.image}
           alt="project image"
         />
