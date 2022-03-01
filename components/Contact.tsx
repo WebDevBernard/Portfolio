@@ -59,7 +59,7 @@ const Contact = () => {
             />
           </svg>
           <h2 className="self-start text-lg font-bold text-indigo-900">
-            Send Me a Message
+            Message Me
           </h2>
         </span>
       )}
