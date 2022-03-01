@@ -23,7 +23,7 @@ const Hero: FC<{
       <div>
         <div className="flex justify-evenly items-center flex-col md:flex-row">
           {/* left */}
-          <div className="w-full flex flex-col justify-center items-center md:items-start md:w-1/2 ">
+          <div className="w-full flex flex-col justify-center items-center md:items-start md:w-1/2">
             <h1 className="ml-8 md:ml-0  text-2xl leading-tight tracking-wider">
               <motion.div
                 ref={ref}
@@ -66,9 +66,7 @@ const Hero: FC<{
             </div>
             {/* right */}
           </div>
-          <div
-            style={{ width: "360px", height: "420px", position: "relative" }}
-          >
+          <div className="md:w-[420px] mt-16 md:mt-0 md:h-[420px] relative w-[280px] h-[280px]">
             <Image
               src="/docs/programming-animate.svg"
               alt="programmer guy"

@@ -4,18 +4,19 @@ export const heroTopAnimation = {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      type: "spring",
+      duration: 2,
     },
   },
 };
 
 export const heroBottomAnimation = {
-  hidden: { x: -300, opacity: 0 },
+  hidden: { x: 300, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 2.5,
+      duration: 3,
     },
   },
 };
@@ -36,8 +37,8 @@ export const arrowAnimation = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 3,
-      duration: 2,
+      delay: 4,
+      duration: 1.5,
     },
   },
 };

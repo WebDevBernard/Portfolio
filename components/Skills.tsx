@@ -27,8 +27,7 @@ const Skills = () => {
         animationDuration={4000}
         disableButtonsControls
         disableDotsControls
-        innerWidth={768}
-        responsive={{ 0: { items: 3 } }}
+        responsive={{ 0: { items: 2 }, 768: { items: 5 } }}
         items={items}
       />
     </div>

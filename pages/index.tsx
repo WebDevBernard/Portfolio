@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Layout from "../components/Layout";
@@ -14,7 +14,15 @@ const Home: NextPage = () => {
   const projectRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLHeadingElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+  // https://www.joshwcomeau.com/react/the-perils-of-rehydration/
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
+  if (!hasMounted) {
+    return null;
+  }
   const scrollProjects = () => {
     projectRef.current!.scrollIntoView({
       block: "start",
@@ -40,7 +48,7 @@ const Home: NextPage = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className="bg-hero-pattern bg-cover font-body selection:bg-[#c7d2fe]">
+      <main className="bg-hero-pattern bg-cover font-body overflow-x-hidden selection:bg-[#c7d2fe]">
         <Header
           scrollProjects={scrollProjects}
           scrollAbout={scrollAbout}
