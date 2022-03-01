@@ -76,7 +76,7 @@ const Hero: FC<{
             />
           </div>
         </div>
-        <motion.div
+        {/* <motion.div
           ref={ref}
           initial="hidden"
           animate={controls}
@@ -101,7 +101,7 @@ const Hero: FC<{
               />
             </svg>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
