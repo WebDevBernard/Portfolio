@@ -90,7 +90,7 @@ const Contact = () => {
             onChange={handleChange}
           />
           <textarea
-            className="input"
+            className="input resize-none"
             autoComplete="off"
             name="message"
             placeholder="Enter your message"
