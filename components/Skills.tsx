@@ -1,28 +1,43 @@
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import { skillsData } from "../data/skills-data";
-import { motion } from "framer-motion";
-import { skillsUpAnimation } from "../styles/variants";
-import useScroll from "../hooks/useScroll";
+
+const responsive: any = {
+  0: {
+    items: 3,
+  },
+  768: {
+    items: 5,
+  },
+};
 
 const Skills = () => {
-  const [ref, controls] = useScroll();
+  const items = skillsData.map(
+    (skill: { id: string; icon: string; name: string }) => {
+      return (
+        <div
+          key={skill.id}
+          className="list-none flex justify-center items-center text-xl p-x-3 py-8 font-bold text-indigo-900"
+        >
+          <i className={`mr-2 ${skill.icon}`} title="dev icon" />
+          <span>{skill.name}</span>
+        </div>
+      );
+    }
+  );
+
   return (
-    <div className="hidden md:flex justify-start md:justify-center items-center border-t border-b border-slate-400">
-      <div className="flex no-scrollbar overflow-x-scroll text-xl font-bold text-indigo-900 py-8 ">
-        {skillsData.map((skill: { id: string; icon: string; name: string }) => {
-          return (
-            <motion.div
-              ref={ref}
-              animate={controls}
-              variants={skillsUpAnimation}
-              key={skill.id}
-              className="list-none px-3 flex justify-center items-center"
-            >
-              <i className={`mr-2 ${skill.icon}`} title="dev icon" />
-              <label>{skill.name}</label>
-            </motion.div>
-          );
-        })}
-      </div>
+    <div className="justify-start md:justify-center items-center border-t border-b border-slate-400">
+      <AliceCarousel
+        mouseTracking
+        infinite
+        autoPlay
+        animationDuration={4000}
+        disableButtonsControls
+        disableDotsControls
+        responsive={responsive}
+        items={items}
+      />
     </div>
   );
 };
