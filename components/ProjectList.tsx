@@ -1,7 +1,12 @@
+import { FC } from "react";
 import ProjectItem from "./ProjectItem";
 import { projects } from "../data/project-data";
-
-const Project = () => {
+interface RefObject<T> {
+  readonly current: T | null;
+}
+const Project: FC<{ projectRef: RefObject<HTMLDivElement> }> = ({
+  projectRef,
+}) => {
   return (
     <div className="nth-child-2:bg-blue-100 grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2">
       <span className="md:col-span-2 flex self-start items-center space-x-2">
@@ -19,7 +24,9 @@ const Project = () => {
             d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
           />
         </svg>
-        <h2 className="text-lg font-bold text-indigo-900">My Projects</h2>
+        <h2 ref={projectRef} className="text-lg font-bold text-indigo-900">
+          My Projects
+        </h2>
       </span>
       {projects.map((project) => {
         return (

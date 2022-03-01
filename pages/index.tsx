@@ -11,7 +11,7 @@ import ProjectList from "../components/ProjectList";
 import Skills from "../components/Skills";
 
 const Home: NextPage = () => {
-  const projectRef = useRef<HTMLDivElement>(null);
+  const projectRef = useRef<HTMLHeadingElement | HTMLDivElement>(null);
   const aboutRef = useRef<HTMLHeadingElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
   // https://www.joshwcomeau.com/react/the-perils-of-rehydration/
@@ -54,13 +54,9 @@ const Home: NextPage = () => {
           scrollAbout={scrollAbout}
           scrollContact={scrollContact}
         />
-        <Hero
-          scrollContact={scrollContact}
-          projectRef={projectRef}
-          scrollProjects={scrollProjects}
-        />
+        <Hero scrollContact={scrollContact} scrollProjects={scrollProjects} />
         <Layout>
-          <ProjectList />
+          <ProjectList projectRef={projectRef} />
           <About aboutRef={aboutRef} />
           <Skills />
           <Contact />

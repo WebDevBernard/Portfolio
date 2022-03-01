@@ -14,12 +14,11 @@ interface RefObject<T> {
 const Hero: FC<{
   scrollContact: () => void;
   scrollProjects: () => void;
-  projectRef: RefObject<HTMLDivElement>;
-}> = ({ scrollContact, scrollProjects, projectRef }) => {
+}> = ({ scrollContact, scrollProjects }) => {
   const spanRef = useRef<HTMLSpanElement | null>(null);
   const [ref, controls] = useScroll();
   return (
-    <div className="flex flex-col justify-around lg:h-screen md:max-w-lg m-auto sm:mt-0 md:mt-16 lg:mt-0 p-4">
+    <div className="flex flex-col justify-around md:max-w-lg m-auto sm:mt-0 md:mt-16 lg:mt-0 p-4">
       <div>
         <div className="flex justify-evenly items-center flex-col md:flex-row">
           {/* left */}
@@ -66,7 +65,7 @@ const Hero: FC<{
             </div>
             {/* right */}
           </div>
-          <div className="select-none md:w-[420px] mt-16 md:mt-0 md:h-[420px] relative w-[280px] h-[280px] bg-transparent">
+          <div className="select-none md:w-[420px] mt-16 md:h-[420px] relative w-[280px] h-[280px] bg-transparent">
             <Image
               className="indent-[100%] whitespace-nowrap overflow-hidden"
               src="/docs/programming-animate.svg"
@@ -86,7 +85,6 @@ const Hero: FC<{
           <div
             className="left-[50%] bottom-[5%] absolute"
             onClick={scrollProjects}
-            ref={projectRef}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
