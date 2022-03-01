@@ -19,7 +19,7 @@ const Hero: FC<{
   const spanRef = useRef<HTMLSpanElement | null>(null);
   const [ref, controls] = useScroll();
   return (
-    <div className="flex flex-col justify-around lg:h-screen md:max-w-lg m-auto p-4">
+    <div className="flex flex-col justify-around lg:h-screen md:max-w-lg m-auto sm:mt-0 md:mt-16 lg:mt-0 p-4">
       <div>
         <div className="flex justify-evenly items-center flex-col md:flex-row">
           {/* left */}
