@@ -22,7 +22,7 @@ export const projects = [
     title: "Make My Day",
     image: "/docs/kanban.png",
     description:
-      "A project management app and Kanban board for teams to manage projects and organize tasks.",
+      "A project management app and Kanban board for teams to manage projects and organize tasks.  Full-stack app: React frontend, Express backend and Postgres database",
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.vercel.app/",
   },
