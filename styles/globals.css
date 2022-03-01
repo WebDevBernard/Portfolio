@@ -20,6 +20,10 @@
   @apply scale-95 shadow-sm;
 }
 
+.input {
+  @apply w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900;
+}
+
 /* https://stackoverflow.com/questions/66416614/how-to-create-scrollable-element-in-tailwind-without-a-scrollbar */
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {

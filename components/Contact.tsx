@@ -65,7 +65,7 @@ const Contact = () => {
       )}
       {!submitted && (
         <form
-          className="mx-auto w-full flex flex-col space-y-4 md:items-center"
+          className=" mx-auto w-full flex flex-col space-y-4 md:items-center"
           name="contact"
           method="POST"
           data-netlify="true"
@@ -73,7 +73,7 @@ const Contact = () => {
         >
           <input type="hidden" name="form-name" value="contact" />
           <input
-            className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
+            className="input"
             autoComplete="off"
             placeholder="Enter your first name"
             name="name"
@@ -81,7 +81,7 @@ const Contact = () => {
             onChange={handleChange}
           />
           <input
-            className="w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
+            className="input"
             autoComplete="off"
             type="email"
             name="email"
@@ -90,7 +90,7 @@ const Contact = () => {
             onChange={handleChange}
           />
           <textarea
-            className="w-full resize-none p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900"
+            className="input"
             autoComplete="off"
             name="message"
             placeholder="Enter your message"
