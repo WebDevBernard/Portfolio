@@ -2,15 +2,6 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { skillsData } from "../data/skills-data";
 
-const responsive: any = {
-  0: {
-    items: 3,
-  },
-  768: {
-    items: 5,
-  },
-};
-
 const Skills = () => {
   const items = skillsData.map(
     (skill: { id: string; icon: string; name: string }) => {
@@ -36,8 +27,8 @@ const Skills = () => {
         animationDuration={4000}
         disableButtonsControls
         disableDotsControls
-        innerWidth={0}
-        responsive={responsive}
+        innerWidth={768}
+        responsive={{ 0: { items: 3 } }}
         items={items}
       />
     </div>
