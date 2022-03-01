@@ -66,8 +66,9 @@ const Hero: FC<{
             </div>
             {/* right */}
           </div>
-          <div className="indent-[100%] whitespace-nowrap overflow-hidden select-none md:w-[420px] mt-16 md:mt-0 md:h-[420px] relative w-[280px] h-[280px] bg-transparent">
+          <div className="select-none md:w-[420px] mt-16 md:mt-0 md:h-[420px] relative w-[280px] h-[280px] bg-transparent">
             <Image
+              className="indent-[100%] whitespace-nowrap overflow-hidden"
               src="/docs/programming-animate.svg"
               alt="programmer guy"
               layout="fill"
