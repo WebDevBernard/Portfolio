@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply text-white bg-violet-500 hover:bg-violet-600 font-medium rounded-md text-sm text-center dark:bg-violet-500 dark:hover:bg-violet-600 dark:focus:ring-purple-900 tracking-widest flex justify-center items-center select-none px-5 py-2.5 uppercase;
+  @apply text-white bg-violet-500 hover:bg-violet-600 font-medium rounded-md text-sm text-center dark:bg-violet-500 dark:hover:bg-violet-600 dark:focus:ring-purple-900 tracking-widest flex justify-center items-center select-none px-5 py-2.5 uppercase duration-150 ease-out;
 }
 
 .btn-primary:active {
@@ -13,7 +13,7 @@
 }
 
 .btn-secondary {
-  @apply border border-gray-400 text-gray-900 bg-gray-100 hover:bg-gray-200 font-medium rounded-md text-sm  px-3 py-1.5 tracking-widest select-none;
+  @apply border border-gray-400 text-gray-900 bg-gray-100 hover:bg-gray-200 font-medium rounded-md text-sm  px-3 py-1.5 tracking-widest select-none duration-150 ease-out;
 }
 
 .btn-secondary:active {
@@ -37,7 +37,6 @@
   margin: 0 -0.4em;
   padding: 0em 0.4em;
   border-radius: 0.8em 0.3em;
-
   background: transparent;
   background-image: linear-gradient(
     to right,
