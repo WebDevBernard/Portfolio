@@ -1,7 +1,7 @@
 export const skillsData = [
   {
     id: "m1",
-    name: "Javascript",
+    name: "JavaScript",
     icon: "devicon-javascript-plain",
   },
   {
@@ -11,7 +11,7 @@ export const skillsData = [
   },
   {
     id: "m3",
-    name: "React",
+    name: "ReactJS",
     icon: "devicon-react-original",
   },
   {
