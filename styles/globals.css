@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply text-white bg-violet-500 hover:bg-violet-600 font-medium rounded-md text-sm text-center dark:bg-violet-500 dark:hover:bg-violet-600 dark:focus:ring-purple-900 tracking-widest block select-none px-5 py-2.5 uppercase duration-150 ease-out;
+  @apply text-white bg-indigo-400 hover:bg-indigo-500 rounded-md text-sm text-center tracking-widest block select-none px-5 py-2.5 uppercase duration-150 ease-out;
 }
 
 .btn-primary:active {
@@ -21,7 +21,7 @@
 }
 
 .input {
-  @apply w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900;
+  @apply w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900 bg-neutral-100;
 }
 
 /* https://stackoverflow.com/questions/66416614/how-to-create-scrollable-element-in-tailwind-without-a-scrollbar */

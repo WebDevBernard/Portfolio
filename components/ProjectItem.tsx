@@ -12,7 +12,7 @@ interface ProjectProps {
 const ProjectItem: FC<ProjectProps> = (props) => {
   return (
     <div
-      className=" bg-neutral-50 flex flex-col justify-between 
+      className=" bg-neutral-100 flex flex-col justify-between 
      rounded-md shadow-lg overflow-hidden "
     >
       <div>

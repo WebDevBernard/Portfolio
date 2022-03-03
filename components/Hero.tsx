@@ -24,7 +24,7 @@ const Hero: FC<{
           {/* left */}
           <div className="w-full flex flex-col justify-center items-center md:items-start md:w-1/2">
             <h1 className="ml-8 md:ml-0  text-2xl leading-tight tracking-wider">
-              <motion.div
+              {/* <motion.div
                 ref={ref}
                 initial="hidden"
                 animate={controls}
@@ -32,7 +32,10 @@ const Hero: FC<{
                 className="font-bold text-4xl text-indigo-900  inline-block"
               >
                 Hello!
-              </motion.div>
+              </motion.div> */}
+              <div className="font-bold text-4xl text-indigo-900  inline-block">
+                Hello!
+              </div>
               <span>
                 <br />
                 I am Bernard,
