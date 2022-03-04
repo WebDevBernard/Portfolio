@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply text-white bg-indigo-400 hover:bg-indigo-500 rounded-md text-sm text-center tracking-widest block select-none px-5 py-2.5 uppercase duration-150 ease-out;
+  @apply text-white bg-indigo-400 hover:bg-indigo-500 rounded-md text-sm text-center tracking-widest block select-none px-5 py-2.5 uppercase duration-150 ease-out shadow-sm;
 }
 
 .btn-primary:active {
