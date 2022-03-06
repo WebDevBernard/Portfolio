@@ -4,7 +4,7 @@ export const projects = [
     title: "Mythic+ Player Count",
     image: "/docs/raiderio.png",
     description:
-      "A graph of player count in World of Warcraft Mythic+ dungeons. Uses AWS Lambda / Eventbridge to automate calling a different API endpoint depending on a given week.",
+      "A graph of player count in World of Warcraft Mythic+ dungeons. Uses AWS Lambda / Eventbridge to automate calling a different API endpoint.",
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicplus.vercel.app/",
   },
@@ -22,7 +22,7 @@ export const projects = [
     title: "Make My Day",
     image: "/docs/kanban.png",
     description:
-      "A project management app and Kanban board for teams to manage projects and organize tasks. Full-stack PERN app.",
+      "A full-stack PERN project management app and Kanban board for teams to manage projects and organize tasks.",
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.vercel.app/",
   },

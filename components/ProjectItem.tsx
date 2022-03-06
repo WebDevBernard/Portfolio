@@ -13,7 +13,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
   return (
     <div
       className=" bg-neutral-100 flex flex-col justify-between 
-     rounded-md shadow-lg overflow-hidden "
+     rounded-md shadow-lg overflow-hidden border-[1px] border-slate-400"
     >
       <div>
         <img
