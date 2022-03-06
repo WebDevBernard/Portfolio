@@ -1,27 +1,25 @@
-@import url("https://fonts.cdnfonts.com/css/sofia-pro");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .btn-primary {
-  @apply text-white bg-indigo-400 hover:bg-indigo-500 rounded-md text-sm text-center tracking-widest block select-none px-5 py-2.5 uppercase duration-150 ease-out shadow-sm;
+  @apply text-white bg-indigo-400 hover:bg-indigo-500 rounded-md text-sm text-center tracking-widest block select-none px-6 py-3 uppercase duration-150 ease-out shadow-sm font-sans;
 }
 
 .btn-primary:active {
-  @apply scale-95 shadow-sm;
+  @apply shadow-sm -translate-y-1;
 }
 
 .btn-secondary {
-  @apply border border-gray-400 text-gray-900 bg-gray-100 hover:bg-gray-200 font-medium rounded-md text-sm  px-3 py-1.5 tracking-widest select-none duration-150 ease-out;
+  @apply border-b-slate-300 border-b-4  border-r-slate-300 border-r-4 shadow-sm text-gray-900 bg-gray-100 hover:bg-gray-200 font-medium rounded-md text-sm  px-3 py-1.5 tracking-widest select-none duration-150 ease-out;
 }
 
 .btn-secondary:active {
-  @apply scale-95 shadow-sm;
+  @apply border-b-0 border-r-0 translate-x-1 translate-y-1 shadow-sm;
 }
 
 .input {
-  @apply w-full p-2 border-2 rounded-md focus:outline-none focus:border-indigo-900 bg-neutral-100;
+  @apply w-full p-2 focus:border-[2px] rounded-md focus:outline-none focus:border-indigo-900 bg-neutral-50;
 }
 
 /* https://stackoverflow.com/questions/66416614/how-to-create-scrollable-element-in-tailwind-without-a-scrollbar */

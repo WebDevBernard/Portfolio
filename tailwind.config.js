@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Sofia Pro", ...defaultTheme.fontFamily.sans],
+        serif: ["Nunito", ...defaultTheme.fontFamily.serif],
       },
     },
   },

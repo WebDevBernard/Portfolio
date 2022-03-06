@@ -13,6 +13,10 @@ export default function Document() {
           href="https://fonts.cdnfonts.com/css/sofia-pro"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />

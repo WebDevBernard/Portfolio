@@ -12,8 +12,8 @@ interface ProjectProps {
 const ProjectItem: FC<ProjectProps> = (props) => {
   return (
     <div
-      className=" bg-neutral-100 flex flex-col justify-between 
-     rounded-md shadow-lg overflow-hidden border-[1px] border-slate-400"
+      className=" bg-neutral-50 flex flex-col justify-between 
+     rounded-md overflow-hidden  relative border-b-indigo-200 border-b-4 border-r-slate-300 border-r-4 shadow-sm"
     >
       <div>
         <img
@@ -23,13 +23,13 @@ const ProjectItem: FC<ProjectProps> = (props) => {
         />
         <div className="p-4">
           <h1 className=" text-lg font-bold text-indigo-900 ">{props.title}</h1>
-          <p className=" text-gray-600 leading-tight  mt-2">
+          <p className="text-[16px] font-serif text-gray-600 leading-tight  mt-2">
             {props.description}
           </p>
         </div>
       </div>
-      <div className="px-4">
-        <footer className=" flex justify-between border-t border-slate-400 py-4">
+      <div className="px-4 ">
+        <footer className=" flex justify-between pb-4 ">
           {props.github && (
             <Link href={props.github} passHref>
               <a target="_blank" rel="noreferrer">
