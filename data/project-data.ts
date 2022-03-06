@@ -13,7 +13,7 @@ export const projects = [
     title: "Twitter React",
     image: "/docs/twitter.png",
     description:
-      "A clone of Twitter home screen with Firebase authentication, Redux state management and reusable React components.",
+      "A clone of Twitter home screen with Firebase authentication, Redux state management and responsive design with Tailwind CSS.",
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitterreact.vercel.app/",
   },
