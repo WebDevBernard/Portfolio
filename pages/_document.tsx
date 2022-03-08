@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en" prefix="og: http://ogp.me/ns#">
       <Head>
         <link
           rel="stylesheet"
@@ -17,6 +17,18 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
           rel="stylesheet"
         />
+        <meta property="og:title" content="Bernard Yang | Portfolio" />
+        <meta
+          name="portfolio image"
+          property="og:image"
+          content="%PUBLIC_URL%/docs/portfolio.png"
+        />
+        <meta name="author" content="Bernard Yang" />
+        <meta
+          property="og:description"
+          content="Hello, I am a software engineer in Vancouver."
+        />
+        <meta property="og:url" content="https://www.bernardyang.com/" />
       </Head>
       <body>
         <Main />
