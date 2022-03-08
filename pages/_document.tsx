@@ -18,11 +18,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <meta property="og:title" content="Bernard Yang | Portfolio" />
-        <meta
-          name="image"
-          property="og:image"
-          content="%PUBLIC_URL%/docs/portfolio.png"
-        />
+        <meta name="image" property="og:image" content="/docs/portfolio.png" />
         <meta name="author" content="Bernard Yang" />
         <meta
           property="og:description"
