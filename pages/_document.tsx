@@ -19,14 +19,14 @@ export default function Document() {
         />
         <meta property="og:title" content="Bernard Yang | Portfolio" />
         <meta
-          name="portfolio image"
+          name="image"
           property="og:image"
           content="%PUBLIC_URL%/docs/portfolio.png"
         />
         <meta name="author" content="Bernard Yang" />
         <meta
           property="og:description"
-          content="Hello, I am a software engineer in Vancouver."
+          content="Hello, I am Bernard, a software engineer in Vancouver."
         />
         <meta property="og:url" content="https://www.bernardyang.com/" />
       </Head>
