@@ -5,7 +5,7 @@ interface RefObject<T> {
 }
 const About: FC<{ aboutRef: RefObject<HTMLDivElement> }> = ({ aboutRef }) => {
   return (
-    <div className="space-y-6 mx-auto w-full flex flex-col items-center md:w-8/12">
+    <div className=" space-y-6 mx-auto w-full flex flex-col items-center md:w-8/12">
       <span className="flex self-start items-center space-x-2 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const About: FC<{ aboutRef: RefObject<HTMLDivElement> }> = ({ aboutRef }) => {
       </span>
       <div>
         <div
-          className=" font-serif tracking-wide bg-slate-50 space-y-4 p-6 text-[16px] shadow-lg rounded-lg overflow-hidden"
+          className="nm-flat-slate-50 font-serif tracking-wide space-y-4 p-6 text-[16px]  rounded-lg overflow-hidden"
           ref={aboutRef}
         >
           <p>{aboutData[0]}</p>

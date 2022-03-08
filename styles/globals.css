@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply text-white bg-indigo-400 hover:bg-indigo-500 rounded-md text-sm text-center tracking-widest block select-none px-6 py-3 uppercase duration-150 ease-out shadow-sm font-sans;
+  @apply nm-flat-indigo-400 text-white bg-indigo-400 hover:bg-indigo-500 rounded-md text-sm text-center tracking-widest block select-none px-6 py-3 uppercase duration-150 ease-out shadow-sm font-sans;
 }
 
 .btn-primary:active {
-  @apply shadow-sm -translate-y-1;
+  @apply shadow-sm;
 }
 
 .btn-secondary {

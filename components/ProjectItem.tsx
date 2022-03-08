@@ -12,8 +12,8 @@ interface ProjectProps {
 const ProjectItem: FC<ProjectProps> = (props) => {
   return (
     <div
-      className=" bg-neutral-50 flex flex-col justify-between 
-     rounded-md overflow-hidden  relative border-b-indigo-200 border-b-4 border-r-slate-300 border-r-4 shadow-sm"
+      className="nm-flat-neutral-50 flex flex-col justify-between 
+     rounded-md overflow-hidden  relative"
     >
       <div>
         <img
