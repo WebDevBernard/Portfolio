@@ -26,7 +26,7 @@ export default function Document() {
         <meta name="author" content="Bernard Yang" />
         <meta
           property="og:description"
-          content="Hello, I am Bernard, a software engineer in Vancouver."
+          content="Hello, I am Bernard, a software engineer in Vancouver.  Welcome to my portfolio website.  Connect with me on LinkedIn!"
         />
         <meta property="og:url" content="https://www.bernardyang.com/" />
       </Head>
