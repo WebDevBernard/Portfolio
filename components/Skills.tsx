@@ -18,7 +18,7 @@ const Skills = () => {
   );
 
   return (
-    <div className="justify-start md:justify-center items-center border-t border-b border-slate-400">
+    <div className="justify-start md:justify-center items-center border-t border-b border-slate-400 opacity-80">
       <AliceCarousel
         ssrSilentMode
         mouseTracking
