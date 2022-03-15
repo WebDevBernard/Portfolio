@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Image from "next/image";
 import Link from "next/link";
 import Description from "./Description";
 import { FC } from "react";
@@ -28,11 +28,9 @@ const ProjectItem: FC<ProjectProps> = (props) => {
         />
       )}
       <div>
-        <img
-          className="w-full h-[10rem] object-cover"
-          src={props.image}
-          alt="project image"
-        />
+        <div className="w-full h-[10rem] object-cover relative">
+          <Image src={props.image} alt="project image" layout="fill" />
+        </div>
         <div className="p-4">
           <h1 className=" text-lg font-bold text-indigo-900 ">{props.title}</h1>
           <span className="text-[16px] font-serif text-gray-600 leading-tight  mt-2">
@@ -41,7 +39,6 @@ const ProjectItem: FC<ProjectProps> = (props) => {
               onClick={handleOpenModal}
               className="inline-block  text-indigo-500 cursor-pointer underline"
             >
-              {"  "}
               Read more...
             </p>
           </span>

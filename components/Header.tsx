@@ -41,7 +41,7 @@ const Header: FC<Props> = ({ scrollAbout, scrollContact, scrollProjects }) => {
         <div>
           <img
             onClick={scrollToTop}
-            className="object-scale-down h-16 inline mr-2 border-4 border-indigo-900 rounded-full cursor-pointer select-none"
+            className="object-scale-down w-16 h-16 inline mr-2 border-4 border-indigo-900 rounded-full cursor-pointer select-none"
             src="https://avatars.githubusercontent.com/u/72034695?v=4"
             alt="profile image"
           />

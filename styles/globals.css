@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply text-white bg-indigo-400 hover:bg-indigo-500 rounded-md text-sm text-center tracking-widest block select-none px-6 py-3 uppercase  duration-300 ease-out shadow-sm font-sans;
+  @apply text-white bg-indigo-400 hover:bg-indigo-500 rounded-md text-sm text-center tracking-widest select-none px-6 py-3 uppercase  whitespace-nowrap duration-300 ease-out shadow-sm font-sans block;
 }
 
 .btn-primary:active {
@@ -11,7 +11,7 @@
 }
 
 .btn-secondary {
-  @apply border-b-slate-300 border-b-4  border-r-slate-300 border-r-4 shadow-sm text-gray-900 bg-gray-100 hover:bg-gray-200 font-medium rounded-md text-sm  px-3 py-1.5 tracking-widest select-none duration-150 ease-out;
+  @apply border-b-slate-300 border-b-4 whitespace-nowrap border-r-slate-300 border-r-4 shadow-sm text-gray-900 bg-gray-100 hover:bg-gray-200 font-medium rounded-md text-sm  px-3 py-1.5 tracking-widest select-none duration-150 ease-out;
 }
 
 .btn-secondary:active {

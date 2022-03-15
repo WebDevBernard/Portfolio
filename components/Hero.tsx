@@ -1,11 +1,7 @@
 import { useRef, FC } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  heroBottomAnimation,
-  heroTopAnimation,
-  arrowAnimation,
-} from "../styles/variants";
+import { heroBottomAnimation } from "../styles/variants";
 import useScroll from "../hooks/useScroll";
 
 interface RefObject<T> {
@@ -23,7 +19,7 @@ const Hero: FC<{
         <div className="flex justify-evenly items-center flex-col md:flex-row">
           {/* left */}
           <div className="w-full flex flex-col justify-center items-center md:items-start md:w-1/2">
-            <h1 className="ml-8 md:ml-0  text-2xl leading-tight tracking-wider">
+            <div className="ml-8 md:ml-0  text-2xl leading-tight tracking-wider">
               {/* <motion.div
                 ref={ref}
                 initial="hidden"
@@ -33,9 +29,9 @@ const Hero: FC<{
               >
                 Hello!
               </motion.div> */}
-              <h2 className="font-bold text-4xl text-indigo-900 inline-block">
+              <h1 className="font-bold text-4xl text-indigo-900 inline-block">
                 Hello!
-              </h2>
+              </h1>
               <span>
                 <br />
                 I am Bernard,
@@ -54,7 +50,7 @@ const Hero: FC<{
                   in Vancouver{" "}
                 </span>
               </span>
-            </h1>
+            </div>
             <div className="flex justify-start mt-12 md:mt-6">
               <button onClick={scrollContact} className="btn btn-primary mr-2">
                 Work With Me
