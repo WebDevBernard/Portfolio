@@ -16,7 +16,7 @@ export const projects = [
     image: "/docs/twitter.png",
     description: [
       "A clone of Twitter home screen with Firebase authentication, Redux state management and responsive design with Tailwind CSS.",
-      "This project started off as an attempt to remake another project I made earlier (in coding bootcamp).  I made it to practice things I learned from various React Tutorials.  It's the Twitter home page with login.  Users can tweet, comment, like and delete a tweet (all saved to local storage).  I made the current page simply from flipping tabs between the real Twitter and then playing around with the CSS until I got a close enough match. Everytime I learned something new I would apply that knowledge to this project.  One major difficulty I had making this app was figuring out how to center a modal.  I remember spending a whole day on this.  What I ended up doing was putting the modal inside another div and using Flexbox. Also, you might notice there is no backend for this project because I only wanted to practice React.",
+      "This project started off as an attempt to remake another project I made earlier (in coding bootcamp).  I made it to practice things I learned from various React Tutorials.  It is the Twitter home page with login.  Users can tweet, comment, like and delete a tweet (all saved to local storage).  I made the current page simply from flipping tabs between the real Twitter and then playing around with the CSS until I got a close enough match. Everytime I learned something new I would apply that knowledge to this project.  One major difficulty I had making this app was figuring out how to center a modal.  I remember spending a whole day on this.  What I ended up doing was putting the modal inside another div and using Flexbox. Also, you might notice there is no backend for this project because I only wanted to practice React.",
     ],
     github: "https://github.com/WebDevBernard/Twitter-React",
     link: "https://twitterreact.vercel.app/",
@@ -27,7 +27,7 @@ export const projects = [
     image: "/docs/kanban.png",
     description: [
       "A full-stack PERN project management app and Kanban board for teams to manage projects and organize tasks.",
-      "This was our final group project at coding bootcamp.  We had about two weeks to make it.  In our group of three, I'll admit I was probably not the strongest at React.  We had learned it two weeks prior and I remember having difficulty understanding props and state.  It didn't help that we didn't know about Context API and used props drilling down 5+ components.  But I did learn a lot working on this project, especially understanding other peoples' code. I also had a lot of fun with the styling.  On Github, you can read more about our planning on Figma, user stories and the ERD's we made.",
+      "This was our final group project at coding bootcamp.  We had about two weeks to make it.  In our group of three, I will admit I was probably not the strongest at React.  We had learned it two weeks prior and I remember having difficulty understanding props and state.  It did not help that we did not know about Context API and used props drilling down 5+ components.  But I did learn a lot working on this project, especially understanding other peoples code. I also had a lot of fun with the styling.  On Github, you can read more about our planning on Figma, user stories and the ERD we made.",
     ],
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.vercel.app/",
