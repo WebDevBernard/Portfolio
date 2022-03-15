@@ -27,7 +27,7 @@ export const projects = [
     image: "/docs/kanban.png",
     description: [
       "A full-stack PERN project management app and Kanban board for teams to manage projects and organize tasks.",
-      "This was our final group project at coding bootcamp.  We had about two weeks to make it.  In our group of three, at that time, I was probably not the strongest at React.  We had learned it two weeks prior and I remember having difficulty understanding props and state.  It did not help that we did not know about Context API and used props drilling down five plus components.  But I did learn a lot working on this project, especially learning to read other peoples code. I also had a lot of fun with the styling.  On Github, you can read more about our planning on Figma, user stories and the ERD we made.",
+      "This was our final group project at coding bootcamp.  We had about two weeks to make it.  Similar to Trello, users can create a task, assign it to team members, drag and drop to any of the 4 categories (In Progress, Backlog, onHold, Completed).  On the project view, there is websocket for teams to message each other. Express backend hosted on Heroku.  On Github, you can read more about our planning on Figma, user stories and the ERD we made.",
     ],
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.vercel.app/",

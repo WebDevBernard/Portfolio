@@ -49,7 +49,7 @@ const Hero: FC<{
                     className={`z-0 w-[239px] h-[29px] highlight inline-block absolute`}
                   ></motion.div>
                   <span className="z-10 relative" ref={spanRef}>
-                    software engineer
+                    web developer
                   </span>{" "}
                   in Vancouver{" "}
                 </span>
