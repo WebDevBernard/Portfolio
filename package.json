@@ -23,6 +23,7 @@
     "tailwindcss-neumorphism": "^0.1.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.2.7",
     "@types/node": "17.0.21",
     "@types/react": "17.0.39",
     "@types/react-dom": "^17.0.13",
