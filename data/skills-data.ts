@@ -29,4 +29,14 @@ export const skillsData = [
     name: "MongoDB",
     icon: "devicon-mongodb-plain",
   },
+  {
+    id: "m7",
+    name: "NextJS",
+    icon: "devicon-nextjs-original",
+  },
+  {
+    id: "m8",
+    name: "TailwindCSS",
+    icon: "devicon-tailwindcss-plain colored",
+  },
 ];

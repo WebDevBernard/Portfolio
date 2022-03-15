@@ -1,20 +1,31 @@
+import { useState } from "react";
 import Link from "next/link";
-
+import Description from "./Description";
 import { FC } from "react";
 interface ProjectProps {
   title: string;
   image: string;
-  description: string;
+  description: string[];
   github: string;
   link: string;
 }
 
 const ProjectItem: FC<ProjectProps> = (props) => {
+  const [openModal, setOpenModal] = useState<boolean>(false);
+  const handleOpenModal = () => {
+    setOpenModal(!openModal);
+  };
   return (
     <div
       className="nm-flat-neutral-50 flex flex-col justify-between 
      rounded-md overflow-hidden  relative"
     >
+      {openModal && (
+        <Description
+          description={props.description[1]}
+          onClose={handleOpenModal}
+        />
+      )}
       <div>
         <img
           className="w-full h-[10rem] object-cover"
@@ -23,9 +34,16 @@ const ProjectItem: FC<ProjectProps> = (props) => {
         />
         <div className="p-4">
           <h1 className=" text-lg font-bold text-indigo-900 ">{props.title}</h1>
-          <p className="text-[16px] font-serif text-gray-600 leading-tight  mt-2">
-            {props.description}
-          </p>
+          <span className="text-[16px] font-serif text-gray-600 leading-tight  mt-2">
+            {props.description[0]}{" "}
+            <p
+              onClick={handleOpenModal}
+              className="inline-block  text-indigo-500 cursor-pointer underline"
+            >
+              {"  "}
+              Read more...
+            </p>
+          </span>
         </div>
       </div>
       <div className="px-4 ">
@@ -52,7 +70,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
                     title="website link icon"
                   />
                   Demo
-                </div>{" "}
+                </div>
               </a>
             </Link>
           )}

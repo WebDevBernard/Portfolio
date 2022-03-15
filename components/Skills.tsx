@@ -18,12 +18,13 @@ const Skills = () => {
   );
 
   return (
-    <div className="justify-start md:justify-center items-center border-t border-b border-slate-400 opacity-80">
+    <div className="justify-start md:justify-center items-center  border-b-2 border-indigo-900">
       <AliceCarousel
         ssrSilentMode
         mouseTracking
         infinite
         autoPlay
+        animationType="fadeout"
         animationDuration={4000}
         disableButtonsControls
         disableDotsControls

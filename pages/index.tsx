@@ -14,6 +14,11 @@ const Home: NextPage = () => {
   const projectRef = useRef<HTMLHeadingElement | HTMLDivElement>(null);
   const aboutRef = useRef<HTMLHeadingElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+  const [_document, set_document] = useState<any>(null);
+
+  useEffect(() => {
+    set_document(document);
+  }, []);
   // https://www.joshwcomeau.com/react/the-perils-of-rehydration/
   // to manage unloaded or mismatched props with SSR
   const [hasMounted, setHasMounted] = useState(false);
