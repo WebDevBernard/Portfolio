@@ -5,7 +5,7 @@ export const projects = [
     image: "/docs/raiderio.png",
     description: [
       "A graph of player count in World of Warcraft Mythic+ dungeons. Uses AWS Lambda / Eventbridge to automate calling a different API endpoint.",
-      "I am a fan of World of Warcraft so I wanted to create an app that could track some useful ingame data.  What this app does is it calls RaiderIO API and gets a pageCount (a rankings of all characters who have completed a mythic+ dungeon).  The main challenge in making this app is that every week there is a different API endpoint to call (twelve total).  I had to design some backend that would know which endpoint to call and save that data to a database.  And all of this would need to be automated using AWS serverless. The project is pretty simple, but it is the one I am most proud of working on. It was the first time I applied programming to solve an actual problem I had. It taught me a lot about working with objects and arrays, using the Date object, and writing a React custom hook.",
+      "I am a fan of World of Warcraft so I wanted to create an app that could track some useful ingame data.  What this app does is it calls RaiderIO API and gets a pageCount (a rankings of all characters who have completed a mythic+ dungeon).  The main challenge in making this app is that every week there is a different API endpoint to call (twelve total).  I had to design some backend that would know which endpoint to call and save that data to a database.  And all of this would need to be automated using AWS serverless computing. The project is pretty simple, but it is the one I am most proud of working on. It was the first time I applied programming to solve an actual problem I had. It taught me a lot about working with objects and arrays, using the Date object, and writing a React custom hook.",
     ],
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
     link: "https://mythicplus.vercel.app/",
@@ -38,7 +38,7 @@ export const projects = [
     image: "/docs/smart-to-do.png",
     description: [
       "A smart to-do list that uses API calls to auto-organize tasks into a things to buy / eat / watch / read category.",
-      "This was a midterm project that I made as a group at coding bootcamp.  It uses external APIs (Wolfram Alpha, OMDB, Yelp, Google Books) to auto assign a keyword to a specific category.  The main difficulty of this app is figuring out which order to chain the API calls.  On top of that there is some logic using Regexp that assigns a keyword based on a specific verb.  We made this project as a group of three after ten weeks into coding bootcamp.",
+      "This was a midterm project that I made as a group at coding bootcamp.  It uses external APIs (Wolfram Alpha, OMDB, Yelp, Google Books) to auto assign a keyword to a specific category.  The main difficulty of this app is figuring out which order to chain the API calls.  On top of that there is some logic using Regexp that assigns a keyword based on a specific verb.  We made this project as a group of three after five weeks into coding bootcamp.",
     ],
     github: "https://github.com/WebDevBernard/smart-to-do",
     link: "",
