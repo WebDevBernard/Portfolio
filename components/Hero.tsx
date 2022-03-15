@@ -46,7 +46,7 @@ const Hero: FC<{
                     initial="hidden"
                     animate={controls}
                     variants={heroBottomAnimation}
-                    className={`z-0 w-[239px] h-[29px] highlight inline-block absolute`}
+                    className={`z-0 w-[194px] h-[29px] highlight inline-block absolute`}
                   ></motion.div>
                   <span className="z-10 relative" ref={spanRef}>
                     web developer
