@@ -39,8 +39,6 @@ const ModalOverlay: FC<{ className: string }> = (props) => {
   );
 };
 
-const portalElement: HTMLElement = document.getElementById("modal")!;
-
 const Modal: FC<{
   onClose: () => boolean;
   className: string;
@@ -48,27 +46,32 @@ const Modal: FC<{
   const domNode = useClickedOutside(() => {
     props.onClose();
   });
+
   return (
     <>
-      {ReactDOM.createPortal(
-        <Backdrop onClose={props.onClose} />,
-        portalElement
-      )}
-      {ReactDOM.createPortal(
-        <ModalOverlay {...props}>
-          <motion.div
-            ref={domNode}
-            variants={modalAnimation}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className={` w-auto mx-w-3xl p-4 shadow-md bg-zinc-50 rounded-md  ${props.className}`}
-          >
-            {props.children}
-          </motion.div>
-        </ModalOverlay>,
-        portalElement
-      )}
+      {typeof window === "object"
+        ? ReactDOM.createPortal(
+            <Backdrop onClose={props.onClose} />,
+            document.getElementById("modal")!
+          )
+        : null}
+      {typeof window === "object"
+        ? ReactDOM.createPortal(
+            <ModalOverlay {...props}>
+              <motion.div
+                ref={domNode}
+                variants={modalAnimation}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className={` w-auto mx-w-3xl p-4 shadow-md bg-zinc-50 rounded-md  ${props.className}`}
+              >
+                {props.children}
+              </motion.div>
+            </ModalOverlay>,
+            document.getElementById("modal")!
+          )
+        : null}
     </>
   );
 };

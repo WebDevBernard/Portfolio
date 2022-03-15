@@ -9,16 +9,12 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import ProjectList from "../components/ProjectList";
 import Skills from "../components/Skills";
-
+import Portal from "../components/Portal";
 const Home: NextPage = () => {
   const projectRef = useRef<HTMLHeadingElement | HTMLDivElement>(null);
   const aboutRef = useRef<HTMLHeadingElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
-  const [_document, set_document] = useState<any>(null);
 
-  useEffect(() => {
-    set_document(document);
-  }, []);
   // https://www.joshwcomeau.com/react/the-perils-of-rehydration/
   // to manage unloaded or mismatched props with SSR
   const [hasMounted, setHasMounted] = useState(false);
@@ -54,21 +50,24 @@ const Home: NextPage = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className="bg-hero-pattern bg-cover font-body overflow-x-hidden selection:bg-[#c7d2fe]">
-        <Header
-          scrollProjects={scrollProjects}
-          scrollAbout={scrollAbout}
-          scrollContact={scrollContact}
-        />
-        <Hero scrollContact={scrollContact} scrollProjects={scrollProjects} />
-        <Layout>
-          <ProjectList projectRef={projectRef} />
-          <About aboutRef={aboutRef} />
-          <Skills />
-          <Contact />
-          <Footer contactRef={contactRef} />
-        </Layout>
-      </main>
+      <Portal>
+        <main className="bg-hero-pattern bg-cover font-body overflow-x-hidden selection:bg-[#c7d2fe]">
+          <Header
+            scrollProjects={scrollProjects}
+            scrollAbout={scrollAbout}
+            scrollContact={scrollContact}
+          />
+          <Hero scrollContact={scrollContact} scrollProjects={scrollProjects} />
+          <Layout>
+            <ProjectList projectRef={projectRef} />
+
+            <About aboutRef={aboutRef} />
+            <Skills />
+            <Contact />
+            <Footer contactRef={contactRef} />
+          </Layout>
+        </main>
+      </Portal>
     </>
   );
 };
