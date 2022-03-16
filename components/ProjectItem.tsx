@@ -18,7 +18,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
   };
   return (
     <div
-      className="nm-flat-neutral-50 flex flex-col justify-between 
+      className="bg-neutral-50 shadow-md flex flex-col justify-between 
      rounded-md overflow-hidden  relative"
     >
       {openModal && (

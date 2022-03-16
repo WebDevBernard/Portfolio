@@ -71,7 +71,6 @@ const Hero: FC<{
               alt="programmer guy"
               layout="fill"
               objectFit="contain"
-              priority
             />
           </div>
         </div>

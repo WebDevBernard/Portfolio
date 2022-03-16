@@ -27,7 +27,7 @@ const About: FC<{ aboutRef: RefObject<HTMLDivElement> }> = ({ aboutRef }) => {
       </span>
       <div>
         <div
-          className="nm-flat-slate-50 font-serif tracking-wide space-y-4 p-6 text-[16px]  rounded-lg overflow-hidden"
+          className="bg-neutral-50 shadow-md font-serif tracking-wide space-y-4 p-6 text-[16px]  rounded-lg overflow-hidden"
           ref={aboutRef}
         >
           <p>{aboutData[0]}</p>
