@@ -71,6 +71,7 @@ const Hero: FC<{
               alt="programmer guy"
               layout="fill"
               objectFit="contain"
+              loading="eager"
             />
           </div>
         </div>

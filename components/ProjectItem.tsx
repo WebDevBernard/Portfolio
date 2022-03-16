@@ -29,7 +29,12 @@ const ProjectItem: FC<ProjectProps> = (props) => {
       )}
       <div>
         <div className="w-full h-[10rem] relative">
-          <Image src={props.image} alt="project image" layout="fill" />
+          <Image
+            src={props.image}
+            alt="project image"
+            layout="fill"
+            loading="eager"
+          />
         </div>
         <div className="p-4">
           <h1 className=" text-lg font-bold text-indigo-900 ">{props.title}</h1>
