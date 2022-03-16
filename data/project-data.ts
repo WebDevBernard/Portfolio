@@ -15,8 +15,8 @@ export const projects = [
     title: "Twitter Purple",
     image: "/docs/twitter.png",
     description: [
-      "A pixel perfect clone of Twitter home screen built with React and Tailwind CSS.  Also has Firebase authentication, Redux state management and responsive web design.",
-      "This project started off as an attempt to remake another project I made earlier (in coding bootcamp).  I made it to practice things I learned from various React tutorials.  It is the Twitter home page with login.  Users can tweet, comment, like and delete a tweet (all saved to local storage).  I made the current page simply from flipping tabs between the real Twitter and then playing around with the CSS until I got a close enough match. Everytime I learned something new I would apply that knowledge to this project (such as adding Context and Redux).",
+      "A pixel perfect clone of Twitter home screen built with React and Tailwind CSS.",
+      "This project started off as an attempt to remake another project I made earlier (in coding bootcamp).  I made it to practice things I learned from various React tutorials.  It is the Twitter home page with login.  Users can tweet, comment, like and delete a tweet (all saved to local storage).  I made the current page simply from flipping tabs between the real Twitter and then playing around with the CSS until I got a close enough match. Everytime I learned something new I would apply that knowledge to this project (such as adding Redux and Firebase Authentication).",
     ],
     github: "https://github.com/WebDevBernard/Twitter-Purple",
     link: "https://twitterpurple.vercel.app/",
