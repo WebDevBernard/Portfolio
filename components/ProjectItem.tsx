@@ -28,7 +28,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
         />
       )}
       <div>
-        <div className="w-full h-[10rem] object-cover relative">
+        <div className="w-full h-[10rem] relative">
           <Image src={props.image} alt="project image" layout="fill" />
         </div>
         <div className="p-4">

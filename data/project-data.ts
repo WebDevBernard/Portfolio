@@ -4,7 +4,7 @@ export const projects = [
     title: "Mythic+ Player Count",
     image: "/docs/raiderio.png",
     description: [
-      "A graph of player count in World of Warcraft Mythic+ dungeons. Uses AWS Lambda / Eventbridge to automate calling a different API endpoint.",
+      "A graph of player count in World of Warcraft Mythic+ dungeons. Uses AWS Lambda / EventBridge to automate calling a different API endpoint.",
       "I am a fan of World of Warcraft so I wanted to create an app that could track some useful ingame data.  What this app does is it calls RaiderIO API and gets a pageCount (a rankings of all characters who have completed a mythic+ dungeon).  The main challenge in making this app is that every week there is a different API endpoint to call (twelve total).  I had to create a backend that would know which endpoint to call and save that data to a database.  And all of this would need to be automated using AWS serverless computing. The project is pretty simple, but it is the one I am most proud of working on. It was the first time I applied programming to solve an actual problem I had. It taught me a lot about working with objects and arrays, using the Date object, and writing a React custom hook.",
     ],
     github: "https://github.com/WebDevBernard/Raider.io-API-Data",
@@ -15,7 +15,7 @@ export const projects = [
     title: "Twitter React",
     image: "/docs/twitter.png",
     description: [
-      "A clone of Twitter home screen with Firebase authentication, Redux state management and responsive design with Tailwind CSS.",
+      "A clone of Twitter home screen with Firebase authentication, Redux state management and responsive web design with Tailwind CSS.",
       "This project started off as an attempt to remake another project I made earlier (in coding bootcamp).  I made it to practice things I learned from various React tutorials.  It is the Twitter home page with login.  Users can tweet, comment, like and delete a tweet (all saved to local storage).  I made the current page simply from flipping tabs between the real Twitter and then playing around with the CSS until I got a close enough match. Everytime I learned something new I would apply that knowledge to this project (such as adding Context and Redux).",
     ],
     github: "https://github.com/WebDevBernard/Twitter-React",
