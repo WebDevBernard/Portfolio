@@ -12,14 +12,14 @@ export const projects = [
   },
   {
     id: "m2",
-    title: "Twitter React",
+    title: "Twitter Purple",
     image: "/docs/twitter.png",
     description: [
-      "A pixel perfect clone of Twitter home screen with Firebase authentication, Redux state management and responsive web design with Tailwind CSS.",
+      "A pixel perfect clone of Twitter home screen built with React and Tailwind CSS.  Also has Firebase authentication, Redux state management and responsive web design.",
       "This project started off as an attempt to remake another project I made earlier (in coding bootcamp).  I made it to practice things I learned from various React tutorials.  It is the Twitter home page with login.  Users can tweet, comment, like and delete a tweet (all saved to local storage).  I made the current page simply from flipping tabs between the real Twitter and then playing around with the CSS until I got a close enough match. Everytime I learned something new I would apply that knowledge to this project (such as adding Context and Redux).",
     ],
-    github: "https://github.com/WebDevBernard/Twitter-React",
-    link: "https://twitterreact.vercel.app/",
+    github: "https://github.com/WebDevBernard/Twitter-Purple",
+    link: "https://twitterpurple.vercel.app/",
   },
   {
     id: "m3",
@@ -27,7 +27,7 @@ export const projects = [
     image: "/docs/kanban.png",
     description: [
       "A full-stack PERN project management app and Kanban board for teams to manage projects and organize tasks.",
-      "This was our final group project at coding bootcamp.  We had about two weeks to make it.  Similar to Trello, users can create a task, assign it to team members, drag and drop to any of the 4 categories (In Progress, Backlog, onHold, Completed).  On the project view, there is websocket for teams to message each other. Express backend hosted on Heroku.  On Github, you can read more about our planning on Figma, user stories and the ERD we made.",
+      "This was our final group project at coding bootcamp.  We had about two weeks to make it.  Similar to Trello, users can create a task, assign it to team members, drag and drop to any of the 4 categories (In Progress, Backlog, onHold, Completed).  On the project view, there is websocket for teams to message each other. The backend is Express.js with PostgreSQL database hosted on Heroku.  On Github, you can read more about our planning on Figma, user stories and the ERD we made.",
     ],
     github: "https://github.com/WebDevBernard/MakeMyDay",
     link: "https://makemydaydemo.vercel.app/",
