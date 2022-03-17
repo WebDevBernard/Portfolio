@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import { heroBottomAnimation } from "../styles/variants";
 import useScroll from "../hooks/useScroll";
 
-interface RefObject<T> {
-  readonly current: T | null;
-}
 const Hero: FC<{
   scrollContact: () => void;
   scrollProjects: () => void;
@@ -14,7 +11,7 @@ const Hero: FC<{
   const spanRef = useRef<HTMLSpanElement | null>(null);
   const [ref, controls] = useScroll();
   return (
-    <div className="tracking-wider flex flex-col justify-around md:max-w-lg m-auto sm:mt-0 md:mt-16 lg:mt-0 p-4">
+    <div className="h-screen tracking-wider flex flex-col justify-around md:max-w-lg m-auto sm:mt-0 md:mt-16 lg:mt-0 p-4">
       <div>
         <div className="flex justify-evenly items-center flex-col md:flex-row">
           {/* left */}
