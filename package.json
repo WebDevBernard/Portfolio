@@ -8,7 +8,8 @@
     "export": "next export",
     "deploy": "npm run build && npm run export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "framer-motion": "^6.2.8",
@@ -28,6 +29,7 @@
     "@types/react": "17.0.39",
     "@types/react-dom": "^17.0.13",
     "autoprefixer": "^10.4.2",
+    "cypress": "^9.5.2",
     "eslint": "8.9.0",
     "eslint-config-next": "12.1.0",
     "postcss": "^8.4.6",
