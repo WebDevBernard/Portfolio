@@ -65,7 +65,7 @@ const Hero: FC<{
             <Image
               className="indent-[100%] whitespace-nowrap overflow-hidden"
               src="/docs/programming-animate.svg"
-              alt="programmer guy"
+              alt="hero image"
               layout="fill"
               objectFit="contain"
               loading="eager"
