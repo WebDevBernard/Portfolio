@@ -9,7 +9,7 @@
     "deploy": "npm run build && npm run export",
     "start": "next start",
     "lint": "next lint",
-    "cypress": "cypress open"
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "framer-motion": "^6.2.8",
