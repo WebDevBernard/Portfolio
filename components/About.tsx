@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { aboutData } from "../data/about-data";
 interface RefObject<T> {
   readonly current: T | null;
 }
@@ -30,10 +29,15 @@ const About: FC<{ aboutRef: RefObject<HTMLDivElement> }> = ({ aboutRef }) => {
           className="bg-neutral-50 shadow-md font-serif tracking-wide space-y-4 p-6 text-[16px]  rounded-lg overflow-hidden"
           ref={aboutRef}
         >
-          <p>{aboutData[0]}</p>
-          <p>{aboutData[1]}</p>
-          <p>{aboutData[2]}</p>
-          <p>{aboutData[3]}</p>
+          <p>
+            "I am a web developer focused on frontend web development. Last year
+            (2021) I decided to make the transition from a long time career in
+            customer service to web development. I did a coding bootcamp and
+            from that experience, I learned how much I enjoyed the design side
+            of frontend web development. Since then, I have been doing a
+            combination of Udemy courses and creating personal projects
+            specializing in Next.js and Tailwind CSS."
+          </p>
         </div>
       </div>
     </div>

@@ -46,11 +46,11 @@ const Footer: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
           GitHub
         </a>
         <a
-          href="https://www.twitter.com/WebDevBernard"
+          href="https://stackoverflow.com/users/16270686/webdevbernard"
           target="_blank"
           rel="noreferrer"
         >
-          Twitter
+          Stack Overflow
         </a>
       </div>
     </div>
