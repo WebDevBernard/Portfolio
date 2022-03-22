@@ -30,13 +30,13 @@ const About: FC<{ aboutRef: RefObject<HTMLDivElement> }> = ({ aboutRef }) => {
           ref={aboutRef}
         >
           <p>
-            "I am a web developer focused on frontend web development. Last year
+            I am a web developer focused on frontend web development. Last year
             (2021) I decided to make the transition from a long time career in
             customer service to web development. I did a coding bootcamp and
             from that experience, I learned how much I enjoyed the design side
             of frontend web development. Since then, I have been doing a
             combination of Udemy courses and creating personal projects
-            specializing in Next.js and Tailwind CSS."
+            specializing in Next.js and Tailwind CSS.
           </p>
         </div>
       </div>
