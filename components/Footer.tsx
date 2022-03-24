@@ -8,9 +8,9 @@ const Footer: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
   return (
     <div
       ref={contactRef}
-      className="flex flex-col items-center justify-between border-t border-black p-4 md:flex-row"
+      className="flex flex-col items-center justify-between border-t border-black p-4 md:flex-row "
     >
-      <div className="flex flex-row text-xs pr-6 divide-x divide-slate-600">
+      <div className=" flex flex-row text-xs pr-6 divide-x divide-slate-600">
         <p className="pr-6">Built with Next.js and Tailwind CSS</p>
         <a
           className="px-6"

@@ -24,8 +24,8 @@ const Contact = () => {
   };
 
   return (
-    <div className=" space-y-4 mx-auto flex flex-col  md:w-4/5">
-      <h2 className="text-2xl font-serif font-bold">Message Me</h2>
+    <div className="mx-auto flex flex-col  md:w-4/5">
+      <h2 className="mb-4 text-2xl font-serif font-bold">Message Me</h2>
 
       <Formik
         initialValues={{
@@ -86,7 +86,7 @@ const Contact = () => {
               rows={5}
               disabled={isSubmitting}
             />
-            <div className="relative">
+            <div className="relative ">
               <div className="text-xs text-red-500 absolute">
                 {touched.name && errors.name && (
                   <p className="">{errors.name}</p>
@@ -101,7 +101,7 @@ const Contact = () => {
                   isSubmitting
                     ? "bg-zinc-400"
                     : "bg-black hover:bg-white hover:border-black hover:text-black cursor-pointer"
-                } btn-primary absolute right-0`}
+                } btn-primary float-right`}
                 type="submit"
                 disabled={isSubmitting}
               >
