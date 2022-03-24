@@ -19,7 +19,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
   return (
     <div
       className="flex flex-col justify-between 
-    p-4 overflow-hidden  relative"
+ overflow-hidden  relative"
     >
       {openModal && (
         <Description
