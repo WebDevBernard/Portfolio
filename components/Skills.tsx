@@ -2,7 +2,7 @@ import { skillsData } from "../data/skills-data";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-start md:items-center space-y-8">
+    <div className="flex flex-col items-start md:items-center space-y-8 border-y-[1px] py-6 border-black">
       <h2 className="text-lg font-serif font-bold">My Toolkit:</h2>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
         {skillsData.map((skill) => {

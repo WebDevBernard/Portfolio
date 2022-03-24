@@ -37,6 +37,6 @@ export const skillsData = [
   {
     id: "m8",
     name: "TailwindCSS",
-    icon: "devicon-tailwindcss-plain colored",
+    icon: "devicon-tailwindcss-plain",
   },
 ];

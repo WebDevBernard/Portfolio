@@ -83,8 +83,8 @@ const Contact = () => {
               spellcheck="false"
               rows={5}
             />
-            <div className="flex justify-between mt-4">
-              <div className="text-xs text-red-500">
+            <div className="relative">
+              <div className="text-xs text-red-500 absolute">
                 {touched.name && errors.name && (
                   <p className="">{errors.name}</p>
                 )}
@@ -98,7 +98,7 @@ const Contact = () => {
                   isSubmitting
                     ? "bg-zinc-400"
                     : "bg-black hover:bg-white hover:border-black hover:text-black cursor-pointer"
-                } btn-primary`}
+                } btn-primary absolute right-0`}
                 type="submit"
                 disabled={isSubmitting}
               >
