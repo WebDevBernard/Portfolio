@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Formik, Field } from "formik";
+import React from "react";
+import { Formik, Field, Form } from "formik";
 
 import * as Yup from "yup";
 
@@ -14,18 +14,6 @@ const schema = Yup.object({
   message: Yup.string().required("Message is required"),
 });
 
-interface FormPost {
-  name?: string;
-  email?: string;
-  message?: string;
-}
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
-
 const Contact = () => {
   const encode = (data: any) => {
     return Object.keys(data)
@@ -35,7 +23,6 @@ const Contact = () => {
       .join("&");
   };
 
-  const [isSubmit, setIsSubmit] = useState<boolean>(false);
   return (
     <div className=" space-y-4 mx-auto flex flex-col  md:w-4/5">
       <h2 className="text-2xl font-serif font-bold">Message Me</h2>
@@ -57,28 +44,19 @@ const Contact = () => {
             }),
           })
             .then(() => {
-              setIsSubmit(true);
-              setSubmitting(false);
+              setSubmitting(true);
             })
             .catch((error) => {
               console.log(error);
-              setSubmitting(false);
             });
         }}
-        render={({
-          touched,
-          errors,
-          isSubmitting,
-          handleSubmit,
-          handleReset,
-        }) => (
-          <form
+        render={({ touched, errors, handleSubmit, isSubmitting }) => (
+          <Form
             className=" mx-auto w-full flex flex-col space-y-4 "
             name="contact"
             method="POST"
             data-netlify="true"
             onSubmit={handleSubmit}
-            onReset={handleReset}
           >
             <Field type="hidden" name="form-name" value="contact" />
             <Field
@@ -102,10 +80,11 @@ const Contact = () => {
               name="message"
               placeholder="Enter your message"
               component="textarea"
+              spellcheck="false"
               rows={5}
             />
-            <div className="flex justify-between">
-              <div className="text-xs text-red-500  ">
+            <div className="flex justify-between mt-4">
+              <div className="text-xs text-red-500">
                 {touched.name && errors.name && (
                   <p className="">{errors.name}</p>
                 )}
@@ -115,19 +94,23 @@ const Contact = () => {
                 )}
               </div>
               <button
-                className="btn btn-primary inline-block self-end uppercase mt-4 cursor-pointer"
+                className={`${
+                  isSubmitting
+                    ? "bg-zinc-400"
+                    : "bg-black hover:bg-white hover:border-black hover:text-black cursor-pointer"
+                } btn-primary`}
                 type="submit"
                 disabled={isSubmitting}
               >
-                Submit
+                {isSubmitting ? "Submitted" : "Submit"}
               </button>
             </div>
-            {isSubmit && (
-              <div className=" p-4 self-center text-[15px] underline-offset-2 un  mb-12">
+            {isSubmitting && (
+              <div className="text-black text-[15px] mx-auto font-serif font-bold underline-offset-4 underline decoration-2  ">
                 Thank you! I will reply to you shortly.
               </div>
             )}
-          </form>
+          </Form>
         )}
       />
     </div>
