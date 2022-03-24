@@ -7,11 +7,11 @@ img:-moz-loading {
 }
 
 .btn-primary {
-  @apply py-2 px-8 whitespace-nowrap  text-white text-sm font-serif font-bold border-transparent uppercase uppercase border-2;
+  @apply py-2 px-8 whitespace-nowrap  text-white text-sm font-serif font-bold border-transparent uppercase border-2;
 }
 
 .btn-secondary {
-  @apply underline whitespace-nowrap  text-[15px];
+  @apply underline whitespace-nowrap text-[15px];
 }
 
 .input {
