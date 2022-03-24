@@ -64,6 +64,7 @@ const Contact = () => {
               autoComplete="off"
               placeholder="Enter your first name"
               name="name"
+              disabled={isSubmitting}
             />
 
             <Field
@@ -72,6 +73,7 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="Enter your email address"
+              disabled={isSubmitting}
             />
 
             <Field
@@ -82,9 +84,10 @@ const Contact = () => {
               component="textarea"
               spellcheck="false"
               rows={5}
+              disabled={isSubmitting}
             />
             <div className="relative">
-              <div className="text-xs text-red-500 absolute">
+              <div className="text-xs text-red-500">
                 {touched.name && errors.name && (
                   <p className="">{errors.name}</p>
                 )}
@@ -106,7 +109,7 @@ const Contact = () => {
               </button>
             </div>
             {isSubmitting && (
-              <div className="text-black text-[15px] mx-auto font-serif font-bold underline-offset-4 underline decoration-2  ">
+              <div className="text-black text-[15px] font-serif font-bold underline-offset-4 underline decoration-2">
                 Thank you! I will reply to you shortly.
               </div>
             )}
