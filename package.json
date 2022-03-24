@@ -12,16 +12,15 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
+    "formik": "^2.2.9",
     "framer-motion": "^6.2.8",
     "next": "12.1.0",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.8.4",
     "react": "17.0.2",
-    "react-alice-carousel": "^2.5.1",
     "react-dom": "17.0.2",
     "react-intersection-observer": "^8.33.1",
-    "tailwind-nth-child": "^1.0.0",
-    "tailwindcss-neumorphism": "^0.1.0"
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.2.7",

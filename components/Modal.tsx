@@ -64,8 +64,23 @@ const Modal: FC<{
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className={` w-auto mx-w-3xl p-4 shadow-md bg-zinc-50 border-[1px] border-black  ${props.className}`}
+                className={`relative w-auto mx-w-3xl p-4 shadow-md bg-white border-[1px] border-black  ${props.className}`}
               >
+                <svg
+                  onClick={props.onClose}
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 absolute right-3 cursor-pointer"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
                 {props.children}
               </motion.div>
             </ModalOverlay>,

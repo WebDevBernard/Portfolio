@@ -23,15 +23,18 @@ const ProjectItem: FC<ProjectProps> = (props) => {
     >
       {openModal && (
         <Description
+          title={props.title}
           description={props.description[1]}
           onClose={handleOpenModal}
+          github={props.github}
+          link={props.link}
         />
       )}
       <div>
         <h1 className="uppercase text-sm font-bold font-serif mb-6">
           {props.title}
         </h1>
-        <span className="text-sm  tracking-wide leading-7 mt-2">
+        <span className="text-sm  tracking-tight leading-7 mt-2">
           {props.description[0]}{" "}
           <p
             onClick={handleOpenModal}
