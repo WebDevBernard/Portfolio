@@ -45,7 +45,9 @@ const Header: FC<Props> = ({ scrollAbout, scrollContact, scrollProjects }) => {
             src="https://avatars.githubusercontent.com/u/72034695?v=4"
             alt="profile image"
           />
-          <p className="text-lg hidden md:inline-block ml-2 ">Bernard</p>
+          <p className="text-md font-serif font-bold hidden md:inline-block ml-2 tracking-wide">
+            Bernard
+          </p>
         </div>
         <div className="flex items-center cursor-pointer ">
           <a onClick={scrollAbout} className="m-2 hover:underline">

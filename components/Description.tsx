@@ -12,7 +12,7 @@ const Description: FC<{
   console.log(props);
   return (
     <Modal onClose={props.onClose} className="w-[400px] min-h-[300px]">
-      <h1 className="text-md font-serif font-bold mb-2 border-b-[1px] border-b-slate-900">
+      <h1 className="text-md font-serif font-bold mb-2 border-b-[1px] border-b-slate-900 tracking-wide">
         {props.title}
       </h1>
       <p className="text-sm tracking-tight leading-7">{props.description}</p>

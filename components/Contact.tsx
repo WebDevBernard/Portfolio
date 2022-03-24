@@ -87,7 +87,7 @@ const Contact = () => {
               disabled={isSubmitting}
             />
             <div className="relative">
-              <div className="text-xs text-red-500">
+              <div className="text-xs text-red-500 absolute">
                 {touched.name && errors.name && (
                   <p className="">{errors.name}</p>
                 )}
