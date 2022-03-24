@@ -76,17 +76,11 @@ const Contact = () => {
             className=" mx-auto w-full flex flex-col space-y-4 "
             name="contact"
             method="POST"
-            data-netlify-honeypot="bot-field"
             data-netlify="true"
             onSubmit={handleSubmit}
             onReset={handleReset}
           >
-            <p className="hidden">
-              <label>
-                Don’t fill this out if you’re human: <input name="bot-field" />
-              </label>
-            </p>
-
+            <Field type="hidden" name="form-name" value="contact" />
             <Field
               className="input"
               autoComplete="off"
