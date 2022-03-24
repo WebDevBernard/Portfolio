@@ -10,7 +10,7 @@ const Footer: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
       ref={contactRef}
       className="flex flex-col items-center justify-between border-t border-slate-400 p-4 md:flex-row"
     >
-      <div className="flex flex-row text-xs divide-x divide-slate-600">
+      <div className="flex flex-row text-xs pr-6 divide-x divide-slate-600">
         <p className="pr-6">Built with Next.js and Tailwind CSS</p>
         <a
           className="px-6"
@@ -29,8 +29,9 @@ const Footer: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
           Xbox B icon by Icons8
         </a>
       </div>
-      <div className="mt-20 md:mt-0 font-bold text-indigo-900">
+      <div className="mt-20 md:mt-0 text-sm">
         <a
+          className="hover:underline"
           href="https://www.linkedin.com/in/bernard-yang/"
           target="_blank"
           rel="noreferrer"
@@ -38,7 +39,7 @@ const Footer: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
           Linkedin
         </a>
         <a
-          className="px-6"
+          className="px-6 hover:underline"
           href="https://www.github.com/webdevbernard"
           target="_blank"
           rel="noreferrer"
@@ -46,6 +47,7 @@ const Footer: FC<{ contactRef: RefObject<HTMLHeadingElement> }> = ({
           GitHub
         </a>
         <a
+          className="hover:underline"
           href="https://stackoverflow.com/users/16270686/webdevbernard"
           target="_blank"
           rel="noreferrer"

@@ -18,7 +18,7 @@ const ProjectItem: FC<ProjectProps> = (props) => {
   };
   return (
     <div
-      className="bg-neutral-50 shadow-md flex flex-col justify-between 
+      className="flex flex-col justify-between 
      rounded-md overflow-hidden  relative"
     >
       {openModal && (
@@ -28,57 +28,35 @@ const ProjectItem: FC<ProjectProps> = (props) => {
         />
       )}
       <div>
-        <div className="w-full h-[10rem] relative">
-          <Image
-            src={props.image}
-            alt="project image"
-            layout="fill"
-            loading="eager"
-          />
-        </div>
-        <div className="p-4">
-          <h1 className=" text-lg font-bold text-indigo-900 ">{props.title}</h1>
-          <span className="text-[16px] font-serif text-gray-600 leading-tight  mt-2">
-            {props.description[0]}{" "}
-            <p
-              onClick={handleOpenModal}
-              className="inline-block  text-indigo-500 cursor-pointer underline"
-            >
-              Read more...
-            </p>
-          </span>
-        </div>
+        <h1 className="uppercase text-sm font-bold font-serif mb-6">
+          {props.title}
+        </h1>
+        <span className="text-sm  tracking-wide leading-7 mt-2">
+          {props.description[0]}{" "}
+          <p
+            onClick={handleOpenModal}
+            className="inline-block  text-indigo-500 cursor-pointer underline mb-4"
+          >
+            Read more...
+          </p>
+        </span>
       </div>
-      <div className="px-4 ">
-        <footer className=" flex justify-between pb-4 ">
-          {props.github && (
-            <Link href={props.github} passHref>
-              <a target="_blank" rel="noreferrer">
-                <div className="btn btn-secondary">
-                  <i
-                    className="devicon-github-original mr-2"
-                    title="github link icon"
-                  />
-                  GitHub
-                </div>
-              </a>
-            </Link>
-          )}
-          {props.link && (
-            <Link href={props.link} passHref>
-              <a target="_blank" rel="noreferrer">
-                <div className="btn btn-secondary mr-2">
-                  <i
-                    className="devicon-react-original mr-2"
-                    title="website link icon"
-                  />
-                  Demo
-                </div>
-              </a>
-            </Link>
-          )}
-        </footer>
-      </div>
+      <footer className=" flex items-start divide-x divide-slate-600  ">
+        {props.github && (
+          <Link href={props.github} passHref>
+            <a target="_blank" rel="noreferrer">
+              <div className="pr-6  btn btn-secondary">View GitHub</div>
+            </a>
+          </Link>
+        )}
+        {props.link && (
+          <Link href={props.link} passHref>
+            <a target="_blank" rel="noreferrer">
+              <div className="pl-6 btn btn-secondary mr-2">View Demo</div>
+            </a>
+          </Link>
+        )}
+      </footer>
     </div>
   );
 };

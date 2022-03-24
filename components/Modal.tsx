@@ -64,7 +64,7 @@ const Modal: FC<{
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className={` w-auto mx-w-3xl p-4 shadow-md bg-zinc-50 rounded-md  ${props.className}`}
+                className={` w-auto mx-w-3xl p-4 shadow-md bg-zinc-50 border-[1px] border-black  ${props.className}`}
               >
                 {props.children}
               </motion.div>

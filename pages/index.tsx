@@ -4,11 +4,11 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import About from "../components/About";
+
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import ProjectList from "../components/ProjectList";
-import Skills from "../components/Skills";
+
 import Portal from "../components/Portal";
 const Home: NextPage = () => {
   const projectRef = useRef<HTMLHeadingElement | HTMLDivElement>(null);
@@ -57,12 +57,10 @@ const Home: NextPage = () => {
             scrollAbout={scrollAbout}
             scrollContact={scrollContact}
           />
-          <Hero scrollContact={scrollContact} scrollProjects={scrollProjects} />
+          <Hero scrollContact={scrollContact} aboutRef={aboutRef} />
           <Layout>
             <ProjectList projectRef={projectRef} />
 
-            <About aboutRef={aboutRef} />
-            <Skills />
             <Contact />
             <Footer contactRef={contactRef} />
           </Layout>

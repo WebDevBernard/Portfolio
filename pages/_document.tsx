@@ -10,11 +10,7 @@ export default function Document() {
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
         />
         <link
-          href="https://fonts.cdnfonts.com/css/sofia-pro"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=Open+Sans&display=swap"
           rel="stylesheet"
         />
         <meta property="og:title" content="Bernard Yang | Portfolio" />
