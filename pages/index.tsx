@@ -4,7 +4,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-
+import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import ProjectList from "../components/ProjectList";
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
           <Hero scrollContact={scrollContact} aboutRef={aboutRef} />
           <Layout>
             <ProjectList projectRef={projectRef} />
-
+            <Skills />
             <Contact />
             <Footer contactRef={contactRef} />
           </Layout>

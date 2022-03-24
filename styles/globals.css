@@ -15,7 +15,7 @@ img:-moz-loading {
 }
 
 .input {
-  @apply text-sm tracking-wide focus:border-2 w-full p-2 focus:rounded-md border-black border-[1px] outline-none;
+  @apply placeholder:uppercase text-sm tracking-wide focus:border-2 w-full p-2 focus:rounded-md border-black border-[1px] outline-none;
 }
 
 /* https://stackoverflow.com/questions/66416614/how-to-create-scrollable-element-in-tailwind-without-a-scrollbar */

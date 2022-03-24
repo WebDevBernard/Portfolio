@@ -44,7 +44,7 @@ const Contact = () => {
     <div className=" space-y-4 mx-auto flex flex-col  md:w-4/5">
       {!submitted && (
         <span className="col-span-2 flex self-start items-center space-x-2">
-          <h2 className="text-xl font-serif font-bold">Message Me</h2>
+          <h2 className="text-2xl font-serif font-bold">Message Me</h2>
         </span>
       )}
       {!submitted && (
