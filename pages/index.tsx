@@ -41,12 +41,12 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Bernard Yang</title>
+        <title>Bernard Yang | Portfolio</title>
         <meta name="author" content="Bernard Yang" />
         <meta name="keywords" content="Bernard Yang" />
         <meta
           name="description"
-          content="Hi there, I am Bernard Yang, a web developer in Vancouver."
+          content="Hi there, I am Bernard Yang a web developer in Vancouver."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
