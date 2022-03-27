@@ -1,13 +1,13 @@
 export const projects = [
   {
     id: "m1",
-    title: "Mythic+ Player Count",
+    title: "Mythic+ Character Count",
     image: "/docs/raiderio.png",
     description: [
-      "A graph of player count in World of Warcraft Mythic+ dungeons. Backend uses AWS Serverless Computing.",
-      "I am a fan of World of Warcraft so I wanted to create an app that could track some useful ingame data.  What this app does is it calls Raider.io API and gets a pageCount (a rankings of all characters who have completed a mythic+ dungeon).  The main challenge in making this app is that every week there is a different endpoint to call (twelve total).  I had to create a backend that would know which endpoint to call and save that data to a database.  And I also wanted to have it all automated using AWS. The project is quite simple, but it is one that I am most proud of working on. It was the first time I applied programming to solve an actual problem I had. It taught me a lot about working with objects and arrays, using the Date object, and writing a React custom hook.",
+      "A graph of character count in World of Warcraft Mythic+ dungeons.",
+      "I am a fan of World of Warcraft so I wanted to create an app that could track some useful ingame data.  What this app does is it calls Raider.io API and gets a pageCount (a rankings of all characters who have completed a mythic+ dungeon).  The main challenge in making this app is that every week there is a different endpoint to call (twelve total).  I had to create a backend that would know which endpoint to call and save that data to a database.  And I also wanted to have it all automated using AWS. The project is quite simple, but it is one that I am most proud of working on. It was the first time I applied programming to solve an actual problem I had. It taught me a lot about working with arrays and objects, using Lodash, using TypeScript with React, and writing a React custom hook.",
     ],
-    github: "https://github.com/WebDevBernard/Raider.io-API-Data",
+    github: "https://github.com/WebDevBernard/MythicPlus-CharacterCount",
     link: "https://mythicplus.vercel.app/",
   },
   {
