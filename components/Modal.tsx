@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactDOM from "react-dom";
 import useClickedOutside from "../hooks/useClickedOutside";

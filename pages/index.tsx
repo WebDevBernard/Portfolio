@@ -25,6 +25,7 @@ const Home: NextPage = () => {
   if (!hasMounted) {
     return null;
   }
+
   const scrollProjects = () => {
     projectRef.current!.scrollIntoView({
       block: "start",

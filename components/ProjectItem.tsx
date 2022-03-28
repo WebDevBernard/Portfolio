@@ -1,5 +1,5 @@
-import { useState } from "react";
-import Image from "next/image";
+import { useState, useEffect } from "react";
+
 import Link from "next/link";
 import Description from "./Description";
 import { FC } from "react";
@@ -13,8 +13,15 @@ interface ProjectProps {
 
 const ProjectItem: FC<ProjectProps> = (props) => {
   const [openModal, setOpenModal] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(false);
+  useEffect(() => {
+    show
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset");
+  }, [show]);
   const handleOpenModal = () => {
     setOpenModal(!openModal);
+    setShow(!show);
   };
   return (
     <div
