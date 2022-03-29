@@ -14,14 +14,14 @@ interface ProjectProps {
 const ProjectItem: FC<ProjectProps> = (props) => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [show, setShow] = useState<boolean>(false);
-  useEffect(() => {
-    show
-      ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "unset");
-  }, [show]);
+  // useEffect(() => {
+  //   show
+  //     ? (document.body.style.overflowY = "hidden")
+  //     : (document.body.style.overflowY = "unset");
+  // }, [show]);
   const handleOpenModal = () => {
     setOpenModal(!openModal);
-    setShow(!show);
+    // setShow(!show);
   };
   return (
     <div

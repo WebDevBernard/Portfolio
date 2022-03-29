@@ -4,19 +4,32 @@ import ReactDOM from "react-dom";
 import useClickedOutside from "../hooks/useClickedOutside";
 
 const modalAnimation = {
-  visible: {
-    scale: 1,
-    opacity: 1,
+  hidden: {
+    transform: "scale(0)",
+    opacity: 0,
     transition: {
-      duration: 0.4,
+      delay: 0.3,
     },
   },
-  exit: { opacity: 0, scale: 0 },
+  visible: {
+    transform: " scale(1)",
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  exit: {
+    transform: "scale(0)",
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+    },
+  },
 };
 
 const Backdrop: FC<{ onClose: () => boolean }> = (props) => (
   <div
-    className="fixed top-0 left-0 h-screen w-full z-20 opacity-20 transition  bg-black ease-out duration-75"
+    className=" fixed top-0 left-0 h-screen w-full z-20 opacity-20 transition  bg-black ease-out duration-75"
     onClick={props.onClose}
   />
 );
@@ -51,10 +64,10 @@ const Modal: FC<{
               <motion.div
                 ref={domNode}
                 variants={modalAnimation}
-                initial={{ scale: 0, opacity: 0 }}
+                initial="hidden"
                 animate="visible"
                 exit="exit"
-                className={`relative w-auto mx-w-3xl p-4 shadow-md bg-white border-[1px] border-black  ${props.className}`}
+                className={` relative w-auto mx-w-3xl p-4 shadow-md bg-white border-[1px] border-black  ${props.className}`}
               >
                 <svg
                   onClick={props.onClose}
