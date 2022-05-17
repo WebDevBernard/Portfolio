@@ -24,11 +24,9 @@ const Hero: FC<{
             <p className="text-sm tracking-tight leading-7">
               I am Bernard, a web developer in Vancouver. Last year (2021) I
               decided to make the transition from a long time career in customer
-              service to web development. I did a coding bootcamp and from that
-              experience, I learned how much I enjoyed the design side of
-              frontend web development. Since then, I have been building on my
-              frontend skills by doing a combination of Udemy courses and
-              personal projects.
+              service to web development. Most of what I have learned about
+              programming is from building this website and these personal
+              projects.
             </p>
 
             <div className="flex divide-x divide-slate-600 pb-4  mt-6">

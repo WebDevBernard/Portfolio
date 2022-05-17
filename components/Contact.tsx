@@ -96,8 +96,8 @@ const Contact = () => {
                   <p className="">{errors.message}</p>
                 )}
                 {isSubmitting && (
-                  <div className="text-black text-[15px] font-serif font-bold underline-offset-4 underline decoration-2">
-                    Thank you! I will reply to you shortly.
+                  <div className="text-black text-[15px] font-serif font-bold border-[1px] border-indigo-500 p-[6px]">
+                    Thank you. Your message was successfully sent.
                   </div>
                 )}
               </div>
