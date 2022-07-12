@@ -26,10 +26,10 @@ const Hero: FC<{
               page with a couple projects I made at a coding bootcamp and a few
               projects made during my free time. If you are hiring, please feel
               free to send me a technical challenge. I always learn a lot making
-              these mini projects, although it does take me a bit longer to
-              finish the more challenging ones. If you are here for any other
-              reason and you want to reach out to me, message me at the bottom
-              of this page and I will get back to you as soon as I can.
+              them, although it does take me a bit longer to finish the more
+              challenging ones. If you are here for any other reason and you
+              want to reach out to me, message me at the bottom of this page and
+              I will get back to you as soon as I can.
             </p>
 
             <div className="flex divide-x divide-slate-600 pb-4  mt-6">
