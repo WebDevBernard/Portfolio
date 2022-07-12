@@ -22,16 +22,19 @@ const Hero: FC<{
             </h1>
 
             <p className="text-sm tracking-tight leading-7">
-              I am Bernard, a web developer in Vancouver. Last year (2021) I
-              decided to make the transition from a long time career in customer
-              service to web development. Most of what I have learned about
-              programming is from building this website and these personal
-              projects.
+              I am Bernard, a web developer in Vancouver. This is my portfolio
+              page with a couple projects I made at a coding bootcamp and a few
+              projects made during my free time. If you are hiring, please send
+              me your technical challenge. I always learn a lot making these
+              mini projects, although it does take me a bit longer to finish the
+              more challenging ones. If you are here for any other reason and
+              you want to reach out to me, message me at the bottom of this page
+              and I will respond to you as soon as I can.
             </p>
 
             <div className="flex divide-x divide-slate-600 pb-4  mt-6">
               <button onClick={scrollContact} className="pr-6 btn-secondary">
-                Work With Me
+                Contact Me
               </button>
               <a href="/resume.pdf">
                 <button className="pl-6 btn-secondary">View Resume</button>
