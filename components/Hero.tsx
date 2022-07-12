@@ -29,7 +29,7 @@ const Hero: FC<{
               these mini projects, although it does take me a bit longer to
               finish the more challenging ones. If you are here for any other
               reason and you want to reach out to me, message me at the bottom
-              of this page and I will respond to you as soon as I can.
+              of this page and I will get back to you as soon as I can.
             </p>
 
             <div className="flex divide-x divide-slate-600 pb-4  mt-6">
