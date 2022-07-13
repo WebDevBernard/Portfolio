@@ -24,12 +24,9 @@ const Hero: FC<{
             <p className="text-sm tracking-tight leading-7">
               I am Bernard, a web developer in Vancouver. This is my portfolio
               page with a couple projects I made at a coding bootcamp and a few
-              projects made during my free time. If you are hiring, please feel
-              free to send me a coding challenge. I always learn a lot doing
-              them, although it does take me a bit longer to finish the more
-              challenging ones. If you are here for any other reason and you
-              want to reach out to me, message me at the bottom of this page and
-              I will get back to you as soon as I can.
+              projects made during my free time. If you are hiring, send me a
+              coding challenge. I always learn a lot doing them even though I
+              may not finish in time.
             </p>
 
             <div className="flex divide-x divide-slate-600 pb-4  mt-6">
