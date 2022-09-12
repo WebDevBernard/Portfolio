@@ -27,7 +27,7 @@ const Hero: FC<{
               projects made during my free time. Throughout my career, I have
               always had an interest looking at data, and finding trends in
               things. Naturally, I wanted to learn coding to save time
-              extracting and organzing data.
+              extracting and organizing data.
             </p>
 
             <div className="flex divide-x divide-slate-600 pb-4  mt-6">
