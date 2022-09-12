@@ -24,7 +24,7 @@ const Hero: FC<{
             <p className="text-sm tracking-tight leading-7">
               I am Bernard, a web developer in Vancouver. This is my portfolio
               page with a couple projects I made at a coding bootcamp and a few
-              projects made during my free time. Throughout my career, I've
+              projects made during my free time. Throughout my career, I have
               always had an interest looking at data, and finding trends in
               things. Naturally, I wanted to learn coding to save time
               extracting and organzing data.
