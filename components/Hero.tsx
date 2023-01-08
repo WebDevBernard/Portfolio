@@ -29,7 +29,7 @@ const Hero: FC<{
               wanted to learn coding to save time extracting and organizing
               data. While learning web development, I found that I really
               enjoyed playing around with CSS, particularly trying to implement
-              uniform spacing and getting that perfectly centered modal. Outside
+              uniform spacing or getting that perfectly centered modal. Outside
               of web development, my main hobbies are playing videogames and
               watching movies.
             </p>
