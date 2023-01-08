@@ -24,10 +24,14 @@ const Hero: FC<{
             <p className="text-sm tracking-tight leading-7">
               I am Bernard, a web developer in Vancouver. This is my portfolio
               page with a couple projects I made at a coding bootcamp and a few
-              projects made during my free time. Throughout my career, I have
-              always had an interest looking at data, and finding trends in
-              things. Naturally, I wanted to learn coding to save time
-              extracting and organizing data.
+              projects made during my free time. I have always had an interest
+              in analyzing data and studying trends in things. Naturally, I
+              wanted to learn coding to save time extracting and organizing
+              data. While learning web development, I found that I really
+              enjoyed playing around with CSS, particularly trying to implement
+              uniform spacing and getting that perfectly centered modal. Outside
+              of web development, my main hobbies are playing videogames and
+              watching movies.
             </p>
 
             <div className="flex divide-x divide-slate-600 pb-4  mt-6">

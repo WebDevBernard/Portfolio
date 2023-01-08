@@ -5,7 +5,7 @@ export const projects = [
     image: "/docs/raiderio.png",
     description: [
       "A graph of character count in World of Warcraft Mythic+ dungeons.",
-      "This is a project I made to share with the Reddit WoW community.  What this app does is it calls Raider.io API and returns a page count (a rankings of all characters who have completed a mythic+ dungeon).  The main challenge in making this app is that every week there is a different endpoint to call (twelve total).  I had to create a backend that would know which endpoint to call and save that data to a database. The API call would also need to be automated using AWS. Working on this project taught me a lot about using JS array methods (map, sort, filter, findIndex), and chaining Lodash functions (_.map, _.groupBy, _.sumBy).  I also learned to use TypeScript with React, and learn how to write my own React custom hook.",
+      "This is a project I made as a proof of concept after seeing a similar implementation on Reddit.  The app gives the user data on player participation, something that is not readily shared by Blizzard. The main challenge in making this app is that every week there is a different endpoint to call (twelve total).  I had to create a backend that would know which endpoint to call and save that data to a database. I also wanted to automate the API call using AWS. Working on this project taught me a lot about using JS array methods (map, sort, filter, findIndex), and chaining Lodash functions (_.map, _.groupBy, _.sumBy).  I also learned to use TypeScript with React, and learn how to write my own React custom hook.",
     ],
     github: "https://github.com/WebDevBernard/MythicPlus-RunCount",
     link: "https://mythicplus.vercel.app/",
