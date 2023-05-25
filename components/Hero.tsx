@@ -22,16 +22,7 @@ const Hero: FC<{
             </h1>
 
             <p className="text-sm tracking-tight leading-7">
-              I am Bernard, a web developer in Vancouver. This is my portfolio
-              page with a couple projects I made at a coding bootcamp and a few
-              projects made during my free time. I have always had an interest
-              in analyzing data and studying trends in things. Naturally, I
-              wanted to learn coding to save time extracting and organizing
-              data. While learning web development, I found that I really
-              enjoyed playing around with CSS, particularly trying to implement
-              uniform spacing or getting that perfectly centered modal. Outside
-              of web development, my main hobbies are playing videogames and
-              watching movies.
+              I am Bernard, welcome to my portfolio page.  Here are some projects I made a while back when I was still looking for work in web dev.  I am honestly done with this industry.  The project links are probably all dead now. If you are trying to reach me for any reason, feel free to leave me a message in the contact form.
             </p>
 
             <div className="flex divide-x divide-slate-600 pb-4  mt-6">
