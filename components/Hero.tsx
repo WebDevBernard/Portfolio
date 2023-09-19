@@ -22,7 +22,12 @@ const Hero: FC<{
             </h1>
 
             <p className="text-sm tracking-tight leading-7">
-              I am Bernard, welcome to my portfolio page.  Here are some projects I made a while back when I was still looking for work in web dev.  I am honestly done with this industry.  The project links are probably all dead now. If you are trying to reach me for any reason, feel free to leave me a message in the contact form.
+              I am Bernard, congrats on finding my portfolio page. Here are some
+              projects I made a while back when I was still pursuing a career in
+              web dev. I am currently in the insurance industry but still
+              practice programming as a hobby. If you are trying to reach me for
+              any reason, feel free to leave me a message in the contact form
+              below.
             </p>
 
             <div className="flex divide-x divide-slate-600 pb-4  mt-6">
