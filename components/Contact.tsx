@@ -86,7 +86,7 @@ const Contact = () => {
               rows={5}
               disabled={isSubmitting}
             />
-            <div className="relative ">
+            <div className="relative">
               <div className="text-xs text-red-500 absolute">
                 {touched.name && errors.name && (
                   <p className="">{errors.name}</p>
@@ -95,9 +95,9 @@ const Contact = () => {
                 {touched.message && errors.message && (
                   <p className="">{errors.message}</p>
                 )}
-                {isSubmitting && (
+                {!isSubmitting && (
                   <div className="text-black text-[15px] font-serif font-bold border-[1px] border-indigo-500 p-[6px]">
-                    Thank you. Your message was successfully sent.
+                    Your message has been sent.
                   </div>
                 )}
               </div>
